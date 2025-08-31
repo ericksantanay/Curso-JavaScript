@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #interajir{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="interajir"  onclick="" mouseenter="" onmouseout=""> <!--Invez disso eu deixo do outro jeito que é menos poluido-->
+        Interaja...
+    </div>
+
+    <script>
+        var i = window.document.getElementById('interajir')
+
+        i.addEventListener('click', clicar)
+        i.addEventListener('mouseenter', entrar)
+        i.addEventListener('mouseout', sair)
+
+        function clicar(){
+            i.innerText = ('Clicou')
+            i.style.background = ('red')
+        }
+
+        function entrar(){
+            i.innerText = ('Entrou')
+            i.style.background = ('blue')
+        }
+
+        function sair(){
+            i.innerText = ('Saiu')
+            i.style.background = ('green')
+        }
+
+    </script>
+</body>
+</html>

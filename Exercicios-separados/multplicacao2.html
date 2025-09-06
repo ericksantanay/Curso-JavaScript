@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplicando</title>
+</head>
+<body>
+    <h1>multiplicando</h1>
+
+    <input type="number" name="mtxt1" id="imtxt1">
+    <input type="number" name="mtxt2" id="imtxt2">
+    <input type="button" value="Multiplique" onclick="multiplicar()">
+    <div id="r">O resultado é</div>
+    <script>
+        function multiplicar(){
+            var m1 = window.document.getElementById('imtxt1')
+            var m2 = window.document.getElementById('imtxt2')
+            var r = window.document.getElementById('r')
+            var n1 = Number(m1.value)
+            var n2 = Number(m2.value)
+            var res = n1 * n2 
+            r.innerText = ('O resultado é ' + res)
+        }
+    </script>
+</body>
+</html>

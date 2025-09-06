@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Sua velocidade</h1>
+    <input type="number" name="txtv" id="itxtvel">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">A sua velocidade é </div>
+
+    <script>
+       function clicar(){
+         var txtv = window.document.getElementById('itxtvel')
+         var res = window.document.getElementById('res')
+         var vel = Number(txtv.value)
+         res.innerText = (`Sua velocidade é de ${vel} km/h`)
+
+         if(vel > 70){
+            res.innerText +=('Voce Foi Multado, porque voce ultrapassou a velocidade, e se voce ultrapassou voce nao presta!!')
+         }else{
+            res.innerText += ('Voce manteve a velocidade abaixo, não fez mais que a sua obrigação')
+         }
+       }
+    </script>
+</body>
+</html>

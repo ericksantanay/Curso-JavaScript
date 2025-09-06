@@ -6,21 +6,23 @@
     <title>Multiplicando Números</title>
 </head>
 <body>
-    <h1>Multiplicando Valores</h1>
-    <input type="number" name="mult1" id="imult1"> x
-    <input type="number" name="mult2" id="imult2">
-    <input type="button" value="Multiplicar" onclick="multiplicou()">
-    <div id="r">O Resultado da multiplicação é</div>
-    <script>
-        function multiplicou(){
-            var m1 = window.document.getElementById('imult1')
-            var m2 = window.document.getElementById('imult2')
-            var r = window.document.getElementById('r')
-            var n1 = Number(m1.value)
-            var n2 = Number(m2.value)
-            var s = n1 * n2
-            r.innerText = (`O Resultado da multiplicação é ` + s)
-        }
-    </script>
+        <h1>Multiplicando Numeros</h1>
+        <input type="number" name="txt1" id="itxt1"> x
+        <input type="number" name="txt2" id="itxt2">
+        <input type="button" value="Multiplique" onclick="multiplique()">
+        <div id="res">O resultado é</div>
+
+        <script>
+            function multiplique(){
+            var ip1 = document.getElementById('itxt1')
+            var ip2 = document.getElementById('itxt2')
+            var r = document.getElementById('res')
+            var n1 = Number(ip1.value)
+            var n2 = Number(ip2.value)
+            var m = n1 * n2
+            r.innerText = (`O Resultado é ${m}`)
+            }
+           
+        </script>
 </body>
 </html>

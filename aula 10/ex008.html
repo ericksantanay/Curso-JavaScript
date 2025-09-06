@@ -7,19 +7,23 @@
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="txt1" id="itxt1"> + 
-    <input type="number" name="txt2" id="itxt2">
-    <input type="button" value="Soma" onclick="somar()">
-    <div id="res">Resultado</div>
+    <input type="number" name="caixa1" id="icaixa1">
+    <input type="number" name="caixa2" id="icaixa2">
+    <input type="button" value="Subtrair" id="subtrair">
+    <div id="r">Resultado</div>
     <script>
-        function somar(){
-            var tn1 = window.document.getElementById('itxt1')
-            var tn2 = window.document.getElementById('itxt2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 - n2 
-            res.innerText = (`A subtração entre ${n1} e ${n2} é ${s}`)
+       
+        var s = window.document.getElementById('subtrair')
+        s.addEventListener('click', subtrair)
+
+        function subtrair(){
+            var ip1 = window.document.getElementById('icaixa1')
+            var ip2 = window.document.getElementById('icaixa2')
+            var r = window.document.getElementById('r')
+            var s1 = Number(ip1.value)
+            var s2 = Number(ip2.value)
+            var s = s1 - s2
+            r.innerText = (`A subtração entre ${s1} e ${s2} é ${s}`)
         }
     </script>
 </body>

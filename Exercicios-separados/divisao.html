@@ -11,10 +11,16 @@
     <input type="number" name="dtxt1" id="idtxt1">
     <input type="number" name="dtxt2" id="idtxt2">
     <input type="button" value="Dividir" onclick="dividir()">
-    <div id="r">O Resultado da divisao é</div>
+    <div id="r">O Resultado da divisão é</div>
     <script>
         function dividir(){
-            
+            var d1 = document.getElementById('idtxt1')
+            var d2 = document.getElementById('idtxt2')
+            var r = document.getElementById('r')
+            var n1 = Number(d1.value)
+            var n2 = Number(d2.value)
+            var res = n1 / n2 
+            r.innerText = ('O resultado da divisão é ' + res)
         }
     </script>
 </body>

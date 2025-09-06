@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dividindo Números</title>
+    <title>Potencia dos Números</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Potencia com os números</h1>
+
+    <input type="number" name="ptxt1" id="iptxt1"> **
+    <input type="number" name="ptxt2" id="iptxt2">
+    <input type="button" value="Potencia" onclick="potencia()">
+    <div id="r">O Resultado é</div>
+    <script>
+        function potencia(){
+            var p1 = window.document.getElementById('iptxt1')
+            var p2 = window.document.getElementById('iptxt2')
+            var r = window.document.getElementById('r')
+            var n1 = Number(p1.value)
+            var n2 = Number(p2.value)
+            var res = n1 ** n2
+            r.innerText = ('O resultado é ' + res)
+        }
+    </script>
 </body>
 </html>

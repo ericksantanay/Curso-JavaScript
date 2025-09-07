@@ -7,10 +7,22 @@
     <title>Verificador de idade</title>
 </head>
 <body>
+    <div id="title"> <h1>Verificador de idade</h1></div>
     <div id="container"">
         <div id="iput">
-            <input type="number" name="" id="">
+            <label for="nascimento">Ano de Nascimento</label>
+            <input type="number" name="txt1" id="itxt1">
         </div>
+        <div id="sex">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="stxt" id="istxt1">
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="stxt" id="istxt2">
+        </div>
+            <div id="btn"><input type="button" value="Verificar" onclick="verificar()"></div>
+            <div id="result">Resultado</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

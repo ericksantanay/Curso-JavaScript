@@ -1,3 +1,7 @@
+:root{
+    --color1: #999;
+}
+
 body{
     background-color: rgba(49, 49, 247, 0.763);
     font-family: Arial, Helvetica, sans-serif;

@@ -3,7 +3,7 @@ function verificar(){
     var ano = data.getFullYear()
     var fano = window.document.getElementById('txtano').value 
     var res = document.getElementById('result')
-    if (fano >= 0 (Number)fano < 16){
+    if (fano >= 0 fano < 16){
         res.innerText = ('Voce é menor de idade, voce nao vota!!')
     }else{
         if (fano >= 18){

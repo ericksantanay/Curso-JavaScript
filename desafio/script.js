@@ -6,7 +6,7 @@ function verificar(){
     if (fano >= 0 && fano < 16){
         res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce nao vota!!`)
     }else{
-        if (fano >= 18){
+        if (fano >= 18 && fano < 64){
             res.innerText = ('Seu voto é obrigatatorio!!')
         }else{
             if (fano >= 16 || Number(fano) < 18 && Number(fano) >=65){

@@ -4,7 +4,7 @@ function verificar(){
     var fano = window.document.getElementById('txtano').value 
     var res = document.getElementById('result')
 
-    if (fano >= 0 && fano < 16){
+    if (fano >= 1 && fano < 16){
          document.body.style.background = '#E60901'
         res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce nao vota!!!!!`)
     }else{
@@ -16,7 +16,6 @@ function verificar(){
                 document.body.style.background = '#FFD400'
                 res.innerText = (`Voce tem ${fano} anos seu voto é opicional`)
             }else{
-                 document.body.style.background = ''
                  window.alert('[ERRO] Nao foi possivel verificar os dados tente novamente')
             }
         }

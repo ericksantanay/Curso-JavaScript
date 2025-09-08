@@ -10,7 +10,7 @@ function verificar(){
     }else{
         if (fano >= 18 && fano < 64){
              document.body.style.background = '#008450'
-            res.innerText = (`Voce tem ${fano} anos e seu voto é obrigatorio!!!!!`)
+            res.innerText = (`Voce tem ${fano} anos e é maior de idade, seu voto é obrigatorio!!!!!`)
         }else{
             if (fano >= 16 || Number(fano) < 18 && Number(fano) >=65){
                 document.body.style.background = '#FFD400'

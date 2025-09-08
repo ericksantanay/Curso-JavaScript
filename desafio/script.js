@@ -7,9 +7,9 @@ function verificar(){
         res.innerText = ('Voce é menor de idade, voce nao vota!!')
     }else{
         if (fano >= 18){
-            res.innerText = ('Seu voto é obrigata')
+            res.innerText = ('Seu voto é obrigatatorio!!')
         }else{
-            if (fano >= 16 && fano >= 65){
+            if (fano >= 16 || Number(fano) < 18){
                 res.innerText = ('Seu voto é opicional')
             }else{
                 window.alert('[ERRO] Nao foi possivel verificar os dados tente novamente')

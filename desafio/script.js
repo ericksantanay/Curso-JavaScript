@@ -3,5 +3,7 @@ function verificar(){
     var ano = data.getFullYear()
     var fano = window.document.getElementById('txtano')
     var res = document.getElementById('result')
-    if (ano > )
+    if (ano <= 16 && ano >= 65){
+        res.innerText = ('')
+    }
 }

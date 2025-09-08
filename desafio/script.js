@@ -6,7 +6,7 @@ function verificar(){
 
     if (fano >= 1 && fano < 16){
          document.body.style.background = '#E60901'
-        res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce nao vota!!!!!`)
+        res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce não vota!!!!!`)
     }else{
         if (fano >= 18 && fano < 64){
              document.body.style.background = '#008450'

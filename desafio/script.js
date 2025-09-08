@@ -12,8 +12,8 @@ function verificar(){
             if (fano >= 16 || Number(fano) < 18 && Number(fano) >=65){
                 res.innerText = (`Voce tem ${fano} anos seu voto é opicional`)
             }else{
-                window.alert('[ERRO] Nao foi possivel verificar os dados tente novamente')
-            } 
+                 window.alert('[ERRO] Nao foi possivel verificar os dados tente novamente')
+            }
         }
     }
 }

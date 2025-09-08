@@ -13,7 +13,7 @@ function verificar(){
                 res.innerText = ('Seu voto é opicional')
             }else{
                 window.alert('[ERRO] Nao foi possivel verificar os dados tente novamente')
-            }
+            } 
         }
     }
 }

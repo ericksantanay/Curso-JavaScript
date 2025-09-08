@@ -35,6 +35,8 @@ body{
 #container #btn{
     padding: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #container #btn input{
@@ -44,3 +46,10 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
+
+#container #result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

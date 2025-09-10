@@ -2,6 +2,7 @@ function verificar(){
     var data = new Date()
     var ano = data.getFullYear()
     var fano = window.document.getElementById('txtano').value 
+    var img = document.createElement('img')
     var res = document.getElementById('result')
 
     if (fano >= 1 && fano < 16){

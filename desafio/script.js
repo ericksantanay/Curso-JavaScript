@@ -3,9 +3,11 @@ function verificar(){
     var ano = data.getFullYear()
     var fano = window.document.getElementById('txtano').value 
     var img = document.createElement('img')
+    img.setAttribute('id', 'foto')
     var res = document.getElementById('result')
 
     if (fano >= 1 && fano < 16){
+        img.setAttribute('src', 'Vegeta.jpg')
          document.body.style.background = '#ff0800ff'
         res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce não vota!!!!!`)
     }else{

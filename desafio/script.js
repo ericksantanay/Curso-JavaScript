@@ -7,7 +7,7 @@ function verificar(){
     var res = document.getElementById('result')
 
     if (fano >= 1 && fano < 16){
-        img.setAttribute('src', 'Vegeta.jpg')
+        document.body.contaienr.style.background.img = 'Vegeta.jpg'
          document.body.style.background = '#ff0800ff'
         res.innerText = (`Voce tem ${fano} anos e é menor de idade, voce não vota!!!!!`)
     }else{

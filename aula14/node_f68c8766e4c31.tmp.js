@@ -1,4 +1,4 @@
 var c = 1
-while (c <= 3) {
+while (c < 3) {
     console.log('Oi tudo')
 } 

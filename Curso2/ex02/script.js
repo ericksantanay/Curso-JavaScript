@@ -1,4 +1,3 @@
-var a = 1
-var b = 4
-var c = a + b
-console.log(c)
+var a = 8
+var b = 2
+var c = 

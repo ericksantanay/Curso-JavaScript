@@ -14,7 +14,15 @@
     </div>
         <div id="result">O seu resultado é </div>
     <script>
-            
+            function clicou(){
+            var i1 = document.getElementById('icaixa1')
+            var i2 = document.getElementById('icaixa2')
+            var r = document.getElementById('result')
+            var n1 = Number(i1.value)
+            var n2 = Number(i2.value)
+            var res = n1 + n2 
+            r.innerHTML = (`O seu resultado foi ${res}`)
+            }
     </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ if (idade <= 16){
             if(idade >= 65 || idade < 110){
                 console.log(`Voce tem ${idade} anos, seu voto é opicional!!`)
             }else{
-                alert('[ERRO]')
+                alert('[ERRO]')  
             }
         }
     }

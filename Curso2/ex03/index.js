@@ -1,1 +1,1 @@
-var nome
+var nome = 'Erick'

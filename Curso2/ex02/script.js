@@ -6,10 +6,10 @@ if (idade < 16 ){
     if (idade >= 16 || idade < 18){
          console.log(`Voce tem ${idade} anos, e seu voto é opicional!!!!`)
     }else {
-        if (idade > 18 && idade < 65 ){
+        if (idade >= 18 && idade < 65 ){
              console.log(`Voce tem ${idade} anos, e seu voto é obrogatorio!!!!`)
         }else {
-            if (idade > 65 ){
+            if (idade >= 65 ){
                  console.log(`Voce tem ${idade} anos, e seu voto é opicional!!!!`)
             }
         }

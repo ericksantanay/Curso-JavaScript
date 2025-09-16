@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="+" onclick="adicionar()" id="ad">
+        <input type="button" value="-" onclick="subtrair()" id="sub">
+        <p id="resul">0</p>
+    </div>
+    <input type="reset" value="Reset" onclick="resetar()">
+
+    <script>
+
+        var contador = 0
+        
+        var r = document.getElementById('resul')
+
+        function adicionar(){
+          contador++;
+        r.innerText = (`${contador}`)
+           }
+
+           function subtrair(){
+            contador--;
+            r.innerText = (`${contador}`)
+           }
+
+           function resetar(){
+                
+           }
+    </script>
+</body>
+</html>

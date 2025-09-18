@@ -8,20 +8,22 @@
 <body>
     <h1>Escolha um número</h1>
     <p>Eu irei ver se voce acerta o número que eu escolhi!!.</p>
-    <input type="number" name="txt" id="itxt" onclick="escolha()">
-    <input type="button" value="Testar">
+    <input type="number" name="txt" id="itxt">
+    <input type="button" value="Testar" onclick="escolha()">
     <div id="res"></div>
     <script>
         function escolha(){
-           var num = 2
+           var ip = Number(document.getElementById('itxt').value)
+           var num = 4
            var r = document.getElementById('res')
-           if (num > 4){
+
+           if (ip > num){
              r.innerText = ('ERROU KKKKK')
            }else {
-            if (num < 4 ){
+            if (ip < num ){
                 r.innerText = ('ERROU KKKK')
             }else{
-                if (num == 4){
+                if (ip == num){
                     r.innerText = ('Voce Acertou!!!!!')
                 }
             }

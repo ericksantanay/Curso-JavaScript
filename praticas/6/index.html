@@ -39,6 +39,10 @@
                 }else{
                     if (ip >= 5 ){
                         r.innerHTML = (`Voce tirou ${ip} e esta na média, tome cuidado!!!`)
+                    }else{
+                        if (ip < 5){
+                            r.innerHTML = (`Voce tirou ${ip} e esta abaixo da média, e voce foi muito mal, tome muito cuidado!!!!`)
+                        }
                     }
                 }
             }

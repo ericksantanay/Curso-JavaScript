@@ -43,7 +43,10 @@
                         if (ip < 5){
                             r.innerHTML = (`Voce tirou ${ip} e esta abaixo da média, e voce foi muito mal, tome muito cuidado!!!!`)
                         }else{
-                               r.innerHTML = ('[ERRO]')
+                              if (ip === ''){
+                                 alert('[ERRO] digite um nota de 0 a 10')
+                                 return
+                              }
                         }
                     }
                 }

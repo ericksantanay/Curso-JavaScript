@@ -66,8 +66,10 @@
                 if (resultado >= 5 && resultado < 7 ){
                     r.innerText = (`Parabéns ${ip1} voce tirou ${resultado} , VOCE ESTA DE RECUPERAÇÂO`)
                 }else {
-                    if (resultado < 5 ){
-                        r.innerText = (`${ip1} voce tirou ${resultado} , VOCE ESTA REPROVADO.`)
+                    if (resultado < 5){
+                        r.innerText = (`${ip1} voce tirou ${resultado} e esta abaixo da média, VOCE ESTA REPROVADO.`)
+                    }else{
+                      alert('ERRO')
                     }
                 }
             }

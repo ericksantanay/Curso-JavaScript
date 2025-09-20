@@ -52,11 +52,14 @@
             var not1 = Number(document.getElementById('nota1').value)
             var not2 = Number(document.getElementById('nota2').value)
 
+            
             //Outras variaveis com o tota de provas, resultado das 2 notas e o resultado que vai ser exibido.
             var totalProvas = 2
             var resultado = not1 + not2 / totalProvas
             var r = document.getElementById('res')
 
+
+            // If e else
             if (resultado >= 7){
                 r.innerText = (`Parabéns ${ip1} voce tirou ${resultado}.`)
             }else{

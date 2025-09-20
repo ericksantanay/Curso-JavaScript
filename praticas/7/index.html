@@ -52,7 +52,7 @@
             var not1 = Number(document.getElementById('nota1').value)
             var not2 = Number(document.getElementById('nota2').value)
 
-            
+
             //Outras variaveis com o tota de provas, resultado das 2 notas e o resultado que vai ser exibido.
             var totalProvas = 2
             var resultado = not1 + not2 / totalProvas
@@ -61,13 +61,13 @@
 
             // If e else
             if (resultado >= 7){
-                r.innerText = (`Parabéns ${ip1} voce tirou ${resultado}.`)
+                r.innerText = (`Parabéns ${ip1} voce tirou ${resultado}`)
             }else{
                 if (resultado >= 5 || resultado < 7 ){
-                    r.innerText = (`${ip1}voce tirou ${resultado} e ainda esta na média.`)
+                    r.innerText = (`${ip1}voce tirou ${resultado} e ainda esta na média`)
                 }else {
                     if (resultado < 5 ){
-                        r.innerText = (`${ip1} voce tirou ${resultado} e esta abaixo da média.`)
+                        r.innerText = (`${ip1} voce tirou ${resultado} e esta abaixo da média`)
                     }
                 }
             }

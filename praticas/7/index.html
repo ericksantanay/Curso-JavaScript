@@ -57,10 +57,10 @@
             var resultado = not1 + not2 / totalProvas
             var r = document.getElementById('res')
 
-            if (resultado >= 7 && resultado < 10){
+            if (resultado >= 7){
                 r.innerText = (`Parabéns ${ip1} voce tirou ${resultado}.`)
             }else{
-                if (resultado >= 5 && < 7){
+                if (resultado >= 5 || resultado < 7 ){
                     r.innerText = (`${ip1}voce tirou ${resultado} e ainda esta na média.`)
                 }else {
                     if (resultado < 5 ){

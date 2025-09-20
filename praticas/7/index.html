@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Notas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+    input {
+      margin: 5px;
+      padding: 8px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    #res {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Cadastro de Notas</h1>
+    <input type="text" id="nome" placeholder="Nome do aluno"><br>
+    <input type="number" id="nota1" placeholder="Nota 1 (0 a 10)"><br>
+    <input type="number" id="nota2" placeholder="Nota 2 (0 a 10)"><br>
+    <button onclick="analisar()">Analisar</button>
+    <p id="res"></p>
+  </div>
+
+  <script>
+    // 👉 Sua lógica em JavaScript vai aqui
+  </script>
+</body>
+</html>

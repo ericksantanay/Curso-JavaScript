@@ -50,8 +50,11 @@
             var ip1 = document.getElementById('nome')
             var not1 = Number(document.getElementById('nota1').value)
             var not2 = Number(document.getElementById('nota2').value)
+            var resultado = not1 + not2
             var r = document.getElementById('res')
-            
+            if (resultado >= 7){
+                r.innerText = (`Parabéns ${ip1} voce tirou `)
+            }
         }
   </script>
 </body>

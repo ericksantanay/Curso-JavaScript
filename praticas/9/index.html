@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+</head>
+<body>
+     <div>
+        <h1>Verificador de Números, ver qual é maior.</h1>
+        <input type="number" name="txt1" id="itxt1" placeholder="Um número de 1 a 10"> 
+        <span id="res"></span>
+        <input type="number" name="txt2" id="itxt2" placeholder="Um número de 1 a 10"> 
+        <input type="button" value="Verificar" onclick="ver()">
+     </div>
+
+     <script>
+        function ver(){
+            // Variaveis
+            var ip1 = Number(document.getElementById('itxt1').value)
+            var ip2 = Number(document.getElementById('itxt2').value)
+            var r = document.getElementById('res')
+
+            // If, if else e else
+            if (ip1 > ip2){
+                r.innerText = (' < ')
+            }else if(ip2 > ip1){
+                r.innerText = (' > ')
+            }else(alert('[ERRO] Digite algum número no campo abaixo.'))
+        }
+     </script>
+</body>
+</html>

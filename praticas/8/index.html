@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <style>
+        *{
+            text-align: center;
+            padding: 5px;
+        }
+        
+        div{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        div #btn{
+            padding: 5px;
+            font-size: 19px;
+            cursor: pointer;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frases Motivacionais</h1>
+    <div>
+        <input id="btn" type="button" value="Gerar Palavras" onclick="gerar()">
+        <p id="res"></p>
+    </div>
+
+    <script>
+        function gerar() {
+    // Lista de frases
+    var frases = [
+        "Hoje vai ser incrível!",
+        "Continue praticando!",
+        "Você consegue!",
+        "Não desista!"
+    ];
+
+    // Gera índice aleatório
+    var indice = Math.floor(Math.random() * frases.length);
+
+    // Pega a frase correspondente ao índice
+    var fraseEscolhida = frases[indice];
+
+    // Mostra no HTML (supondo que exista um elemento com id="res")
+    document.getElementById('res').innerText = fraseEscolhida;
+}
+
+    </script>
+</body>
+</html>

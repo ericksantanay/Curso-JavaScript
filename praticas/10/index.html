@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticaa</title>
+</head>
+<body>
+    <div>
+        <h1>Digite seu Nome</h1>
+        <input type="text" name="txt" id="itxt" placeholder="Nome">
+        <input type="button" value="Ver Mensagem" onclick="mensagem()">
+        <p id="res"></p>
+        <textarea name="camp1" id="icamp1" placeholder="Digite Aqui"></textarea>
+    </div>
+
+    <script>
+        function mensagem(){
+            var ip = document.getElementById('itxt').value
+            var r = document.getElementById('res')
+
+            r.innerText = (`Olá ${ip} como vai a sua, vida vai bem,? espero que sim. `)
+        }
+    </script>
+</body>
+</html>

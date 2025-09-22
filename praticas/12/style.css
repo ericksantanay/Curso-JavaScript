@@ -3,3 +3,17 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ba
+}
+
+div > input {
+    cursor: pointer;
+    padding: 20px;
+    margin: 40px;
+
+}

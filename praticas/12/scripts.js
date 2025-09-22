@@ -1,7 +1,8 @@
-function adiciona(){
-    var contador = 0
-    var r = document.getElementById('res')
 
+var contador = 0
+var r = document.getElementById('res')
+
+function adiciona(){
     contador++;
     r.innerText = (`${contador}`)
 }

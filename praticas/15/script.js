@@ -1,1 +1,1 @@
-var ip = Number(document.getElementById(''))
+var ip = Number(document.getElementById('inum'))

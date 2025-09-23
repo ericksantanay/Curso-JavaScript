@@ -1,0 +1,1 @@
+var ip = Number(document.getElementById(''))

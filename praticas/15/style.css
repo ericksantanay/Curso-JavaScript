@@ -10,3 +10,8 @@ div {
     background-color: rgb(106, 106, 106); 
     padding: 40px;
 }
+
+div input {
+    padding: 10px;
+    outline: none;
+}

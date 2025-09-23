@@ -4,3 +4,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+div {
+    background-color: aliceblue; 
+    padding: 40px;
+}

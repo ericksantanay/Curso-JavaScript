@@ -9,3 +9,4 @@ function verifica() {
         r.innerText = ('Voce errou!!!')
     }
 }
+

@@ -5,3 +5,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+div {
+    background-color: rgb(158, 160, 162);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div h1 {
+    padding: 20px;
+}
+
+div > input {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}

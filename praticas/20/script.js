@@ -1,8 +1,11 @@
+
+    // Função.
 function TemperaturaQuenteFrio() {
+    // Variaveis.
     var ip = Number(document.getElementById('itemp').value)
     var r = document.getElementById('res')
    
-    // if, else-if e else
+    // if, else-if e else.
 
         if (ip < 20) {
             r.innerText = ('Frio!')
@@ -11,6 +14,6 @@ function TemperaturaQuenteFrio() {
         }else if (ip >= 30) {
             r.innerText = ('Quente')
         }else {
-            alert('[ERRO] TENTE NOVAMENTE MAIS TARDE.')
+            alert('[ERRO] TENTE NOVAMENTE.')
         }
 }

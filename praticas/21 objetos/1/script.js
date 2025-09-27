@@ -1,7 +1,7 @@
 let livro = {
-    titulo: 20,
+    titulo: "Alice e o Pais das maravilhas",
      autor: "Jhon",
       ano: 2000
     }
 
-      console.log(livro)
+      console.log(livro["Titulo"])

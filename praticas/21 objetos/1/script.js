@@ -4,4 +4,6 @@ let livro = {
       ano: 2000
     }
 
-      console.log(livro["Titulo"])
+      console.log(livro["titulo"])
+      console.log(livro["autor"])
+      console.log(livro["ano"])

@@ -1,0 +1,21 @@
+body {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #999999be;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+div input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}

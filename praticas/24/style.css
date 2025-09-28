@@ -7,8 +7,11 @@ body {
 }
 
 div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #bab8b8c7;
-    padding: 20px;
+    padding: 70px;
     border-radius: 5px;
 }
 
@@ -17,6 +20,7 @@ div input {
     border-radius: 5px;
     outline: none;
     border: none;
+    margin: 20px;
 }
 
 div #btn {

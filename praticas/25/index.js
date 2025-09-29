@@ -9,6 +9,6 @@ setInterval(() => {
     indice++; // avança para a próxima
 
     if (indice >= palavras.length) { 
-        indice = 0; // volta pro início
+        indice = 0; //  volta pro início
     }
 }, 1000)

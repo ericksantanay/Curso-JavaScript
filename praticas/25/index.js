@@ -1,6 +1,6 @@
 var r = document.getElementById('palavra')
 
-let palavras = ["Bonito", "Lindo", "Perfeito", "Agradavel", "Abençoado", "Magnifico"];
+let palavras = ["Bonito", "Lindo", "Perfeito", "Agradavel", "Abençoado", "Magnifico", "Bom"];
 
 let indice = 0;
 

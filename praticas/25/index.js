@@ -5,5 +5,10 @@ let palavras = ["Bonito", "Lindo", "Perfeito", "Agradavel", "Abençoado"];
 let indice = 0;
 
 setInterval(() => {
-    r.innerText = palavras[indice];
+    r.innerText = palavras[indice]; // mostra a palavra atual
+    indice++; // avança para a próxima
+
+    if (indice >= palavras.length) { 
+        indice = 0; // volta pro início
+    }
 }, 1000)

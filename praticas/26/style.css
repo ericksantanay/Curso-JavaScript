@@ -13,3 +13,20 @@ div {
     border: 1px solid blue;
 }   
 
+div input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+div #btn {
+    cursor: pointer;
+    background-color: rgb(15, 188, 15);
+    font-weight: 700;
+    color: white;
+}
+
+div #btn:hover {
+    color: #b7b5b5;
+    background-color: green;
+}

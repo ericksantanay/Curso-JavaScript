@@ -7,7 +7,9 @@ body {
 }
 
 div {
-    background-color: #e6e1e1;
+    background-color: #e8e5e5;
     padding: 5%;
     border-radius: 2%;
-}
+    border: 1px solid blue;
+}   
+

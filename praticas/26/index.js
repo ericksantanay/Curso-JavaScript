@@ -4,7 +4,7 @@ function verif() {
     let r = document.getElementById('res')
 
     // Variaveis pré definidas!
-    const dia1 = 'D'
+    const dia = 'D'
     const tarde = 'T';
     const noite = 'N';
 
@@ -15,5 +15,7 @@ function verif() {
         r.innerText = (`Turno da Tarde`)
     }else if ( ip == noite) {
         r.innerText = (`Turno da noite`)
+    }else {
+       alert('[ERRO] Escreva no campo abaixo com umas das letras em letras maiusculo.')
     }
 }

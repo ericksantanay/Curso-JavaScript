@@ -8,5 +8,7 @@ function mostrar() {
         r.innerText = ('Outono')
     }else if (ip == 6,7,8) {
         r.innerText ('Inverno')
+    }else if (ip == 9,10,11) {
+        r.innerText = ('Primavera')
     }
 }

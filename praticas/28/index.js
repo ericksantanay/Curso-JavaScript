@@ -10,5 +10,7 @@ function mostrar() {
         r.innerText ('Inverno')
     }else if (ip == 9,10,11) {
         r.innerText = ('Primavera')
+    }else {
+        alert('[ERRO]')
     }
 }

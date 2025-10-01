@@ -6,5 +6,7 @@ function mostrar() {
         r.innerText = ('Verão')
     }else if (ip == 3,4,5) {
         r.innerText = ('Outono')
-    }else if
+    }else if (ip == 6,7,8) {
+        r.innerText ('Inverno')
+    }
 }

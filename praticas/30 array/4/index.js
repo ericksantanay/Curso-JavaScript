@@ -5,4 +5,7 @@ let indice = 0
 r.innerText = (`${nomes[indice]}`)
 setInterval(() => {
     indice++
+    if (indice >= nomes.length) {
+        indice = 0}
+    r.innerText = (`${nomes[indice]}`)
 }, 2000);

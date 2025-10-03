@@ -1,4 +1,4 @@
-const nomes = ["Oi", "Bão?", "BLZ", "Joia?", "Suave", "Bom dia"]
+const nomes = ["GRU", "VAMOS", "CORTAR", "O", "CABELO", "AMANHA?", ",", "SE", "VOCE", "NÃO", "FOR", "EU", "NÃO", "VOU", "DEIXAR", "VOCE", "ROUBAR", "A", "LUA", "HEHEHEHEHEHEHEHEHEHEH"]
 
 let r = document.getElementById('res')
 let indice = 0
@@ -8,4 +8,4 @@ setInterval(() => {
     if (indice >= nomes.length) {
         indice = 0}
     r.innerText = (`${nomes[indice]}`)
-}, 2000);
+}, 1000);

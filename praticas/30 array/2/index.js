@@ -1,4 +1,4 @@
 const frutas = ["maça", "banana", "pera", "laranja", "uva", "abacate"]
 
-console.log([0])
-console.log([5])
+console.log(frutas[0])
+console.log(frutas[5])

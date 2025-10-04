@@ -1,6 +1,10 @@
 const r = document.getElementById('res')
 const pessoa = ["Erick", "Santana", 20, "Iniciante"]//Array
 
+const lista1 = ["Feijão", "Arroz", "Macarrão", "Banana", "Pera", "Melancia"]
+const  lista2 = ["Suco", "Guarana", "Àgua", "Carne"]
+
+//const superLista = lista1.concat(lista2)
 //pessoa.pop()
 //r.innerHTML = pessoa.join("-")
 //pessoa.push("Qulquer coisa")
@@ -8,7 +12,8 @@ const pessoa = ["Erick", "Santana", 20, "Iniciante"]//Array
 //pessoa.unshift("È os Guri né pai.")
 //delete pessoa[0]
 //pessoa.splice(1,3, "Item adicionado1")
-r.innerHTML = pessoa
+
+r.innerHTML = superLista
 
 
 
@@ -47,5 +52,9 @@ r.innerHTML = pessoa
 -------------------------------------------------------------------------------------------------------------
 7- Método (splice)
     Com esse metodo eu consigo adicionar multiplos valores numa determinada posição que eu desejo.
-    Ex:  pessoa.splice(posição,0, "Item adicionado1", "item adicionado2")
+    Ex:  pessoa.splice(posição,0 esse é se eu quero que 1 item seja deletado e quantos eu quero deletar, "Item adicionado1", "item adicionado2")
+-------------------------------------------------------------------------------------------------------------
+8- Metodo (concat)
+    Com esse metodo eu consigo concatenar 2 array, no caso eu junto 2 listas em 1 só.
+    Ex: const superLista = lista1.concat(lista2)
   */

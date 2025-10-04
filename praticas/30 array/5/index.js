@@ -8,6 +8,8 @@ const  lista3 = ["as", "pera", "Àgsssua", "Carnsssse"]
 
 const jogadores = ["Pipi", "Zeze", "Pele", "Neymar", "Ronaldo", "Messi", "Cristiano Ronaldo", "Wilian"]
 
+const numeros = [1, 90, 50, 60, 23, 2, 45, 100, 10]
+
 //const craques = jogadores.slice(2, 6)
 //const superLista = lista1.concat(lista2, lista3)
 //pessoa.pop()
@@ -19,7 +21,8 @@ const jogadores = ["Pipi", "Zeze", "Pele", "Neymar", "Ronaldo", "Messi", "Cristi
 //pessoa.splice(1,3, "Item adicionado1")
 //jogadores.sort()
 //jogadores.reverse()
-r.innerHTML = jogadores
+numeros.sort(function(a,b){return a-b})
+r.innerHTML = numeros
 
 
   /*
@@ -86,8 +89,14 @@ r.innerHTML = jogadores
     Esse método deixa as palavras ao reverso o ultimo vira o primeiro e assim sucessivamente.
     Ex: jogadores.reverse()
 -------------------------------------------------------------------------------------------------------------
-12- 
+12- Método para deixar os números em ordem, (sort()) tambem usa esse.
 
+    Esse a explição é meio dificil mas é só usar do jeito do exemplo que da certo.
+
+    Ex: numeros.sort(function(a,b){return a-b})
+    Para deixar os números na ordem certa é só fazer isso
+-------------------------------------------------------------------------------------------------------------
+13 Método para deixar o número do maior para o menor (sort)
 
 
 

@@ -15,7 +15,8 @@ r.innerHTML = pessoa
 
   
   /*
-  
+    Os indice mudam.
+
   1- Metodo (Join)
   Com esse metodo eu posso adicionar qualquer coisa que ele vai adicionar entre os espaços de uma plavra a outra.     
     Ex:  r.innerHTML = pessoa.join("-")
@@ -32,4 +33,6 @@ r.innerHTML = pessoa
 4- Metodo (Shift) Esse metodo remove o primeiro item
     Com esse metodo eu removo o primeiro item da lista no caso o (array)
     Ex: pessoa.shift()
+-------------------------------------------------------------------------------------------------------------
+
   */

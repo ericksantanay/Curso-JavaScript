@@ -8,7 +8,7 @@ const  lista3 = ["as", "pera", "Àgsssua", "Carnsssse"]
 
 const jogadores = ["Pipi", "Zeze", "Pele", "Neymar", "Ronaldo", "Messi", "Cristiano Ronaldo", "Wilian"]
 
-const craques = jogadores.slice(2, 6)
+//const craques = jogadores.slice(2, 6)
 //const superLista = lista1.concat(lista2, lista3)
 //pessoa.pop()
 //r.innerHTML = pessoa.join("-")
@@ -17,8 +17,9 @@ const craques = jogadores.slice(2, 6)
 //pessoa.unshift("È os Guri né pai.")
 //delete pessoa[0]
 //pessoa.splice(1,3, "Item adicionado1")
-
-r.innerHTML = craques
+//jogadores.sort()
+//jogadores.reverse()
+r.innerHTML = jogadores
 
 
   /*
@@ -26,7 +27,7 @@ r.innerHTML = craques
 
   1- Método (join)
   Com esse metodo eu posso adicionar qualquer coisa que ele vai adicionar entre os espaços de uma plavra a outra.
-       
+
     Ex:  r.innerHTML = pessoa.join("-")
 -------------------------------------------------------------------------------------------------------------
 2- Método (pop) Esse remove oultimo item
@@ -63,7 +64,7 @@ r.innerHTML = craques
 
     Ex:  pessoa.splice(posição,0 esse é se eu quero que 1 item seja deletado e quantos eu quero deletar, "Item adicionado1", "item adicionado2")
 -------------------------------------------------------------------------------------------------------------
-8- Metodo (concat)
+8- Método (concat)
     Com esse metodo eu consigo concatenar 2 array, no caso eu junto 2 listas em 1 só.
 
     Ex: const superLista = lista1.concat(lista2) 
@@ -72,7 +73,33 @@ r.innerHTML = craques
 
     Ex com 3 lista: const superLista = lista1.concat(lista2, lista3, assim por diante)
 -------------------------------------------------------------------------------------------------------------
-9- Metodo (slice)
+9- Método (slice)
     Com esse metodo eu consigo fatiar uma matriz eu posso fazer ela pegar de um indice até outro.
     Ex: const craques = jogadores.slice(2, 6)
+-------------------------------------------------------------------------------------------------------------
+10- Método (sort())
+    Com esse metodo é possivel deixar os itens em ordem alfabetica.
+    Ex: jogadores.sort() 
+-------------------------------------------------------------------------------------------------------------
+11- Método (reverse)
+
+    Esse método deixa as palavras ao reverso o ultimo vira o primeiro e assim sucessivamente.
+    Ex: jogadores.reverse()
+-------------------------------------------------------------------------------------------------------------
+12- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Com alguns metodos eu preciso criar um variavel e colocar o nome da variavel no innerText ou innerHTML e por o metodo dentro dessa variavel
   */

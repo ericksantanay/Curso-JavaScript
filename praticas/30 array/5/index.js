@@ -6,6 +6,7 @@ const pessoa = ["Erick", "Santana", 20, "Iniciante"]//Array
 //pessoa.push("Qulquer coisa")
 //pessoa.shift()
 //pessoa.unshift("È os Guri né pai.")
+delete pessoa[0]
 r.innerHTML = pessoa
 
 
@@ -39,5 +40,7 @@ r.innerHTML = pessoa
     Com esse metodo eu adiciono alguma coisa no primeiro item da minha lista (array)
     Ex: pessoa.unshift("Qualquer coisa")
 -------------------------------------------------------------------------------------------------------------
-6- 
+6- Metodo (delete)
+    Esse metodo deleta o primeiro item, mas diferente dos outros que quando são removidos, esse metodo remove mas os indice continua igual. No caso do ex o Erick é o (indice) 0 e o Santana é o 1 se fosse os metodos anteriores os indice ia mudar já com esse metodo os (indice) continua a mesma coisa.
+    Ex:
   */

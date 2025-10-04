@@ -1,8 +1,17 @@
 const r = document.getElementById('res')
-const pessoa = ["Erick", "Santana", 20, "Iniciante"]
+const pessoa = ["Erick", "Santana", 20, "Iniciante"]//Array
+
+//pessoa.pop()
+//r.innerHTML = pessoa.join("-")
 r.innerHTML = pessoa
-pessoa.pop()
-  //r.innerHTML = pessoa.join("-")
+
+
+
+
+
+
+
+  
   /*
   
   1- Metodo (Join)
@@ -11,6 +20,9 @@ pessoa.pop()
 -------------------------------------------------------------------------------------------------------------
 2- Metodo (Pop)
    Com esse metodo eu consigo remover o ultimo item de uma lista no caso o (array).
-    Ex: 
-  
+    Ex: pessoa.pop() 
+    Um detalhe eu tenho que deixar o pessoa.pop antes o innerHTMl ou do innerText.
+-------------------------------------------------------------------------------------------------------------
+3- Metodo (Push)
+    Com esse metodo eu consigo adicionar 
   */

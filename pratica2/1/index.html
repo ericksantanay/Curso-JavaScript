@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <div class="inputs_txt">
         <input type="text" name="texto" id="itxt">
-        <input type="button" value="+" onclick="adicionar()">
-        <input type="button" value="-" onclick="remover()">
+        <input class="btn" type="button" value="+" onclick="adicionar()">
+        <input class="btn" type="button" value="-" onclick="remover()">
+        </div>
+        
+        <div id="paragrafos"> 
+        <p id="res"></p>
+        <p id="res"></p>
+        <p id="res"></p>
+        <p id="res"></p>
+        <p id="res"></p>
+        </div>
     </div>
+
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>

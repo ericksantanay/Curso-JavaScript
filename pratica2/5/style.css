@@ -1,0 +1,44 @@
+body {
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    background-color: #999;
+    padding: 70px;
+    border-radius: 50px;
+}
+
+div input {
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+div #azul {
+    background-color: blue;
+}
+
+div #azul:hover {
+     background-color: rgb(11, 11, 171);
+}
+
+div #vermelho {
+    background-color: red;
+}
+
+div #vermelho:hover {
+    background-color: rgb(191, 11, 11);
+}
+
+div #verde {
+    background-color: green;
+}
+
+div #verde:hover {
+    background-color: rgb(4, 87, 4);
+}

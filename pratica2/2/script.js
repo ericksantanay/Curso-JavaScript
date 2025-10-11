@@ -1,9 +1,8 @@
 function verificar() {
 
-    let ip = document.getElementById('itext').value
+    let ip = document.getElementById('itext').value.trim().toLowerCase()
     let r = document.getElementById('res')
-    const c = 'Brasília'
-    ip = ip.toLowerCase()
+    const c = 'brasília'.toLowerCase()
     
     if (ip == c ) {
          r.innerText = ('Acertou Parabéns')

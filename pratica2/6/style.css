@@ -1,0 +1,36 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+body {
+    height: 96vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    border-radius: 5px;
+    padding: 40px;
+    background-color: #999;
+}
+
+div p {
+    font-family: monospace;
+    color: rgb(36, 92, 244);
+}
+
+div input {
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+}
+
+div input:hover {
+    background-color: rgb(1, 85, 1);
+}

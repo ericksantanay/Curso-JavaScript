@@ -7,7 +7,7 @@ function verificar() {
     
     if (ip == c ) {
          r.innerText = ('Acertou Parabéns')
-    }else if (ip == '') {
+    }else if (ip === '') {
        r.innerText = ('[ERRO] Digite algo')
     }else {
         r.innerText = ('[ERROU], Tente novamente ')

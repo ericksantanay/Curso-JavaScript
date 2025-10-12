@@ -1,8 +1,17 @@
+ function ativar() {
+let r = document.getElementById('res')
 
-function ativar() {
-    
-setTimeout(function(){
-    
-}, 5000) 
+    tempo = setTimeout(function(){
 
+    r.innerText = ('Contou 5s')
+    document.body.style.backgroundColor = 'blue'
+
+    }, 5000) 
+
+}
+
+
+function para() {
+    clearTimeout(tempo)
+    r.innerText = ('Parou a contagem')
 }

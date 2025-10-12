@@ -3,7 +3,7 @@
     tempo = setInterval(function() {
         const r = document.getElementById('res')
        contador++
-        r.innerText = contador
+        r.innerText = (`${contador} s`)
     }, 1000)
 }
 

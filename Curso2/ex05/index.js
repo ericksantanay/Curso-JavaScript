@@ -18,3 +18,12 @@ function para() {
 }
  */
 
+function ativar() {
+    setInterval(function (){
+    var cronometro = document.getElementById('res')
+    var soma = parseInt(cronometro) + 1;
+
+    document.getElementById('res').innerHTML = soma
+    
+}, 1000) 
+}

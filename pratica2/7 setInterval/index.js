@@ -10,3 +10,8 @@
 function pararTempo() {
     clearInterval(tempo)
 }
+
+function reiniciarTempo() {
+   contador = 0
+    
+}

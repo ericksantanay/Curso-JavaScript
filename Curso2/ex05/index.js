@@ -1,4 +1,5 @@
- function ativar() {
+/*
+function ativar() {
 let r = document.getElementById('res')
 
     tempo = setTimeout(function(){
@@ -15,3 +16,5 @@ function para() {
     clearTimeout(tempo)
     r.innerText = ('Parou a contagem')
 }
+ */
+

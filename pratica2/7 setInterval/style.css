@@ -13,6 +13,10 @@ div {
     background-color: #999;
 }
 
+div #res {
+    font-size: 2.3rem;
+}
+
 div input {
     padding: 10px;
     border: none;

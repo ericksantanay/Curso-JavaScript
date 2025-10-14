@@ -7,7 +7,7 @@
         contador++
 
         if (contador == 60) {
-            r.innerText = (`${contador}, ${contador}`)
+            r.innerText = (``)
         }
     }, 1000)
 }

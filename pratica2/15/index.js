@@ -1,7 +1,7 @@
     contador = 0
     function iniciar() {
 
-    setInterval(function(){
+    tempo = setInterval(function(){
         const r = document.getElementById('res')
         r.innerText = (`${contador}`)
         contador++
@@ -10,4 +10,8 @@
             r.innerText = (``)
         }
     }, 1000)
+}
+
+function parar() {
+    clearInterval(tempo)
 }

@@ -9,8 +9,7 @@
 
         if (contador == 60) {
             r.innerText = (`${contador}`)
-            re.innerText = (1)
-            re++
+            re.innerText = 1
         }
     }, 1000)
 }

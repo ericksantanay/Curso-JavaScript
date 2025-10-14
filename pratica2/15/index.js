@@ -1,6 +1,7 @@
 
-    contador = 0
+    
     function iniciar() {
+    contador = 0
     setInterval(function(){
         
         contador++

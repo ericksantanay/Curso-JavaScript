@@ -1,9 +1,10 @@
     contador = 0
     function iniciar() {
 
-    setInterval(function() {
+    setInterval(function(){
         const r = document.getElementById('res')
         r.innerText = (`${contador}`)
+        
         contador++
         
         

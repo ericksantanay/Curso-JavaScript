@@ -26,3 +26,9 @@ console.log(diaMes)
 // Dia da semana 
 
 let diaSemana = data.getDay()
+console.log(diaSemana)
+
+// Macete
+let diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"]
+let diaDaSemanaEscrito = diasDaSemana[data.getDay()]
+console.log(diaDaSemanaEscrito)

@@ -8,6 +8,6 @@ let ano = data.getFullYear()
 console.log(ano)
 
 
-// Pegar o mes de 0 até 11
+// Pegar o mes de 0 até 11 sendo 0 janeiro e 11 dezembro
 let mes = data.getMonth()
 console.log(mes)

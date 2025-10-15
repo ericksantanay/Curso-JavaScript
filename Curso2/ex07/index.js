@@ -13,7 +13,11 @@ console.log(ano)
 let mes = data.getMonth()
 console.log(mes)
 
+//Mostrar o mes no formato escrito
 const mesesDoAno = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-
 let mesEscrito = mesesDoAno[data.getMonth()]
 console.log(mesEscrito)
+
+// Pegar dia do mes de 1 até 31
+
+let diaMes = data.getDate()

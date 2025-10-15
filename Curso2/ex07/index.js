@@ -49,4 +49,9 @@ let segundos = data.getSeconds()
 const s = document.getElementById('sec')
 s.innerText = (`${segundos}`)
 
-// Pegare os Milissegundo
+// Pegare os Milissegundo 
+let milissegundo = data.getMilliseconds()
+console.log(milissegundo)
+
+
+// Pegar a data no padrao brasileiro

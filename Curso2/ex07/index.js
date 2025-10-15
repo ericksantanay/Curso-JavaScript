@@ -55,3 +55,5 @@ console.log(milissegundo)
 
 
 // Pegar a data no padrao brasileiro
+let dataBR = data.toDateString('pt-BR')
+console.log(dataBR)

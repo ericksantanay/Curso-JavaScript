@@ -23,12 +23,30 @@ console.log(mesEscrito)
 let diaMes = data.getDate()
 console.log(diaMes)
 
-// Dia da semana 
 
+// Dia da semana 
 let diaSemana = data.getDay()
-console.log(diaSemana)
 
 // Macete
 let diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"]
 let diaDaSemanaEscrito = diasDaSemana[data.getDay()]
 console.log(diaDaSemanaEscrito)
+
+
+// Pegar a hora 
+let hora = data.getHours()
+const h = document.getElementById('ho')
+h.innerText = (`${hora}`)
+
+// Pegar os minutos
+let minutos = data.getMinutes()
+const m = document.getElementById('min')
+m.innerText = (`${minutos}`)
+
+
+// Pegar os Segundos
+let segundos = data.getSeconds()
+const s = document.getElementById('sec')
+s.innerText = (`${segundos}`)
+
+// Pegare os Milissegundo

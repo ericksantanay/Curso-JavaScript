@@ -10,5 +10,6 @@
     }else {
         document.body.style.backgroundColor = 'white'
         corInicial = 'white'
+        document.body.style.color = 'black'
     }
 }

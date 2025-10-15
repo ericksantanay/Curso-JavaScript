@@ -57,3 +57,23 @@ console.log(milissegundo)
 // Pegar a data no padrao brasileiro
 let dataBR = data.toDateString('pt-BR')
 console.log(dataBR)
+
+
+// Comparar Datas Maior ou Menor Ex: Vencimento
+var hoje = new Date
+var vencimento = new Date(2022, 0, 15)
+
+if (hoje > vencimento) {
+    console.log("Venceu")
+}else {
+    console.log("Ainda nao venceu")
+}
+
+
+//----------------------------------------
+
+var dataInicial = new Date()
+var dataFinal = new Date(2025, 11, 31)
+var diferencaTempo = dataFinal.getTime() - dataInicial.getTime()
+var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000))
+console.log(diferencaDias + "dias")

@@ -21,3 +21,8 @@ console.log(mesEscrito)
 // Pegar dia do mes de 1 até 31
 
 let diaMes = data.getDate()
+console.log(diaMes)
+
+// Dia da semana 
+
+let diaSemana = data.getDay()

@@ -3,11 +3,11 @@
 
         // Esse é da mensaguem que troca a cada click 
         const mensagem = document.getElementById('men')
-        const palavras = ["Continue Praticando, voce está evoluindo!", "Voce é capaz", "Voce consegue!", "Eu confio em voce"]
+        const palavras = ["Continue Praticando, voce está evoluindo!", "Voce é capaz!", "Voce consegue!", "Eu confio em voce!", "Você não precisa saber tudo, só precisa continuar aprendendo todos os dias.", "Cada erro é uma linha a mais na história do seu progresso.", "Grandes programadores também já se sentiram perdidos a diferença é que eles não pararam.", "Você está construindo algo maior do que código está construindo o seu futuro.", "Se você persistir mais um dia, já está à frente da maioria.", "Aprender é difícil, desistir é pior.", "Eu estou me tornando a versão que eu sempre quis ser.", "Um erro a menos, uma lição a mais.", "Hoje eu aprendo, amanhã eu conquisto.", "Você está fazendo o que muitos sonham, mas poucos têm coragem de continuar.", "Você não é burro, você é um aprendiz em progresso.",]
         mensagem.innerText = (palavras[indice])
         indice++
 
-        if (indice == 4) {
+        if (indice == 15) {
             indice = 0
         }   
 

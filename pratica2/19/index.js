@@ -9,5 +9,8 @@ setInterval(function(){
     let minutos = data.getMinutes()
     m.innerText = (minutos)
 
+    let s = document.getElementById('segu')
+    let segundos = data.getSeconds()
+    s.innerText = (segundos)
 
 }, 1000)

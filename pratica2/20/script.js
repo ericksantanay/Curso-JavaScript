@@ -1,4 +1,7 @@
-
+function gerarPalavra() {
+    let mensaguem = document.getElementById('res-data')
+    
+}
 
 setInterval(function(){
     let h = document.getElementById('hora')

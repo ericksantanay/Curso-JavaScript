@@ -4,7 +4,7 @@
     let res = 'CSS'
     indice++
 
-    if ()
+    
     perguntas.innerText = ()
     
 }

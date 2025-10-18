@@ -1,10 +1,11 @@
     // Saudação quando entra no site  e Cores
     const saudacao = document.getElementById('saudacao')
-    if (hora >= 5 && hora < 12 ) {
+    let diaHoje = new Date().getHours()
+    if (diaHoje >= 5 && diaHoje < 12 ) {
         saudacao.innerText = ('Bom dia!')
         document.body.style.color = 'white'
         document.body.style.backgroundColor = 'rgba(227, 230, 5, 0.855)'
-    }else if (hora >= 12 && hora < 18) {
+    }else if (diaHoje >= 12 && diaHoje < 18) {
         saudacao.innerText = ('Boa tarde!')
         document.body.style.color = 'white'
         document.body.style.backgroundColor = 'rgb(199, 104, 9)'
@@ -14,7 +15,6 @@
         document.body.style.backgroundColor = 'rgb(4, 4, 96)'
     }
 
-    
     // RELOGIO
     setInterval(function(){
     let dia = new Date()
@@ -24,15 +24,15 @@
     
     // HORAS
     let hora = dia.getHours()
-    h.innerText = (hora)
+    h.innerText = String(hora).padStart(2, '0')
 
     // MINUTOS
     let minuto = dia.getMinutes()
-    m.innerText = (minuto)
+    m.innerText = String(minuto).padStart(2, '0')
     
     // SEGUNDOS 
     let segundos = dia.getSeconds()
-    s.innerText = (segundos)
+    s.innerText = String(segundos).padStart(2, '0')
 }, 1000)
 
     // DATA
@@ -50,9 +50,9 @@
     
     indice++
     const frases = document.getElementById('frases')
-    frases.innerText = (palavra[indice].toUpperCase())
+    frases.innerText = (palavra[indice])
 
-    if (indice >= 4) {
+    if (indice >= palavra.length) {
         indice = 0
     }
 

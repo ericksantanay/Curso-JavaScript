@@ -1,4 +1,7 @@
-    
+    const saudacao = document.getElementById('saudacao')
+
+
+
     // RELOGIO
     setInterval(function(){
     let dia = new Date()

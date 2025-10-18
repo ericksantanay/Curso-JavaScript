@@ -2,14 +2,12 @@
     setInterval(function(){
     const r = document.getElementById('res')
 
-    let nomes = [
-    
-]
+    let nomes = [,"ARTHUR", "EU", "TE", "AMO", "VOCE", "É", "A", "MINHA", "PAIXAO", "UM", "BEIJO", "NO", "TRASEIRO"]
 
     indice++
 
     r.innerText = (nomes[indice])
-    if (indice == 29) {
+    if (indice == 14) {
         indice = 0
     }
 

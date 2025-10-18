@@ -46,14 +46,12 @@
     // MENSAGUEM
     indice = 0
     function MudarMensaguem() {
-        let palavra = ["Foco, força e código!", "O erro é só uma oportunidade disfarçada.", "O impossível só dura até alguém resolver.", "Você não é burro está apenas aprendendo algo novo.", "Um bom programador não desiste, ele depura!"]
-    
+    let palavra = ["Foco, força e código!", "O erro é só uma oportunidade disfarçada.", "O impossível só dura até alguém resolver.", "Você não é burro está apenas aprendendo algo novo.", "Um bom programador não desiste, ele depura!"]
     
     indice++
     const frases = document.getElementById('frases')
     frases.innerText = (palavra[indice].toUpperCase())
 
-    
     if (indice >= 4) {
         indice = 0
     }

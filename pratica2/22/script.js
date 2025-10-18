@@ -12,5 +12,10 @@
 
     indice++
 
+    r.innerText = (nomes[indice])
+    if (indice == 29) {
+        indice = 0
+    }
+
 
 }, 1000)

@@ -38,5 +38,12 @@
 
     // MENSAGUEM
     function MudarMensaguem() {
-        let palavras = [""]
+        let palavras = [
+    "Foco, força e código!",
+    "O erro é só uma oportunidade disfarçada.",
+    "O impossível só dura até alguém resolver.",
+    "Você não é burro está apenas aprendendo algo novo.",
+    "Um bom programador não desiste, ele depura!"
+    ]
+
     }

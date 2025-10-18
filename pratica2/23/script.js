@@ -51,10 +51,10 @@
     
     indice++
     const frases = document.getElementById('frases')
-    frases.innerText = (palavra[indice])
+    frases.innerText = (palavra[indice].toUpperCase())
 
-
-    if (indice >= palavra.length) {
+    
+    if (indice >= 4) {
         indice = 0
     }
 

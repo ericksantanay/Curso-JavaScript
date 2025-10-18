@@ -7,17 +7,33 @@
 
     <style>
         body {
-           
+           height: 96vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-family: Arial, Helvetica, sans-serif;
         }
+
+        #container {
+            background-color: #3f3f3f;
+            padding: 50px;
+            border-radius: 5px;
+        }
+
+        #container > #hors {
+            display: flex;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <div id="container">
         <h1 id="saudacao"></h1>
     <!---------------------------------->
         <div id="hors">
-        <h1 id="hora"></h1>
-        <h1 id="min"></h1>
+        <h1 id="hora"></h1> :
+        <h1 id="min"></h1> :
         <h1 id="seg"></h1>
         </div>
 

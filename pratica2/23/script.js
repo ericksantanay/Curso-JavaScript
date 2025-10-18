@@ -14,10 +14,10 @@
         document.body.style.backgroundColor = 'rgb(4, 4, 96)'
     }
 
-    const dia = new Date()
+    
     // RELOGIO
     setInterval(function(){
-    
+    let dia = new Date()
     let h = document.getElementById('hora')
     let m = document.getElementById('min')
     let s = document.getElementById('seg')
@@ -36,20 +36,26 @@
 }, 1000)
 
     // DATA
+    let dataHoje = new Date()
     let dataMensaguem = document.getElementById('data')
-    let Data = dia.getDate()
-    let mes = dia.getMonth()+1
-    let ano = dia.getFullYear()
+    let Data = dataHoje.getDate()
+    let mes = dataHoje.getMonth()+1
+    let ano = dataHoje.getFullYear()
     dataMensaguem.innerText = (`Hoje é dia ${Data} do mes ${mes} do ano de ${ano}`)
 
     // MENSAGUEM
+    indice = 0
     function MudarMensaguem() {
-        let palavras = [
-    "Foco, força e código!",
-    "O erro é só uma oportunidade disfarçada.",
-    "O impossível só dura até alguém resolver.",
-    "Você não é burro está apenas aprendendo algo novo.",
-    "Um bom programador não desiste, ele depura!"
-    ]
+        let palavra = ["Foco, força e código!", "O erro é só uma oportunidade disfarçada.", "O impossível só dura até alguém resolver.", "Você não é burro está apenas aprendendo algo novo.", "Um bom programador não desiste, ele depura!"]
+    
+    
+    indice++
+    const frases = document.getElementById('frases')
+    frases.innerText = (palavra[indice])
 
+
+    if (indice >= palavra.length) {
+        indice = 0
     }
+
+}

@@ -3,8 +3,4 @@
     function verificarResposta1() {
     let res = 'CSS'
     indice++
-
-    
-    perguntas.innerText = ()
-    
 }

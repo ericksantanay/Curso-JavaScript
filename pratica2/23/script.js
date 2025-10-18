@@ -13,5 +13,8 @@
     // MINUTOS
     let minuto = dia.getMinutes()
     m.innerText = (minuto)
-   
+    
+    // SEGUNDOS 
+    let segundos = dia.getSeconds()
+    s.innerText = (segundos)
 }, 1000)

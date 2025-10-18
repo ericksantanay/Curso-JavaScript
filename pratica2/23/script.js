@@ -1,11 +1,17 @@
-    // Saudação quando entra no site 
+    // Saudação quando entra no site  e Cores
     const saudacao = document.getElementById('saudacao')
     if (hora >= 5 && hora < 12 ) {
         saudacao.innerText = ('Bom dia!')
+        document.body.style.color = 'white'
+        document.body.style.backgroundColor = 'rgba(227, 230, 5, 0.855)'
     }else if (hora >= 12 && hora < 18) {
         saudacao.innerText = ('Boa tarde!')
+        document.body.style.color = 'white'
+        document.body.style.backgroundColor = 'rgb(199, 104, 9)'
     }else {
         saudacao.innerText = ('Boa noite!')
+        document.body.style.color = 'white'
+        document.body.style.backgroundColor = 'rgb(4, 4, 96)'
     }
 
     const dia = new Date()

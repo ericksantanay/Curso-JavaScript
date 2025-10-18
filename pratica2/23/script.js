@@ -1,4 +1,4 @@
-    
+
     // Saudação quando entra no site 
     const saudacao = document.getElementById('saudacao')
     if (hora >= 5 && hora < 12 ) {
@@ -33,4 +33,6 @@
     // DATA
     let dataMensaguem = document.getElementById('data')
     let Data = dia.getDate()
-    dataMensaguem.innerText = (Data)
+    let mes = dia.getMonth()+1
+    let ano = dia.getFullYear()
+    dataMensaguem.innerText = (`Hoje é dia ${Data} do mes ${mes} do ano de ${ano}`)

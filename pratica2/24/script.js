@@ -1,10 +1,13 @@
 let tempo = document.getElementById('tempo')
 
+    // manipulação de data
     let data = new Date()
     let hora = data.getHours()
+
+    // horarios 
     if (hora >= 5 && hora < 12 ) {
         tempo.innerText = ('BOM DIA!!')
-    }else if (hora > 12 || hora < 18) {
+    }else if (hora >= 12 || hora < 18) {
         tempo.innerText = ('BOA TARDE!!')
     }else {
         tempo.innerText = ('BOA NOITE')

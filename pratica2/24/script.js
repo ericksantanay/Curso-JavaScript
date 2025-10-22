@@ -15,10 +15,10 @@ let tempo = document.getElementById('tempo')
 
 
 
-    function Saudacao() {
+    function MostrarMensaguem() {
        let nome = document.getElementById('inome').value 
        let  s = document.getElementById('saudacao')
-       s.innerText = ('Ola')
+       s.innerText = (`OLA, ${nome}`)
     }
 
    

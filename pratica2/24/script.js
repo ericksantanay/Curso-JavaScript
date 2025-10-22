@@ -16,9 +16,9 @@ let tempo = document.getElementById('tempo')
 
 
     function Saudacao() {
-        let nome = document.getElementById('ipnome').value
-        let diz = document.getElementById('saudacao')
-       diz.innerText = (`OLA ${nome}`)
+       let nome = document.getElementById('inome').value 
+       let  s = document.getElementById('saudacao')
+       s.innerText = ('Ola')
     }
 
    

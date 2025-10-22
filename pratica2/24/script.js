@@ -15,11 +15,17 @@ let tempo = document.getElementById('tempo')
 
 
 
+    function Saudacao() {
+        let nome = document.getElementById('ipnome').value
+        let diz = document.getElementById('saudacao')
+       diz.innerText = (`OLA ${nome}`)
+    }
 
    
 
     indice = 0
     function MudarMensaguem() {
+    
      
      let frases = [
     "Mensagem do dia: Sinta o aroma da felicidade.",
@@ -39,9 +45,8 @@ let tempo = document.getElementById('tempo')
     "Mensagem do dia: Venha experimentar a alegria em forma de pão."
     ]
 
-        let r = document.getElementById('saudacao')
-        let nome = document.getElementById('ipnome').value
-        r.innerText = (`Ola ${nome}`)
+        let r = document.getElementById('mensaguem')
+        r.innerText = (frases[indice])
         indice++
     }
     

@@ -1,4 +1,4 @@
-
+/*
 // OBJETO
 
 let carro  = {
@@ -16,3 +16,6 @@ let r = document.getElementById('area')
 
 let obj = JSON.parse(texto)
 r.innerText = (obj.modelo)
+*/
+
+const ajax = XMLHttpRequest

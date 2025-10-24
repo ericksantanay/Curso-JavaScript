@@ -13,7 +13,7 @@ function aumentar1() {
     res1.innerText = (`Unidades ${contador1}`)
     contador1--
 
-    if (contador1 === 0 ) {
-        document.body.res1.style.body = 'red'
+    if (contador1 == 0 ) {
+        document.body.style.color = 'red'
     } 
 }

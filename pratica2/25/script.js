@@ -35,7 +35,33 @@ function aumentar1() {
         contador2--
 
         if (contador2 == -1) {
-            contador = 0
+            contador2 = 0
             res2.innerText = ('⚠️ Produto esgotado!')
         }
     }
+
+    //
+
+
+    // FUNÇÃO 3  ADICIONAR 
+    let res3 = document.getElementById('unicamisa')
+    contador3 = 10
+    function aumentar3() {
+    res3.innerText = (`Unidades ${contador3}`)
+    contador3++
+    }
+
+    // FUNÇÃO 3 DIMINUIR
+        contador3 = 9
+    function diminuir3() {
+        res3.innerText = (`Unidades ${contador3}`)
+        contador3--
+
+        if (contador3 == -1) {
+            contador3 = 0
+            res3.innerText = ('⚠️ Produto esgotado!')
+        }
+    }
+
+
+

@@ -29,7 +29,11 @@
     const restotal = document.getElementById('resultadorDeVotos')
 
     if (contador1 ===  20) {
-        restotal.innerText = (`O GANHADOR FOI O ${resCont}`)
+        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
+    }else if (contador2 === 20) {
+        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
+    }else {
+        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
     }
 
 

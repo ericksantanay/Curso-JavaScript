@@ -8,7 +8,7 @@
 
         if (contador1 > 20) {
             res1.innerText = (`Votos 20`)
-            restotal.innerText = ('O GANHADOR FOI O PÃO FRANÇÊS')
+            restotal.innerText = ('O GANHADOR FOI O PÃO FRANCÊS')
         }
     }
 
@@ -37,7 +37,7 @@
 
         if (contador3 > 20) {
             res3.innerText = (`Votos 20`)
-            restotal.innerText = ('O GANHADOR FOI O Pão francês')
+            restotal.innerText = ('O GANHADOR FOI O PÃO DOCE')
         }
     }
 

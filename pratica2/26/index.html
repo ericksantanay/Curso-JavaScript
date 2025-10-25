@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Votação de Sabores de Pão</title>
+    <style> 
+        body {
+            display: flex;
+        }
+
+        div {
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            color: #000;
+            background-color: rgb(136, 136, 136);
+            margin: 30px;
+        }
+    </style>
 </head>
 <body>
     
+    <div>
+        <h1>Pão francês</h1>
+        <p id="resultado1"></p>
+       <input type="button" value="Votar" onclick="pao1()">
+    </div>
+
+    <div>
+        <h1>Pão francês</h1>
+        <p id="resultado2"></p>
+       <input type="button" value="Votar" onclick="pao2()">
+    </div>
+
+    <div>
+        <h1>Pão francês</h1>
+        <p id="resultado3"></p>
+       <input type="button" value="Votar" onclick="pao3()">
+    </div>
+
 </body>
 </html>

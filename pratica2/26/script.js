@@ -15,6 +15,10 @@
         let res2 = document.getElementById('resultado2')
         res2.innerText = (`Votos ${contador2}`)
         contador2++
+
+        if (contador2 > 20) {
+            res2.innerText = 20
+        }
     }
 
 
@@ -28,12 +32,12 @@
 
     const restotal = document.getElementById('resultadorDeVotos')
 
-    if (contador1 ===  20) {
-        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
-    }else if (contador2 === 20) {
-        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
-    }else {
-        restotal.innerText = (`O GANHADOR FOI O Pão francês`)
+    if (contador1 ==  20) {
+        restotal.innerText = ('O GANHADOR FOI O Pão francês')
+    }else if (contador2 == 20) {
+        restotal.innerText = ('O GANHADOR FOI O Pão queijo')
+    }else if (contador3 == 20){
+        restotal.innerText = ('O GANHADOR FOI O Pão doce')
     }
 
 

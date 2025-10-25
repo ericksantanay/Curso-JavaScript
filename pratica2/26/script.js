@@ -6,9 +6,9 @@
         res1.innerText = (`Votos ${contador1}`)
         contador1++
 
-        if (contador1 > 20) {
-            res1.innerText = (`Votos 20`)
-            restotal.innerText = ('O GANHADOR FOI O PÃO FRANCÊS')
+        if (contador1 > 30) {
+            res1.innerText = (`Votos 30`)
+            restotal.innerText = (`O GANHADOR FOI O PÃO FRANCÊS COM ${contador1} VOTOS`)
         }
     }
 
@@ -21,9 +21,9 @@
         res2.innerText = (`Votos ${contador2}`)
         contador2++
 
-        if (contador2 > 20) {
-            res2.innerText = (`Votos 20`)
-             restotal.innerText = ('O GANHADOR FOI O PÃO DE QUEIJO')
+        if (contador2 = 30) {
+            res2.innerText = (`Votos 30`)
+             restotal.innerText = (`O GANHADOR FOI O PÃO DE QUEIJO COM ${contador2} VOTOS`)
         }
     }
 
@@ -35,13 +35,13 @@
         res3.innerText = (`Votos ${contador3}`)
         contador3++
 
-        if (contador3 > 20) {
-            res3.innerText = (`Votos 20`)
-            restotal.innerText = ('O GANHADOR FOI O PÃO DOCE')
+        if (contador3 > 30) {
+            res3.innerText = (`Votos 30`)
+            restotal.innerText = (`O GANHADOR FOI O PÃO DOCE COM ${contador3} VOTOS`)
         }
     }
 
-  
+    
 
    
 

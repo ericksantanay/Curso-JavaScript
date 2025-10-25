@@ -1,4 +1,4 @@
-
+      const restotal = document.getElementById('resultadorDeVotos')
     // Voto 1
     contador1 = 0
     function pao1() {
@@ -8,6 +8,7 @@
 
         if (contador1 > 20) {
             res1.innerText = (`Votos 20`)
+            restotal.innerText = ('O GANHADOR FOI O PÃO FRANÇÊS')
         }
     }
 
@@ -22,6 +23,7 @@
 
         if (contador2 > 20) {
             res2.innerText = (`Votos 20`)
+             restotal.innerText = ('O GANHADOR FOI O PÃO DE QUEIJO')
         }
     }
 
@@ -35,22 +37,12 @@
 
         if (contador3 > 20) {
             res3.innerText = (`Votos 20`)
+            restotal.innerText = ('O GANHADOR FOI O Pão francês')
         }
     }
 
-    const restotal = document.getElementById('resultadorDeVotos')
+  
 
-    if (contador1 ===  20) {
-        restotal.innerText = ('O GANHADOR FOI O Pão francês')
-    }
-    
-   if (contador2 === 20) {
-        restotal.innerText = ('O GANHADOR FOI O Pão queijo')
-    }
-           
-    if (contador3 === 20){
-        restotal.innerText = ('O GANHADOR FOI O Pão doce')
-    }
-
+   
 
 

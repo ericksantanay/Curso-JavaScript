@@ -40,9 +40,3 @@
             restotal.innerText = (`O GANHADOR FOI O PÃO DOCE COM ${contador3} VOTOS`)
         }
     }
-
-    
-
-   
-
-

@@ -23,6 +23,11 @@
         if (indice < 0 ) {
             indice = 0
         }
+
+        // Se o indice for maior que 120
+       if (indice === 120 ) {
+        indice = 100
+       }
     }
 
     // Esse adiciona 1% do Nivel
@@ -31,10 +36,6 @@
         indice++
         nivelAgua.innerText = (`Nivel ${indice} %`)
        Condicoes()
-        
-       if (indice >= 120 ) {
-        indice = 100
-       }
     }
 
     // Esse diminui 1% do nivel 

@@ -1,5 +1,6 @@
     const temp = document.getElementById('temperatura')
-
+    const forn = document.getElementById('forno')
+    
     indice = 0
     function aumentarTemp() {
         indice++
@@ -13,5 +14,5 @@
     }
 
     if (indice < 100) {
-
+        
     }

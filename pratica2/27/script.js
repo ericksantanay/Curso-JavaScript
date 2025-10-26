@@ -3,8 +3,15 @@
     indice = 0
     function aumentarTemp() {
         indice++
-        temp.innerText = (indice)
+        temp.innerText = (`A TEMPERATURA É ${indice} GRAUS`)
     }
 
 
-    function 
+    function diminuirTemp() {
+        indice--
+        temp.innerText = (`A TEMPERATURA É ${indice} GRAUS`)
+    }
+
+    if (indice < 100) {
+
+    }

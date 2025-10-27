@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mudar cor</title>
-    <style>
-        div {
-            height: 200px;
-            width: 200px;
-            background-color: black;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lâmpada Inteligente</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #222;
+    }
+
+    #lampada {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: black;
+      box-shadow: 0 0 20px #000;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+
+  <div id="lampada"></div>
+
+  <div>
+    <button onclick="ligar()">Ligar</button>
+    <button onclick="desligar()">Desligar</button>
+    <button onclick="automatico()">Ligar Automático</button>
+    <button onclick="parar()">Parar</button>
+  </div>
+
+  <script>
+    // lampa aonde vai aparecer a cor e cores aonde eu amarzenei as cores que eu quero que apareça
+    let lampa = document.getElementById('lampada')
+    let cores = ["yellow", "white", "blue"]
+
+    // Primeira função
+    indice = 0
+    function automatico() {
+
+        setInterval(function() { 
+
+            
+            lampa.style.backgroundColor = (cores[indice])
+            indice++
+
+
+            if (indice > cores.length) {
+                indice = 0
+            } 
+        }, 1000)
+    }
+
+
+    // Segunda Função de ligar a lampada 
+    function ligar() {
+        lampa.style.backgroundColor = (cores[1])
+    }
+
     
 
-    <div id="res">
-
-    </div>
-
-    <input type="button" value="Mudar" onclick="MudarCor()">
-
-
-    <script src="index.js"></script>
+  </script>
 </body>
 </html>

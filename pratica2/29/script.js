@@ -1,22 +1,25 @@
 
-    let vermelho = document.getElementById('semaforo-verm').style.backgroundColor = 'red'
+    let verm = document.getElementById('semaforo-verm')
 
-    let amarelo = document.getElementById('semanforo-amar').style.backgroundColor = 'yellow'
+    let a = document.getElementById('semanforo-amar')
 
-    let verde = document.getElementById('semaforo-verde').style.backgroundColor = 'green'
+    let ver = document.getElementById('semaforo-verde')
+
+    let vermelho = ["red"]
+    let amarelo = ["yellow"]
+    let verde = ["green"]
 
     indice = 0
     function MudaCorAutomatico() {
         
 
         setInterval(function(){
-        
+            verm.style.backgroundColor = (vermelho[indice])
+          
+           a.style.backgroundColor = (amarelo[indice])
 
-            if (vermelho !== 'black') {
-                vermelho = 'black'
-            }
-           indice++
-           
+           ver.style.backgroundColor = (verde[indice])
+            indice++
         }, 1000)
 
     }

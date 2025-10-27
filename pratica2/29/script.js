@@ -1,12 +1,27 @@
 
+    let vermelho = document.getElementById('semaforo-verm').style.backgroundColor = 'red'
+
+    let amarelo = document.getElementById('semanforo-amar').style.backgroundColor = 'yellow'
+
+    let verde = document.getElementById('semaforo-verde').style.backgroundColor = 'green'
 
     function MudaCorAutomatico() {
-        let vermelho = document.getElementById('semaforo-verm')
-        let amarelo = document.getElementById('semanforo-amar')
-        let verde = document.getElementById('semaforo-verde')
+        
 
         setInterval(function(){
+        
+            if (vermelho == 'black') {
+                vermelho = 'red'
+            }
 
-        }, 2000)
+            if (amarelo == 'black') {
+                amarelo = 'yellow'
+            }
+
+            if (verde == 'black') {
+                verde = 'green'
+            }
+           
+        }, 1000)
 
     }

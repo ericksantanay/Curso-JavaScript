@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Tráfego Inteligente</title>
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semáforo</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #222;
+    }
 
-        div {
-            width: 200px;
-            height: 200px;
-            background-color: black;
-            margin: 10px;
-            border-radius: 50%;
-        }
-
-
-    </style>
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: black;
+      margin: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+  </style>
 </head>
 <body>
+  <div id="semaforo-verm"></div>
+  <div id="semaforo-amar"></div>
+  <div id="semaforo-verde"></div>
 
-    <div id="semaforo-verm">
+  <article>
+    <button onclick="automatico()">Automático</button>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="amarelo()">Amarelo</button>
+    <button onclick="verde()">Verde</button>
+  </article>
 
-    </div>
+  <script>
+    // IA QUE FEZ !! :( 
+    const vermelhoDiv = document.getElementById('semaforo-verm')
+    const amareloDiv = document.getElementById('semaforo-amar')
+    const verdeDiv = document.getElementById('semaforo-verde')
+    let intervalo
 
-    <div id="semanforo-amar">
+    function limpar() {
+      vermelhoDiv.style.backgroundColor = 'black'
+      amareloDiv.style.backgroundColor = 'black'
+      verdeDiv.style.backgroundColor = 'black'
+    }
 
-    </div>
+    function vermelho() {
+      limpar()
+      vermelhoDiv.style.backgroundColor = 'red'
+    }
 
-    <div id="semaforo-verde">
+    function amarelo() {
+      limpar()
+      amareloDiv.style.backgroundColor = 'yellow'
+    }
 
-    </div>
+    function verde() {
+      limpar()
+      verdeDiv.style.backgroundColor = 'green'
+    }
 
-    <article>
-        <input type="button" value="Automatico" onclick="MudaCorAutomatico()">
-         <input type="button" value="Vermelho" onclick="MudaCorVermelho()">
-          <input type="button" value="Amarelo" onclick="MudaCorAmarelo()">
-           <input type="button" value="Verde" onclick="MudaCorVerde()">
-    </article>
-    
-
-    <script src="script.js"></script>
+    function automatico() {
+      let passo = 0
+      clearInterval(intervalo)
+      intervalo = setInterval(() => {
+        if (passo === 0) vermelho()
+        else if (passo === 1) amarelo()
+        else if (passo === 2) verde()
+        passo++
+        if (passo > 2) passo = 0
+      }, 1000)
+    }
+  </script>
 </body>
 </html>

@@ -5,22 +5,17 @@
 
     let verde = document.getElementById('semaforo-verde').style.backgroundColor = 'green'
 
+    indice = 0
     function MudaCorAutomatico() {
         
 
         setInterval(function(){
         
-            if (vermelho == 'black') {
-                vermelho = 'red'
-            }
 
-            if (amarelo == 'black') {
-                amarelo = 'yellow'
+            if (vermelho !== 'black') {
+                vermelho = 'black'
             }
-
-            if (verde == 'black') {
-                verde = 'green'
-            }
+           indice++
            
         }, 1000)
 

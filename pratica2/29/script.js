@@ -15,6 +15,9 @@
 
         setInterval(function(){
             verm.style.backgroundColor = (vermelho[indice])
+            if (indice == vermelho) {
+                indice = 'black'
+            }
           
            a.style.backgroundColor = (amarelo[indice])
 

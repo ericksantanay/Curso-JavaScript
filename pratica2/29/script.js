@@ -5,6 +5,7 @@
 
     let ver = document.getElementById('semaforo-verde')
 
+    let corInicial = 'black'
     let vermelho = ["red"]
     let amarelo = ["yellow"]
     let verde = ["green"]
@@ -15,8 +16,8 @@
 
         setInterval(function(){
             verm.style.backgroundColor = (vermelho[indice])
-            if (indice == vermelho) {
-                indice = 'black'
+            if (indice > vermelho) {
+                indice = corInicial
             }
           
            a.style.backgroundColor = (amarelo[indice])

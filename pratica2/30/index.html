@@ -46,28 +46,42 @@
     // lampa aonde vai aparecer a cor e cores aonde eu amarzenei as cores que eu quero que apareça
     let lampa = document.getElementById('lampada')
     let cores = ["yellow", "white", "blue"]
-
+    let black = 'black'
     // Primeira função
     indice = 0
     function automatico() {
 
-        setInterval(function() { 
+        tempo = setInterval(function() { 
 
             
             lampa.style.backgroundColor = (cores[indice])
             indice++
 
 
-            if (indice > cores.length) {
+            if (indice >= cores.length) {
                 indice = 0
             } 
         }, 1000)
+
+        
     }
 
 
-    // Segunda Função de ligar a lampada 
+    // Função de ligar a lampada 
     function ligar() {
+        clearTimeout(tempo)
         lampa.style.backgroundColor = (cores[1])
+    }
+
+
+    // Função de desligar a lampada 
+    function desligar() {
+        clearTimeout(tempo)
+        lampa.style.backgroundColor = (black)
+    }
+
+    function parar() {
+        clearTimeout(tempo)
     }
 
     

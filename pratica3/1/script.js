@@ -2,7 +2,6 @@
     const lampada = document.getElementById('lampada')
     const tempo = document.getElementById('tempoLigado')
     const cores = ["yellow", "orange", "blue"]
-    let data = new Date()
 
     
 
@@ -13,7 +12,6 @@
         Tempo = setInterval(function(){
         lampada.style.backgroundColor = (cores[indice])
         indice++
-
         ifEelse()
         }, 2000)
         
@@ -46,7 +44,8 @@
 
     // Parte de parar o contador 
     function Parar() {
-        clearTimeout(Tempo)
+        clearInterval(Tempo)
+        ifEelse()
     }
 
 

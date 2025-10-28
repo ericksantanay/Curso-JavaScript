@@ -13,7 +13,7 @@
         indice++
 
         ifEelse()
-        }, 1000)
+        }, 2000)
         
          
     }
@@ -30,3 +30,20 @@
     function Parar() {
         clearTimeout(Tempo)
     }
+
+
+    // Parte que reinica o contador 
+    function Reiniciar() {
+        lampada.style.backgroundColor = 'black'
+        indice = 0
+
+    }
+
+
+    // Parte de desligar
+    function Desligar() {
+        lampada.style.backgroundColor = 'black'
+        Parar()
+    }
+
+    

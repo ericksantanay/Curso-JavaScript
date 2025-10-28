@@ -25,14 +25,14 @@
             indice = 0
             }
 
-            if (lampada == 'yellow') {
+            if (indice == 1) {
                 sensor.innerText = ('sala está iluminada')
 
-            }else if (lampada == 'black' ) {
-                sensor.innerText = ('AAAAAAAAAAA')
+            }else if (indice == 2 ) {
+                sensor.innerText = ('AAA')
 
-            }else if (lampada == 'blue') {
-                sensor.innerText = ('“luz de ambiente')
+            }else if (indice == 3) {
+                sensor.innerText = ('luz de ambiente')
             }
 
     }

@@ -8,21 +8,25 @@
     indice = 0
     function Automatico() {
        
-        setInterval(function(){
+        Tempo = setInterval(function(){
         lampada.style.backgroundColor = (cores[indice])
         indice++
+
         ifEelse()
-        }, 2000)
+        }, 1000)
         
-        
+         
     }
 
-    // Função, ajustes 
+    // Parte de funcoes para nao precisar repetir codigo
     function ifEelse() {
-        // Parte de mudar as cores e voltar para o inicio de novo
-        if (indice >= cores.length) {
+
+         if (indice >= cores.length) {
             indice = 0
-        }
+            }
     }
 
-
+    // Parte de parar o contador 
+    function Parar() {
+        clearTimeout(Tempo)
+    }

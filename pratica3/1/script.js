@@ -25,14 +25,18 @@
             indice = 0
             }
 
-            if (indice == 1) {
+            if (lampada.style.backgroundColor == 'yellow') {
                 sensor.innerText = ('sala está iluminada')
 
-            }else if (indice == 2 ) {
-                sensor.innerText = ('AAA')
-
-            }else if (indice == 3) {
+            }else if (lampada.style.backgroundColor == 'blue') {
                 sensor.innerText = ('luz de ambiente')
+            }else {
+                sensor.innerText = ('')
+            }
+
+
+            if (lampada.style.backgroundColor == 'black') {
+                sensor.innerText = ('está escuro ')
             }
 
     }
@@ -47,7 +51,7 @@
     function Reiniciar() {
         lampada.style.backgroundColor = 'black'
         indice = 0
-
+        ifEelse()
     }
 
 

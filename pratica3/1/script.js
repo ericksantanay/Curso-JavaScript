@@ -1,8 +1,10 @@
 
     const lampada = document.getElementById('lampada')
     const tempo = document.getElementById('tempoLigado')
-    let sensor = document.getElementById('sensor')
     const cores = ["yellow", "orange", "blue"]
+    let data = new Date()
+
+    
 
     // Função automatico
     indice = 0
@@ -24,20 +26,21 @@
          if (indice >= cores.length) {
             indice = 0
             }
-
+        
+            // Esse é se a lampada estiver apagada, se esta no amarelo, se esta no azul etc.
             if (lampada.style.backgroundColor == 'yellow') {
                 sensor.innerText = ('sala está iluminada')
 
             }else if (lampada.style.backgroundColor == 'blue') {
                 sensor.innerText = ('luz de ambiente')
+            }else if (lampada.style.backgroundColor == 'black') {
+                sensor.innerText = ('está escuro ')
             }else {
                 sensor.innerText = ('')
             }
+                
 
-
-            if (lampada.style.backgroundColor == 'black') {
-                sensor.innerText = ('está escuro ')
-            }
+          
 
     }
 

@@ -17,7 +17,7 @@
         
          
     }
-
+   
     // Parte de funcoes para nao precisar repetir codigo
     function ifEelse() {
             // Parte para voltar no inicio e ficar repetindo

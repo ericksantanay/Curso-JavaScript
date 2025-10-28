@@ -20,10 +20,21 @@
 
     // Parte de funcoes para nao precisar repetir codigo
     function ifEelse() {
-
+            // Parte para voltar no inicio e ficar repetindo
          if (indice >= cores.length) {
             indice = 0
             }
+
+            if (lampada == 'yellow') {
+                sensor.innerText = ('sala está iluminada')
+
+            }else if (lampada == 'black' ) {
+                sensor.innerText = ('AAAAAAAAAAA')
+
+            }else if (lampada == 'blue') {
+                sensor.innerText = ('“luz de ambiente')
+            }
+
     }
 
     // Parte de parar o contador 
@@ -44,6 +55,7 @@
     function Desligar() {
         lampada.style.backgroundColor = 'black'
         Parar()
+        ifEelse()
     }
 
     

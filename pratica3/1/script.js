@@ -45,7 +45,6 @@
     // Parte de parar o contador 
     function Parar() {
         clearInterval(Tempo)
-        ifEelse()
     }
 
 

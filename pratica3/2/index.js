@@ -20,6 +20,8 @@
 
 
 
+
+
         
     }
 
@@ -45,6 +47,16 @@
             ajustes()
             t.innerText = (` Temperatura ${indice}°C`)
             indice++
+
+
+            // Parte automatica da temperatura
+        if (indice == 40 ) {
+           indice = 40 
+           indice--
+        }
         }, 1000)
+
+        
+       
     }
 

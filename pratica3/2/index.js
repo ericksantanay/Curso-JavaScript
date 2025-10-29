@@ -39,3 +39,10 @@
         t.innerHTML = (`Temperatura ${indice}°C`)
     }
 
+    // Esse é o modo automatico
+    function modoAutomatico() {
+        setInterval(function(){
+            
+        }, 1000)
+    }
+

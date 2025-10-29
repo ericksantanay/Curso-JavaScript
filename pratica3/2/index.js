@@ -4,6 +4,9 @@
 
     // Função com ajustes 
     function ajustes() {
+
+        // Parte de mudar o texto conforme muda a temperatura 
+
         // Parte se o indice for menor que 0 
         if (indice < 0  ) {
             indice = 0

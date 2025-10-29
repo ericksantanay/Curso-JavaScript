@@ -17,12 +17,7 @@
             estado.innerText = ('Muito quente! 🔥')
             document.body.style.backgroundColor = 'red'
         }
-
-
-
-
-
-        
+  
     }
 
     // Aumentar Temperatura 
@@ -43,20 +38,22 @@
 
     // Esse é o modo automatico
     function modoAutomatico() {
-        setInterval(function(){
+        tempo = setInterval(function(){
             ajustes()
             t.innerText = (` Temperatura ${indice}°C`)
             indice++
 
 
             // Parte automatica da temperatura
-        if (indice == 40 ) {
-           indice = 40 
+            /*let descendo = false
+        if (indice === descendo) {
            indice--
-        }
+            } */
         }, 1000)
 
-        
-       
+    }
+
+    function parar() {
+        clearInterval(tempo)
     }
 

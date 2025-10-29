@@ -13,6 +13,9 @@
         }else if (indice >= 20 && indice < 35) {
             estado.innerText = ('Temperatura agradável ☀️')
             document.body.style.backgroundColor = 'orange'
+        }else {
+            estado.innerText = ('Muito quente! 🔥')
+            document.body.style.backgroundColor = 'red'
         }
 
 

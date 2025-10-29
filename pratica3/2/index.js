@@ -42,7 +42,9 @@
     // Esse é o modo automatico
     function modoAutomatico() {
         setInterval(function(){
-            
+            ajustes()
+            t.innerText = (` Temperatura ${indice}°C`)
+            indice++
         }, 1000)
     }
 

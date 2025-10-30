@@ -23,10 +23,10 @@
         r.innerText = (`🔋 Bateria: ${indice}%`)
 
             // Parte de texto, Ex: Carregando ⚡ etc.
-            if (indice === 100) {
-                t.innerText = ('Bateria cheia ✅')
-            }else if (indice == indice++) {
-                 t.innerText = ('Carregando ⚡')
+            if (indice === indice++) {
+                t.innerText = ('Carregando ⚡')
+            }else if (indice === 100 ) {
+                t.innerText = ('Bateria cheia ✅') 
             }
     }
 
@@ -39,7 +39,7 @@
             r.innerText = (`🔋 Bateria: ${indice}%`)
 
             // Função de usar a 'bateria'
-        if (indice == indice-- && indice > 5 ) {
+        if (indice === indice-- && indice > 5 ) {
             t.innerText = ('Descarregando 🔻')
         }else if (indice < 5 ) {
             t.innerText = ('Bateria fraca ❌')

@@ -10,12 +10,8 @@
         }else if (indice > 100) {
             indice = 100
         }
-    }
 
-
-    // Parte de texto, Ex: Carregando ⚡ etc.
-    if (indice == 100) {
-        t.innerText = ('Bateria cheia ✅')
+       
     }
 
 
@@ -25,6 +21,13 @@
         indice++
          ajustes()
         r.innerText = (`🔋 Bateria: ${indice}%`)
+
+            // Parte de texto, Ex: Carregando ⚡ etc.
+            if (indice === 100) {
+                t.innerText = ('Bateria cheia ✅')
+            }else if (indice == indice++) {
+                 t.innerText = ('Carregando ⚡')
+            }
     }
 
 
@@ -34,9 +37,17 @@
             indice--
             ajustes()
             r.innerText = (`🔋 Bateria: ${indice}%`)
-        }, 1000)
-    }
 
+            // Função de usar a 'bateria'
+        if (indice == indice-- && indice > 5 ) {
+            t.innerText = ('Descarregando 🔻')
+        }else if (indice < 5 ) {
+            t.innerText = ('Bateria fraca ❌')
+        }
+
+    }, 1000)
+     
+}
 
 
     // Parte de parar 

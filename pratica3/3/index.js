@@ -18,12 +18,15 @@
     }
 
     function Usar() {
-        
+        tempo = setInterval(function(){
+            indice--
+            r.innerText = (`🔋 Bateria: ${indice}%`)
+        }, 1000)
     }
 
 
 
     // Parte de parar 
     function Parar() {
-        
+        clearInterval()
     }

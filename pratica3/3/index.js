@@ -1,5 +1,6 @@
 
     let r = document.getElementById('resultado')
+    let t = document.getElementById('texto')
 
     // Parte de ajustes 
     function ajustes() {
@@ -10,6 +11,13 @@
             indice = 100
         }
     }
+
+
+    // Parte de texto, Ex: Carregando ⚡ etc.
+    if (indice == 100) {
+        t.innerText = ('Bateria cheia ✅')
+    }
+
 
     // Função de carregar 
     indice = 0 
@@ -26,7 +34,6 @@
             indice--
             ajustes()
             r.innerText = (`🔋 Bateria: ${indice}%`)
-            
         }, 1000)
     }
 

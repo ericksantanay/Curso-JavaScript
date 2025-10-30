@@ -17,4 +17,13 @@
         ajustes()
     }
 
-    function
+    function Usar() {
+        
+    }
+
+
+
+    // Parte de parar 
+    function Parar() {
+        
+    }

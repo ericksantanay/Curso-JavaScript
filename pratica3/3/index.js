@@ -29,9 +29,11 @@
     // Função de carregar 
     indice = 0 
     function Carregar() {
-        indice++
+        tempo = setInterval(function(){
+            indice++
          ajustes()
         r.innerText = (`🔋 Bateria: ${indice}%`)
+        }, 1000)
 
             // Parte de texto, Ex: Carregando ⚡ etc.
              if (indice == 100 ) {
@@ -63,5 +65,5 @@
     // Parte de parar 
     function Parar() {
         clearInterval(tempo)
-        ajustes()
+         t.innerText = 'Pausado ⏸️'
     }

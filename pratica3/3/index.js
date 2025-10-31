@@ -12,7 +12,16 @@
         }
 
         // Cores que mudam conforme a bateria
-        
+        if (indice >= 0 && indice < 20) {
+            document.body.style.backgroundColor = 'red'
+            document.body.style.color = 'white'
+        }else if (indice >= 20 && indice < 60 ) {
+            document.body.style.backgroundColor = 'yellow'
+            document.body.style.color = 'black'
+        }else if (indice >= 60){
+            document.body.style.backgroundColor = 'green'
+            document.body.style.color = 'white'
+        }
        
     }
 
@@ -32,10 +41,7 @@
             }
 
         }
-            
-           
-
-
+             
     // Função de usar a 'bateria'
     function Usar() {
         tempo = setInterval(function(){
@@ -53,7 +59,6 @@
     }, 1000)
      
 }
-
 
     // Parte de parar 
     function Parar() {

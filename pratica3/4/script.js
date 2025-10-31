@@ -1,5 +1,7 @@
 
     let r = document.getElementById('humidade')
+    let estado = document.getElementById('estado')
+
 
     // Essa é uma função que ajusta ex: se for menor que 0 
     function ajustes() {
@@ -14,8 +16,15 @@
         }
 
         // Essa é a parte de cada estado do solo 
-        if (indice >= 30 && indice < 30) {
-            
+        if (indice >= 0 && indice < 30) {
+            estado.innerText = (' Solo seco! Ligue a irrigação! 🌵')
+            document.body.style.backgroundColor = 'brown'
+        }else if (indice >= 30  && indice < 70 ) {
+            estado.innerText = ('Umidade ideal 🌿')
+            document.body.style.backgroundColor = 'green'
+        }else if (indice >= 70 ) {
+            estado.innerText = (' Solo encharcado! Desligue a irrigação! 💧')
+            document.body.style.backgroundColor = 'blue'
         }
 
     }

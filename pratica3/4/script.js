@@ -3,9 +3,10 @@
     
 
     // Função de regar 
-    indice = 0
+    indice = 50
     function regar() {
         setInterval(function(){
-
+            indice++
+            r.innerText = (`Humidade: ${indice}%`)
         }, 1000)
     }

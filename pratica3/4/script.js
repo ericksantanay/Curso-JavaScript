@@ -1,5 +1,5 @@
 
-    let r = document.getElementById('humidade')
+    let r = document.getElementById('umidade')
     let estado = document.getElementById('estado')
 
 
@@ -35,7 +35,7 @@
         tempo = setInterval(function(){
             indice++
             ajustes()
-            r.innerText = (`Humidade: ${indice}%`)
+            r.innerText = (`Umidade: ${indice}%`)
         }, 1000)
     }
 
@@ -44,7 +44,7 @@
         tempo = setInterval(function(){
             indice--
             ajustes()
-            r.innerText = (`Humidade: ${indice}%`)
+            r.innerText = (`Umidade: ${indice}%`)
         }, 1000)
     }
 

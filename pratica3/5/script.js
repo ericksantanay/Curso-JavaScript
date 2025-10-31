@@ -7,8 +7,8 @@
     document.body.style.backgroundColor = (cores[indice])
     indice++
 
-    if (indice >= cores.length) {
+        if (indice >= cores.length) {
         indice = 0
-    }
+        }
 
     }, 1000)

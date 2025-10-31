@@ -13,6 +13,11 @@
             indice = 100
         }
 
+        // Essa é a parte de cada estado do solo 
+        if (indice >= 30 && indice < 30) {
+            
+        }
+
     }
 
     // Função de regar 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho Interativo</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <h1>🛍️ Minha Loja de Brinquedos</h1>
+
+    <div id="produtos">
+        <div class="produto-item" data-id="1" data-nome="Boneca Princesa" data-preco="20.00" data-imagem="boneca.jpg">
+            <img src="boneca.jpg" alt="Boneca Princesa">
+            <h3>Boneca Princesa</h3>
+            <p>R$ 20,00</p>
+            <button onclick="adicionarAoCarrinho(1)">Adicionar</button>
+        </div>
+
+        <div class="produto-item" data-id="2" data-nome="Bola de Futebol" data-preco="30.00" data-imagem="bola.jpg">
+            <img src="bola.jpg" alt="Bola de Futebol">
+            <h3>Bola de Futebol</h3>
+            <p>R$ 30,00</p>
+            <button onclick="adicionarAoCarrinho(2)">Adicionar</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>🛒 Seu Carrinho</h2>
+    <div id="lista-carrinho-container">
+        </div>
+    
+    <p>Total: <strong id="total-carrinho">R$ 0,00</strong></p>
+
+    <script src="index.js"></script>
+</body>
+</html>

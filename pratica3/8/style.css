@@ -1,0 +1,19 @@
+.carrinho-item {
+    display: flex; /* Alinha a imagem e o texto lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.carrinho-imagem {
+    width: 80px; /* Tamanho da imagem no carrinho */
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.info-carrinho {
+    flex-grow: 1; /* Faz o bloco de texto ocupar o espaço restante */
+}

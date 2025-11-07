@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relogio</title>
+    <style>
+        body {
+            background-color: rgb(225, 225, 225);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 97vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        div {
+            color: white;
+            border-radius: 6px;
+            padding: 20px;
+            background-color: gray;
+        }
+
+
+    </style>
 </head>
 <body>
-     <h1>HORAS</h1>
-      <h1><span id="hora">00</span>:<span id="minuto">00</span>:<span id="segundos">00</span></h1>
+       
+    <div>
+         <h1>HORA</h1>
+        <h1><span id="hora">00</span>:<span id="minuto">00</span>:<span id="segundos">00</span></h1>
+    </div>
 
       <script src="index.js"></script>
 </body>

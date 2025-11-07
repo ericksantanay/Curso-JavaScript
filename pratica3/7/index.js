@@ -19,6 +19,6 @@
 
         // SEGUNDOS
         let segundos = data.getSeconds()
-        s.innerText = (segundos)+0
+        s.innerText = (segundos)
 
     }, 1000)

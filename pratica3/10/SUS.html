@@ -15,7 +15,7 @@
         }
 
         div {
-            border-radius: 20%30%60%33%;
+            border-radius: 10px;
             padding: 3%;
             background-color: rgb(239, 239, 239);
             color: black;
@@ -55,30 +55,32 @@
     
     <div class="container">
         <h1>Sitema do SUS</h1>
-        <div class="inputs">
+         
+            <div class="inputs">
 
             <!--VOCE ESTA BEM?-->
             <!--SIM-->
             <label for="">Voce esta bem?</label> <br>
             <label for="sim">Sim</label>
-            <input type="radio" name="estabem" id="isim" required> 
+            <input type="radio" name="estabem" id="isim" required value="sim"> 
             <!--NAO-->
              <label for="não">Não</label>
-            <input type="radio" name="estabem" id="inao" required> <br> <br> 
+            <input type="radio" name="estabem" id="inao" required value="não"> <br> <br> 
             
 
             <!--Sintoma-->
             <label for="sintoma">Qual é o seu Sintoma?</label> <br>
-            <input type="text" id="itext" required placeholder="Sintoma"> <br>
+            <input type="text" id="itext" placeholder="Sintoma" required> <br>
 
-            <input id="btn" type="button" value="Ver Sintoma" onclick="Resultado()">
+            <input id="btn" type="submit" value="Ver Sintoma" onclick="Resultado()">
 
-            <p class="resposta">0000</p>
+            <p class="resposta"></p>
             
-             
-
         </div>
+         
     </div>
 
+
+    <script src="script.js"></script>
 </body>
 </html>

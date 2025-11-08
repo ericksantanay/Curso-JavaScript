@@ -1,12 +1,14 @@
 
-//Puxando o input, o paragrafo que vai sair a resposta e colocando o new Date() e getFulYeaer()
+
     let r = document.getElementById('respostaIdade')
     let res = document.getElementById('res')
    
     // Função Calcular
     function Calcular() {
+    //Puxando o input, o paragrafo que vai sair a resposta e colocando o new Date() e getFulYeaer()
     let CampoIdade = document.getElementById('itext')
     let idade = CampoIdade.value
+    // Aqui esta a manipulação das datas 
     let data = new Date()
     let anoAtual = data.getFullYear()
     let conta = anoAtual - idade
@@ -19,6 +21,7 @@
         alert('Preencha o campo com a sua data de nascimento.')
     }
     
+    // Se o usuario digitar mais que 4 caracterias o campo zera.
     if (idade.length  >  maxCaracter) {
         alert('Coloque Números validos')
         CampoIdade.value = ''
@@ -32,6 +35,6 @@
         res.innerText = ('Voce é maior de idade')
     } 
 
-
-      r.innerText = (conta) 
+    // Aqui vai sair a idade do usuario.
+    r.innerText = (conta) 
     }

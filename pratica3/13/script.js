@@ -5,7 +5,8 @@
    
     // Função Calcular
     function Calcular() {
-    let idade = document.getElementById('itext').value
+    let CampoIdade = document.getElementById('itext')
+    let idade = CampoIdade.value
     let data = new Date()
     let anoAtual = data.getFullYear()
     let conta = anoAtual - idade
@@ -16,12 +17,15 @@
     // Se o input == a (nada) vai aparecer para o usuario preencher
     if (idade == '') {
         alert('Preencha o campo com a sua data de nascimento.')
-    }else if (idade >  maxCaracter) {
-        idade.value = ''
+    }
+    
+    if (idade.length  >  maxCaracter) {
         alert('Coloque Números validos')
+        CampoIdade.value = ''
+
     }
 
-    
+    // Ver se o usuario é maior ou menor de idade 
     if (conta < 18) {
         res.innerText = (`Voce é menor de idade!!`)
     }else {

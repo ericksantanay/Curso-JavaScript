@@ -1,5 +1,4 @@
-
-
+    // Aqui eu puchei os paragrafos do HTML.
     let r = document.getElementById('respostaIdade')
     let res = document.getElementById('res')
    
@@ -7,7 +6,7 @@
     function Calcular() {
     //Puxando o input, o paragrafo que vai sair a resposta e colocando o new Date() e getFulYeaer()
     let CampoIdade = document.getElementById('itext')
-    let idade = CampoIdade.value
+    let idade = Number(CampoIdade.value)
     // Aqui esta a manipulação das datas 
     let data = new Date()
     let anoAtual = data.getFullYear()
@@ -36,5 +35,5 @@
     } 
 
     // Aqui vai sair a idade do usuario.
-    r.innerText = (conta) 
+    r.innerText = (`Voce tem ${conta} anos`) 
     }

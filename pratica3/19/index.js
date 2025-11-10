@@ -3,22 +3,24 @@
     // Maximo de Caractereas
     let maxCaracter = 4
 
-
     function Verificar() {
     // Puxando o input que pega o nome do usuario
     let inputNome = document.getElementById('inome').value
     // Parte da Idade,  input com o value e fazendo a conta 
     let Idade = document.getElementById('iidade')
-    let idadeValue = Idade.value // Nao adicionei o Number porque fica dando errado na condição Idadae > maxCaracter
+    let idadeValue = Idade.value 
     let data = new Date()
     let anoatual = data.getFullYear()
-    let resultado = anoatual - idadeValue
+    let resultado = Number(anoatual - idadeValue)
 
         // Parte da idade condição
-        if (idadeValue === '') {
+        if (inputNome === '') { // Ip nome
             alert('Digite no Campo abaixo')
             return
-        }else if (Idade > maxCaracter) {
+        }else if (idadeValue === '') { // Ip idade
+            alert('Digite no Campo abaixo')
+            return
+        }else  if (idadeValue > maxCaracter) { // Maximo de caracter
             alert('Digite um valor correto')
             Idade.value = ''
             return
@@ -26,10 +28,7 @@
 
 
     // Resultado Final
-    if (inputNome === '') {
-        alert('Digite no Campo abaixo')
-        return
-    }   
+      
     
     r.innerText = (`Seu nome é ${inputNome} e voce tem ${resultado} anos`)
 
@@ -49,5 +48,23 @@
     E eu tirei o '' do idadeValue mas mesmo assim nao foi 
     */ 
 
+    }
 
+    // Puxando os icones e fazendo a cor do tema
+
+    let temaInicial = 'white'
+    let icone = document.getElementById('icones')
+
+    function MudarTema() {
+        if (temaInicial == 'white') {
+            document.body.style.backgroundColor = 'black'
+            document.body.style.color = 'white'
+            icone.innerText = ('sunny')
+            temaInicial = 'black'
+        }else {
+            document.body.style.backgroundColor = 'white'
+            document.body.style.color = 'black'
+            icone.innerText = ('bedtime')
+            temaInicial = 'white'
+        }
     }

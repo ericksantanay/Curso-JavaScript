@@ -12,7 +12,7 @@
     let data = new Date()
     let anoatual = data.getFullYear()
     let resultado = Number(anoatual - idadeValue)
-
+    
         // Parte da idade condição
         if (inputNome === '') { // Ip nome
             alert('Digite no Campo abaixo')
@@ -20,33 +20,15 @@
         }else if (idadeValue === '') { // Ip idade
             alert('Digite no Campo abaixo')
             return
-        }else  if (idadeValue > maxCaracter) { // Maximo de caracter
+        }else  if (idadeValue.length > maxCaracter) { // Maximo de caracter
             alert('Digite um valor correto')
             Idade.value = ''
             return
         }
 
-
     // Resultado Final
-      
-    
     r.innerText = (`Seu nome é ${inputNome} e voce tem ${resultado} anos`)
 
-    /*
-    if (inputNome && idadeValue === length) {
-        r.innerText = (`Seu nome é ${inputNome} e voce tem ${idadeValue} anos`)
-        return
-    }else if (inputNome == length && idadeValue == '') {
-        r.innerText = (`Seu nome é ${inputNome}`)
-        return
-    }else if (idadeValue == length && inputNome == '') {
-        r.innerText = (`Voce tem${resultado} anos`)
-        return
-    }
-    Aqui eu tentei fazer se o usuario digita só o nom aparece só o nome se o usuario digita a idade aparece só  a idade mas nao deu por isso eu comentei.
-
-    E eu tirei o '' do idadeValue mas mesmo assim nao foi 
-    */ 
 
     }
 
@@ -68,3 +50,15 @@
             temaInicial = 'white'
         }
     }
+
+
+    /*if (inputNome !== '' && idadeValue === '') {
+        r.innerText = `Seu nome é ${inputNome}`
+    } else if (idadeValue !== '' && inputNome === '') {
+        r.innerText = `Você tem ${resultado} anos`
+    } else if (inputNome !== '' && idadeValue !== '') {
+        r.innerText = `Seu nome é ${inputNome} e você tem ${resultado} anos`
+    }
+    
+    
+    */

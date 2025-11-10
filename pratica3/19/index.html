@@ -37,6 +37,16 @@
             margin: 10px;
         }
 
+        .btn {
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: blueviolet;
+        }
+
 
     </style>
 </head>
@@ -51,7 +61,7 @@
             <input type="text" name="nome" id="inome" placeholder="Seu Nome">
             <input type="number" name="idade" id="iidade" placeholder="Ano de Nascimento">
             <h2 id="res"></h2>
-            <input type="button" value="Verificar" onclick="Verificar()">
+            <input class="btn" type="button" value="Verificar" onclick="Verificar()">
         </div>
     </div>
 

@@ -5,11 +5,6 @@
     let fotos = ["foto1.jpg", "foto2.png"]
 
     indice = 0
-    function MudarImagem() {
-
-        
-       
-    }
 
      setInterval(function(){
             indice++

@@ -8,6 +8,7 @@
     let total = document.getElementById('total')
 
 
+    Total = 0
     function Adicionar() {
 
     //Puxando os inputs
@@ -21,11 +22,19 @@
         preço: Preco
     }
 
+    // Atualizar lista
+      r.innerHTML = '';
+      let soma = 0;
+
+
     // Adicionando o Push
     dados.push(compra)
 
-    // Primeira saida 
-        r.innerText = ` ${nome} -- R$${preço}` 
+         dados.forEach((item) => {
+        r.innerHTML += `<p>${item.nome} — R$ ${item.preco.toFixed(2)}</p>`;
+        soma += item.preco; // acumula o total
+      });
 
-
+       // Mostrar total
+      total.innerText = `💰 Total: R$ ${soma.toFixed(2)}`;
 }

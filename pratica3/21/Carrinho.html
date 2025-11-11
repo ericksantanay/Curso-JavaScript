@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Carrinho de Compras 🛒</title>
+  <meta charset="UTF-8">
+  <title>Lista de Compras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #999;
+      outline: none;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: dodgerblue;
+      color: white;
+      cursor: pointer;
+      transition: .3s;
+    }
+    button:hover {
+      background-color: royalblue;
+      transform: scale(1.05);
+    }
+    #res p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-    
-    <div>
-        <input type="text" name="nome" id="inome" placeholder="Nome do produto">
-        <input type="number" name="preco" id="ipreco" placeholder="Preço do produto">
-        <input type="button" value="Adicionar" onclick="Adicionar()">
+  <h1>🛒 Lista de Compras</h1>
 
-        <h1 id="res"></h1>
-        <p id="total"></p>
-    </div>
+  <input type="text" id="inome" placeholder="Nome do produto">
+  <input type="number" id="ipreco" placeholder="Preço">
+  <button onclick="Adicionar()">Adicionar</button>
 
-    <script src="index.js"></script>
+  <div id="res"></div>
+  <h3 id="total"></h3>
+
+  <script>
+    // Array para guardar os produtos
+    let dados = [];
+
+    // Elementos HTML
+    let r = document.getElementById('res');
+    let total = document.getElementById('total');
+
+    function Adicionar() {
+      // Pegar valores dos inputs
+      let Nome = document.getElementById('inome').value;
+      let Preco = Number(document.getElementById('ipreco').value);
+
+      if (Nome === '' || Preco === 0) {
+        alert('Preencha todos os campos!');
+        return;
+      }
+
+      // Criar objeto e adicionar ao array
+      let compra = {
+        nome: Nome,
+        preco: Preco
+      };
+      dados.push(compra);
+
+      // Atualizar lista
+      r.innerHTML = '';
+      let soma = 0;
+
+      dados.forEach(item => {
+        r.innerHTML += `<p>${item.nome} — R$ ${item.preco.toFixed(2)}</p>`;
+        soma += item.preco; // acumula o total
+      });
+
+      // Mostrar total
+      total.innerText = `💰 Total: R$ ${soma.toFixed(2)}`;
+
+      // Limpar inputs
+      document.getElementById('inome').value = '';
+      document.getElementById('ipreco').value = '';
+    }
+  </script>
 </body>
 </html>

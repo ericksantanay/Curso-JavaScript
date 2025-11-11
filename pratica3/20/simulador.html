@@ -11,13 +11,24 @@
     <div class="container">
         <h1>Simulador de Cadastro e Lista de Usuários</h1>
         <div class="inputs">
-            <input type="text" name="nome" id="inome"  placeholder="Nome">
-            <input type="text" name="idade" id="iidade"  placeholder="Idade">
-            <input type="text" name="profissao" id="iprofissao" placeholder="Profissão">
-            <input type="button" value="Cadastrar">
+            <input type="text" name="nome" id="inome"  placeholder="Nome" oninput="Verificar()">
+            <input type="text" name="idade" id="iidade"  placeholder="Idade" oninput="Verificar()">
+            <input type="text" name="profissao" id="iprofissao" placeholder="Profissão" oninput="Verificar()">
+            <input type="button" value="Cadastrar" onclick="Cadastrar()">
+
+            <div id="lista">
+                <!--Aqui eu vou mostrar a lista de usuarios  -->
+            </div>
+
+            <div class="filtro">
+                <h1>Filtrar por profissão</h1>
+                <input type="text" name="prof" id="iprof">
+                <p id="result"></p>
+            </div>
         </div>
     </div>
 
 
+        <script src="index.js"></script>
 </body>
 </html>

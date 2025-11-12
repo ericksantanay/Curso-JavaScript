@@ -31,19 +31,20 @@
             nome: Nome,
             nota: Nota
         }
-
-        // Atualizar a Lista 
-        let soma = 0
         armazem.push(dados)
 
+        // Atualizar a Lista 
+        r.innerHTML = '';
+        let soma = 0;
+        
+        
         armazem.forEach(item => {
-            r.innerText += `<p>👤Aluno:${dados.nome}  🧠Nota: ${dados.nota.toFixed(2)}</p>`
-            soma += item.nota
-
-            let media = soma / armazem.length
-
-            rm.innerText = (`A média da turma é: 👤👤👤 ${media}`)
+            r.innerHTML += `<p>👤Aluno:${item.nome}  🧠Nota: ${item.nota.toFixed(1)}</p>`;
+            soma += item.nota; 
         });
+
+        let media = soma / armazem.length;
+        rm.innerText = (`A média da turma é: 👤👤👤 ${media}`)
         
         document.getElementById('inome').value = ''
         document.getElementById('inota').value = ''

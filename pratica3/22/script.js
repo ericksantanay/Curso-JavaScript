@@ -44,7 +44,7 @@
         });
 
         let media = soma / armazem.length;
-        rm.innerText = (`A média da turma é: 👤👤👤 ${media}`)
+        rm.innerText = (`A média da turma é: 👤👤👤 ${media.toFixed(1)}`)
         
         document.getElementById('inome').value = ''
         document.getElementById('inota').value = ''

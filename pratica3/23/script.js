@@ -1,6 +1,12 @@
+    // Array
+    let armazemTarefas = []
+
+    // Indice 
+    indice = 0 
+
+    
     // Chamando o resul, aonde vai sair o codigo!
     let r = document.getElementById('resul')
-    let deletar = document.querySelector('.deletar')
   
     // Função de adicionar 
     function Adicionar() {
@@ -23,26 +29,19 @@
     // Push
     armazemTarefas.push(objto)
 
-    // Laço de repetição !!!
-    armazemTarefas.forEach(item => {
-        r.innerHTML += (`<div><span>${item.tarefa}</span> <button onclick="apagar()"><span class="material-symbols-outlined">delete</span></button></div>`)
+    // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função
+    armazemTarefas.forEach ((item, indice) => {
+        r.innerHTML += (`<div><span>${item.tarefa}</span> <button onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
          
     });
-
-
+        // Limpar o campo depois de digitado
+        document.getElementById('itarefa').value = ''
     }
 
-      
-    // Array
-    let armazemTarefas = []
-
-    // Indice 
-    indice = 0 
-
-
-    function apagar() {
-       indice = removeEventListener()
-
+      // Função De apagar o indice
+    function apagar(indice) {
+        r.innerHTML = ''
+        armazemTarefas.splice(indice,1)
     }
 
    

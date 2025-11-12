@@ -34,7 +34,7 @@
 
     // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função
     armazemTarefas.forEach ((item, indice) => {
-        r.innerHTML += (`<div><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
+        r.innerHTML += (`<div class='divB' style='border: 1px solid black;'><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
          
     });
         // Limpar o campo depois de digitado

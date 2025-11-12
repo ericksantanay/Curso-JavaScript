@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+
+.container {
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    height: auto;
+    border: none;
+    margin:20px auto;
+}
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+input,#btnA {
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#btn {
+    background-color: rgb(240, 7, 7);
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+#btnA {
+    background-color: rgb(24, 166, 214);
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+#btnA:hover {
+     background-color: rgb(5, 108, 143);
+}

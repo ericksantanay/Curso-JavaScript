@@ -24,7 +24,7 @@
     armazemTarefas.push(objto)
 
     // Laço de repetição !!!
-    armazemTarefas.forEach(item =>  {
+    armazemTarefas.forEach(item => {
         r.innerHTML += (`<div><span>${item.tarefa}</span> <button onclick="apagar()"><span class="material-symbols-outlined">delete</span></button></div>`)
          
     });
@@ -41,7 +41,7 @@
 
 
     function apagar() {
-       indice = removeEventListener(indice)
+       indice = removeEventListener()
 
     }
 

@@ -1,5 +1,6 @@
     // Chamando o resul, aonde vai sair o codigo!
     let r = document.getElementById('resul')
+    let deletar = document.getElementById('deletar')
   
     // Função de adicionar 
     function Adicionar() {
@@ -29,3 +30,5 @@
 
     // Indice 
     indice = 0 
+
+    deletar.addEventListener('onclick', remover)

@@ -14,6 +14,18 @@
         // Puchando o input Nota
         let Nota = Number(document.getElementById('inota').value)
 
+
+        if (Nome === '' || Nota === '') {
+            alert('Preencha todos os campos!');
+             return
+        }
+        
+        if (Nota > 10) {
+            alert('O Maximo permitido é ate 10. Preencha a Nota corretamente')
+            Nota = ''
+            return
+        }
+
         // Dados
         let dados = {
             nome: Nome,
@@ -25,16 +37,14 @@
         armazem.push(dados)
 
         armazem.forEach(item => {
-            r.innerText += `<p> Aluno: ${dados.nome} -- Nota: ${dados.nota.toFixed(2)}</p>`
+            r.innerText += `<p>👤Aluno:${dados.nome}  🧠Nota: ${dados.nota.toFixed(2)}</p>`
             soma += item.nota
 
             let media = soma / armazem.length
 
-            rm.innerText = (`A média da turma é: ${media}`)
+            rm.innerText = (`A média da turma é: 👤👤👤 ${media}`)
         });
         
-       
-        
-
-
+        document.getElementById('inome').value = ''
+        document.getElementById('inota').value = ''
     }

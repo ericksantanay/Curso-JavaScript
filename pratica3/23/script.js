@@ -1,6 +1,6 @@
     // Chamando o resul, aonde vai sair o codigo!
     let r = document.getElementById('resul')
-    let deletar = document.getElementById('deletar')
+    let deletar = document.querySelector('.deletar')
   
     // Função de adicionar 
     function Adicionar() {
@@ -20,8 +20,25 @@
 
     // Laço de repetição !!!
     armazemTarefas.forEach(item => {
-        r.innerHTML += (`<div><span>${item.tarefa}</span>  <button>delete</button></div>` )
+        r.innerHTML += (`<div id=""><span>${item.tarefa}</span> <button onclick="apagar()"><span class="material-symbols-outlined">delete</span></button></div>`)
+        
+        
+        
     });
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
     }
 
       
@@ -29,6 +46,11 @@
     let armazemTarefas = []
 
     // Indice 
-    indice = 0 
+    contaienrs = 0 
 
-    deletar.addEventListener('onclick', remover)
+
+    function apagar() {
+
+    }
+
+   

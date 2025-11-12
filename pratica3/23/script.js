@@ -29,7 +29,7 @@
         tarefa: ipTarefa
     }
 
-    // Push Coloca o objeto dentro da lista de tarefas
+    // Push Coloca o objeto dentro da lista de tarefas (Array) 
     armazemTarefas.push(objto)
 
     // Faz um laço e exibe todas as tarefas que estão no array, com um botão de apagar para cada uma.

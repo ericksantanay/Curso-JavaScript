@@ -24,26 +24,29 @@
     // Parte para não duplicar
     r.innerHTML = ''
 
-    // Objeto 
+    // Objeto Cria um pequeno “pacotinho de dados” (um objeto).
     let objto = {
         tarefa: ipTarefa
     }
 
-    // Push
+    // Push Coloca o objeto dentro da lista de tarefas
     armazemTarefas.push(objto)
 
-    // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função
+    // Faz um laço e exibe todas as tarefas que estão no array, com um botão de apagar para cada uma.
     armazemTarefas.forEach ((item, indice) => {
-        r.innerHTML += (`<div class='divB' style='border: 1px solid black;'><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
-         
+        r.innerHTML += (`<div style='border: 1px solid black;'><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)             // Aqui tem a função de apagar a tarefa
+                      
     });
         // Limpar o campo depois de digitado
         document.getElementById('itarefa').value = ''
+
     }
 
+
+    //-------------------------------------------------------------------------
       // Função De apagar o indice
     function apagar(indice) {
-        r.innerHTML = ''
+        r.innerHTML = '' // È preciso desse campo
         armazemTarefas.splice(indice,1)
 
         // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função

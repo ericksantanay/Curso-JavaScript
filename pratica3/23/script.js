@@ -7,6 +7,9 @@
     
     // Chamando o resul, aonde vai sair o codigo!
     let r = document.getElementById('resul')
+    
+    // Botao
+    let botao = document.getElementById('btn')
   
     // Função de adicionar 
     function Adicionar() {
@@ -31,7 +34,7 @@
 
     // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função
     armazemTarefas.forEach ((item, indice) => {
-        r.innerHTML += (`<div><span>${item.tarefa}</span> <button onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
+        r.innerHTML += (`<div><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
          
     });
         // Limpar o campo depois de digitado
@@ -42,6 +45,13 @@
     function apagar(indice) {
         r.innerHTML = ''
         armazemTarefas.splice(indice,1)
+
+        // Laço de repetição com o item e o indice, eu pego esse indice para eu apagar ele depois quando receber a função
+    armazemTarefas.forEach ((item, indice) => {
+        r.innerHTML += (`<div><span>${item.tarefa}</span> <button id='btn' onclick="apagar(${indice})"> <span class="material-symbols-outlined">delete</span></button> </div>`)
+         
+    });
+
     }
 
    

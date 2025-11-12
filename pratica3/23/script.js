@@ -7,6 +7,11 @@
     // Chamando o input 
     let ipTarefa = document.getElementById('itarefa').value
 
+    // Parte do preencha o campo
+    if (ipTarefa === '') {
+        alert('Preencha o Campo abaixo!')
+    }
+
     // Parte para não duplicar
     r.innerHTML = ''
 
@@ -19,24 +24,10 @@
     armazemTarefas.push(objto)
 
     // Laço de repetição !!!
-    armazemTarefas.forEach(item => {
-        r.innerHTML += (`<div id=""><span>${item.tarefa}</span> <button onclick="apagar()"><span class="material-symbols-outlined">delete</span></button></div>`)
-        
-        
-        
+    armazemTarefas.forEach(item =>  {
+        r.innerHTML += (`<div><span>${item.tarefa}</span> <button onclick="apagar()"><span class="material-symbols-outlined">delete</span></button></div>`)
+         
     });
-
-
-    
-
-
-
-
-
-
-
-
-
 
 
     }
@@ -46,10 +37,11 @@
     let armazemTarefas = []
 
     // Indice 
-    contaienrs = 0 
+    indice = 0 
 
 
     function apagar() {
+       indice = removeEventListener(indice)
 
     }
 

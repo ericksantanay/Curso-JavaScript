@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+
+    <div>
+        <h1>Digite o valor em Reais</h1>
+        <input type="text" name="Moedas" id="imoeda">
+        <input type="button" value="Converter" onclick="Converter()">
+        <p id="res"></p>
+    </div>
+    
+    <script>
+
+
+        let r = document.getElementById('res')
+
+        function Converter() {
+            let ip = document.getElementById('imoeda').value 
+            let total = ip * 5.30
+
+            r.innerText = (total)   
+        }
+    </script>
+</body>
+</html>

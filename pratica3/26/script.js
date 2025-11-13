@@ -20,8 +20,6 @@ let armazem = []
          // Push serve para guardar o objeto dentro do array
         armazem.push(pacotinho)
 
-        
-
         // Laço de repetição
         armazem.forEach(item => {
             r.innerHTML += `<p> 🛒Produto: ${item.produto}         R$: ${item.preço}</p>`
@@ -29,4 +27,7 @@ let armazem = []
         });
 
         t.innerHTML = (`<p>Total R$:${soma}</p>`)
+
+        document.getElementById('iproduto').value = ''
+        document.getElementById('ipreco').value = ''
     }

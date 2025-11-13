@@ -24,7 +24,7 @@ let armazem = []
 
         // Laço de repetição
         armazem.forEach(item => {
-            r.innerHTML += `<p> 🛒Produto:${item.produto}  R$:${item.preço}</p>`
+            r.innerHTML += `<p> 🛒Produto: ${item.produto}         R$: ${item.preço}</p>`
             soma += item.preço
         });
 

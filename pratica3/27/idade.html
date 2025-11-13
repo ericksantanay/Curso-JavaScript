@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Digite seu ano de nascimento </h1>
+        <input type="number" name="ano" id="iano">
+        <input type="button" value="Verificar" onclick="Verificar()">
+        <p id="res"></p>
+    </div>
+
+
+
+    <script>
+        // Aonde vai aparecer o resultado
+        let r = document.getElementById('res')
+
+        let max = 4
+
+        function Verificar() {
+            //Input ano
+            let ipAno = Number(document.getElementById('iano').value)
+            // Manipulação das datas
+            let data = new Date()
+            let anoAtual = data.getFullYear()
+            let conta = anoAtual - ipAno
+
+            r.innerText = (conta)
+
+
+            if (ipAno == ' ') {
+                alert('Preencha o campo abaixo')
+            }else if (ipAno.lenght > max) {
+                alert('Preencha corretamente')
+                return
+            }
+
+            document.getElementById('iano').value = ''
+        }
+
+    </script>
+</body>
+</html>

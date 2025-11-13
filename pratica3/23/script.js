@@ -86,18 +86,9 @@ function apagar(indice) {
 
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
+    
+
    /*  // Array
     let armazemTarefas = []
 

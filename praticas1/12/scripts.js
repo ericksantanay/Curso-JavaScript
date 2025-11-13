@@ -4,10 +4,10 @@ var r = document.getElementById('res')
 
 function adiciona(){
     contador++;
-    r.innerText = (`${contador}`)
+    r.innerText = (contador)
 }
 
 function diminui(){
     contador--;
-    r.innerText = (`${contador}`)
+    r.innerText = (contador)
 }

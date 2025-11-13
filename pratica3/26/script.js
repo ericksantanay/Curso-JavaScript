@@ -9,7 +9,7 @@ let armazem = []
         let Produto = document.getElementById('iproduto').value
         // Input Preço
         let Preco = Number(document.getElementById('ipreco').value)
-
+        soma = 0 
 
         // Eu coloco as ' ' para nao repetir o produto
         r.innerHTML = '' 
@@ -24,7 +24,9 @@ let armazem = []
 
         // Laço de repetição
         armazem.forEach(item => {
-            r.innerHTML += `<p>${item.produto}  ${item.preço}</p>`
-            t.innerHTML = (item.preço)
+            r.innerHTML += `<p> 🛒Produto:${item.produto}  R$:${item.preço}</p>`
+            soma += item.preço
         });
+
+        t.innerHTML = (`<p>Total R$:${soma}</p>`)
     }

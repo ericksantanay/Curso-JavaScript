@@ -33,15 +33,19 @@ function adicionar() {
         </div>`
     });
 
-    
+        // Aqui limpa o campo apos o usuario digitar
     document.getElementById('inome').value = ''
     document.getElementById('itelefone').value = ''
+
+
 }
 
     function apagar(indice) {
         r.innerHTML = ''
+        // Aqui eu estou sinalizando o indice que vai ser apagado
         bancoDeDados.splice(indice, 1)
 
+        // Laço de repetição que vai percorrer o array até achar o indice
         bancoDeDados.forEach((item, indice) => {
         r.innerHTML += `<div>
         <p>Nome: ${item.Nome} <br> Telefone: ${item.Telefone}  
@@ -49,7 +53,8 @@ function adicionar() {
         </div>`
     });
 
+       // Aqui limpa o campo apos o usuario digitar
     document.getElementById('inome').value = ''
-
+    document.getElementById('itelefone').value = ''
 
     }

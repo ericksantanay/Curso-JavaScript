@@ -26,7 +26,10 @@ function adicionar() {
 
     bancoDeDados.forEach(item => {
     let nome = 
-        r.innerHTML += `<div><p>${item.Nome} <br> ${item.Telefone}  <span></span></p></div>`
+        r.innerHTML += `<div>Nome: <p>${item.Nome} <br> Telefone: ${item.Telefone}  
+            <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button>
+        
+        </p></div>`
     });
 
 }

@@ -1,8 +1,11 @@
 // Aonde vai aparecer o conteudo
 const r = document.getElementById('res')
 
-// Aonde eu vou guardar a lista 
+// Aonde eu vou guardar a os objetos 
 let bancoDeDados = []
+
+// Indice
+indice = 0 
 
 // Função de adicionar 
 function adicionar() {
@@ -29,14 +32,19 @@ function adicionar() {
     bancoDeDados.forEach((item, indice) => {
         r.innerHTML += `<div>
         <p>Nome: ${item.Nome} <br> Telefone: ${item.Telefone}  
-        <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button></p>
+        <button onclick="apagar(${indice})"><span class="material-symbols-outlined">delete</span></button></p>
         </div>`
     });
 
-        // Aqui limpa o campo apos o usuario digitar
+    // Condições 
+    if (nome ==='' || telefone === '') {
+        alert('Preencha os Campos abaixo.')
+        r.innerHTML = ''
+    }
+
+    // Aqui limpa o campo apos o usuario digitar
     document.getElementById('inome').value = ''
     document.getElementById('itelefone').value = ''
-
 
 }
 
@@ -45,16 +53,14 @@ function adicionar() {
         // Aqui eu estou sinalizando o indice que vai ser apagado
         bancoDeDados.splice(indice, 1)
 
-        // Laço de repetição que vai percorrer o array até achar o indice
+        // 🔁 Depois de apagar, repetimos o forEach pra mostrar o que sobrou.
         bancoDeDados.forEach((item, indice) => {
         r.innerHTML += `<div>
         <p>Nome: ${item.Nome} <br> Telefone: ${item.Telefone}  
-        <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button></p>
+        <button onclick="apagar(${indice})"><span class="material-symbols-outlined">delete</span></button></p>
         </div>`
     });
 
-       // Aqui limpa o campo apos o usuario digitar
-    document.getElementById('inome').value = ''
-    document.getElementById('itelefone').value = ''
+      
 
     }

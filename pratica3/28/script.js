@@ -24,6 +24,13 @@ function adicionar() {
         Telefone: telefone
     }
 
+     // Validação 
+    if (nome ==='' || telefone === '') {
+        alert('Preencha os Campos abaixo.')
+        r.innerHTML = ''
+    }
+
+
     // Metodo Push, serve para eu pegar o bjeto e por no array a minha "lista"
     bancoDeDados.push(dados)
     
@@ -36,12 +43,7 @@ function adicionar() {
         </div>`
     });
 
-    // Condições 
-    if (nome ==='' || telefone === '') {
-        alert('Preencha os Campos abaixo.')
-        r.innerHTML = ''
-    }
-
+   
     // Aqui limpa o campo apos o usuario digitar
     document.getElementById('inome').value = ''
     document.getElementById('itelefone').value = ''

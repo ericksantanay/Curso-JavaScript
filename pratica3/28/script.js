@@ -13,7 +13,7 @@ function adicionar() {
 
 
     // Para não repetir as listas
-    nome.value = ''
+    r.innerHTML = ''
 
     // Objeto, aqui é tipo os itens dentro de um pacotinho e o array é o armario
     let dados = {
@@ -23,13 +23,33 @@ function adicionar() {
 
     // Metodo Push, serve para eu pegar o bjeto e por no array a minha "lista"
     bancoDeDados.push(dados)
+    
 
-    bancoDeDados.forEach(item => {
-    let nome = 
-        r.innerHTML += `<div>Nome: <p>${item.Nome} <br> Telefone: ${item.Telefone}  
-            <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button>
-        
-        </p></div>`
+    // Laço de repetição que vai percorrer o array até achar o indice
+    bancoDeDados.forEach((item, indice) => {
+        r.innerHTML += `<div>
+        <p>Nome: ${item.Nome} <br> Telefone: ${item.Telefone}  
+        <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button></p>
+        </div>`
     });
 
+    
+    document.getElementById('inome').value = ''
+    document.getElementById('itelefone').value = ''
 }
+
+    function apagar(indice) {
+        r.innerHTML = ''
+        bancoDeDados.splice(indice, 1)
+
+        bancoDeDados.forEach((item, indice) => {
+        r.innerHTML += `<div>
+        <p>Nome: ${item.Nome} <br> Telefone: ${item.Telefone}  
+        <button onclick='apagar()'><span class="material-symbols-outlined">delete</span></button></p>
+        </div>`
+    });
+
+    document.getElementById('inome').value = ''
+
+
+    }

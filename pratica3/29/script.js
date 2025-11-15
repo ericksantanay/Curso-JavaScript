@@ -2,7 +2,9 @@
 let result = document.getElementById('mensagem')
 
 // Array aonde vou Armazenar as listas 
-let localStorage.bancoDeDados = []
+let bancoDeDados = []
+
+
 
 // Função de cadastro!
 function cadastrar() {
@@ -21,6 +23,16 @@ function cadastrar() {
         return
     }
 
+    // Divisor da nota
+    let divisor = 3
+
+    let conta = n1 + n2 + n3 / divisor // Ajustar depois
+
+
+    result.innerText = (conta)
+    // Guardar os dados no navegador 
+    localStorage.setItem('banco', JSON.stringify(bancoDeDados))
+
     // Para não ter o problema de repetir os dados
     result.innerHTML = ''
 
@@ -34,6 +46,12 @@ function cadastrar() {
 
     // Agora eu tenho  que puchar o dados no array "Lista"
     bancoDeDados.push(dados)
+
+
+    // Laço de repetição que vai percorrer o array inteiro 
+    bancoDeDados.forEach(item,(indice) => {
+        
+    });
 
 
 

@@ -30,9 +30,9 @@ function cadastrar() {
     
     // Aprovado ou reprovado
     if (conta >= 5) {
-        me.innerHTML = ('aprovado')
+        me.innerText = ('aprovado')
     }else {
-        me.innerHTML = ('reprovado')
+        me.innerText = ('reprovado')
     }
      
      
@@ -55,23 +55,17 @@ function cadastrar() {
 
 
     // Laço de repetição que vai percorrer o array inteiro 
-    bancoDeDados.forEach(item,(indice) => {
-        result.innerHTML =+ `
+    bancoDeDados.forEach((item, indice) => {
+        result.innerHTML += `
                 <div id="containerTxt">
                 <p>Nome do aluno: ${item.nome}</p>
-                <p>Notas: Nota1:${item.nota1}, Nota2:${item.nota2}, Nota3:${item.nota3}</p>
+                <p>Notas: Nota1: ${item.nota1}, Nota2: ${item.nota2}, Nota3: ${item.nota3}</p>
                 <p>Media do aluno: ${conta.toFixed(2)}</p>
-                <p id="media">Aprovado/Reprovado:</p>
+                <p>Aprovado/Reprovado: ${conta}}</p>
                 <span class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
                 </div>
                 `
     });
-
-
-
-
-
-
 
     // Parte quando o usuario digitar e clicar noo botão o campo irá ficar limpo para digitar novamente
     document.getElementById('nome').value = ''
@@ -81,15 +75,15 @@ function cadastrar() {
     
 }
 
+
 // Função de apagar
 function deletar(indice) {
     // Para não ter o problema de repetir os dados
     result.innerHTML = ''
     bancoDeDados.splice(indice, 1)
 
-
     bancoDeDados.forEach(item, (indice) => {
-        result.innerHTML =+ `
+        result.innerHTML += `
                 <div id="containerTxt">
                 <p>Nome do aluno: ${item.nome}</p>
                 <p>Notas: Nota1:${item.nota1}, Nota2:${item.nota2}, Nota3:${item.nota3}</p>
@@ -101,21 +95,3 @@ function deletar(indice) {
     });
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//localStorage('NomeUsuario', nome);

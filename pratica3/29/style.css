@@ -55,13 +55,18 @@ button:hover {
 }
 
 #mensaguem {
-    border-radius: 5px ;
-    border: 1px solid black;
     margin: 20px;
 }
 
 #mensaguem > p {
     margin: 10px;    
+}
+
+#containerTxt {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 20px;
 }
 
 span {

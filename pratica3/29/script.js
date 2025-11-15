@@ -24,9 +24,9 @@ function cadastrar() {
     }
 
     // Divisor da nota
-    let divisor = 3
+    //let divisor = 3
 
-    let conta = n1 + n2 + n3 / divisor // Ajustar depois
+    //let conta = n1 + n2 + n3 / divisor // Ajustar depois
 
 
     result.innerText = (conta)
@@ -50,7 +50,7 @@ function cadastrar() {
 
     // Laço de repetição que vai percorrer o array inteiro 
     bancoDeDados.forEach(item,(indice) => {
-        
+        result.innerHTML =+ ``
     });
 
 

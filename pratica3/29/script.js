@@ -41,7 +41,7 @@ function cadastrar() {
         nota2: n2,
         nota3: n3,
         media: media,
-        situação: situacao
+        situacao: situacao
     }
 
     // Agora eu tenho  que puchar o dados no array "Lista"
@@ -57,7 +57,7 @@ function cadastrar() {
                 <p>Nome do aluno: ${item.nome}</p>
                 <p>Notas: Notas: ${item.nota1}, ${item.nota2}, ${item.nota3}</p>
                 <p>Media do aluno: ${item.media.toFixed(2)}</p>
-                <p>Situação: ${item.situação}</p>
+                <p>Situação: ${item.situacao}</p>
                 <span class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
                 </div>
                 `
@@ -85,7 +85,7 @@ function deletar(indice) {
                 <p>Nome do aluno: ${item.nome}</p>
                 <p>Notas: Nota1:${item.nota1}, Nota2:${item.nota2}, Nota3:${item.nota3}</p>
                 <p>Media do aluno: ${item.media.toFixed(2)}</p>
-                <p>Situação: ${item.situação}</p>
+                <p>Situação: ${item.situacao}</p>
                 <span class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
                 </div>
                 `

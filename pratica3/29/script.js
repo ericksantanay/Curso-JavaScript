@@ -1,3 +1,4 @@
+/*
 // O que o usuario vai ver 
 let result = document.getElementById('mensagem')
 
@@ -85,3 +86,95 @@ function mostrar() {
 
 // Mostrar na tela ao abrir a página
 mostrar()
+*/
+
+
+
+// O que o usuario vai ver 
+let result = document.getElementById('mensagem')
+
+// Carregar banco do localStorage
+let bancoDeDados = JSON.parse(localStorage.getItem('banco')) || []
+
+
+// Função principal
+function cadastrar() {
+
+    let Nome = document.getElementById('nome').value
+    let n1 = Number(document.getElementById('nota1').value)
+    let n2 = Number(document.getElementById('nota2').value)
+    let n3 = Number(document.getElementById('nota3').value)
+
+    if (Nome === '' ) {
+        alert('Preencha todos os campos!')
+        return
+    }
+
+    // Calcular média
+    let Media = (n1 + n2 + n3) / 3
+
+    // Situação do aluno
+    let Situacao = Media >= 5 ? 'Aprovado' : 'Reprovado'
+
+    // Criar objeto do aluno
+    let dados = {
+        nome: Nome,
+        nota1: n1,
+        nota2: n2,
+        nota3: n3,
+        media: Media,
+        situacao: Situacao
+    }
+
+    // Inserir no array
+    bancoDeDados.push(dados)
+
+    // SALVAR no localStorage corretamente
+    localStorage.setItem('banco', JSON.stringify(bancoDeDados))
+
+    
+     // Exibir na tela
+    mostrar()
+
+    // Limpar campos
+    document.getElementById('nome').value = ''
+    document.getElementById('nota1').value = ''
+    document.getElementById('nota2').value = ''
+    document.getElementById('nota3').value = ''
+
+   
+}
+
+
+
+
+
+// Função de deletar aluno
+function deletar(indice) {
+    bancoDeDados.splice(indice, 1)
+    localStorage.setItem('banco', JSON.stringify(bancoDeDados))
+    mostrar()
+}
+
+
+
+// FUNÇÃO QUE MOSTRA A LISTA NA TELA
+function mostrar() {
+    result.innerHTML = ''
+
+    bancoDeDados.forEach((item, indice) => {
+        result.innerHTML += `
+            <div id="containerTxt">
+                <p><strong>Aluno:</strong> ${item.nome}</p>
+                <p>Notas: ${item.nota1}, ${item.nota2}, ${item.nota3}</p>
+                <p>Média: ${item.media.toFixed(2)}</p>
+                <p>Situação: <strong>${item.situacao}</strong></p>
+                <span class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
+            </div>
+        `
+    })
+}
+
+
+
+

@@ -1,18 +1,20 @@
-let n1 = 5
-let n2 = 9
-let n3 = 7
+function avaliarAluno(n1, n2, n3) {
+    let media = (n1 + n2 + n3) / 3;
+    let situacao = "";
 
-let media = (n1 + n2 + n3) / 3
-
-
-
-if (media >= 7 ) {
-        console.log(`Nota: ${media}, Situação: aprovado`)
-        return
-    }else if (media >= 5 && media < 7) {
-        console.log(`Nota: ${media}, Situação: Recuperação`)
-        return
-    }else if (media < 5) {
-        console.log(`Nota${media}, Situação: Reprovado`)
-        return
+    if (media >= 7) {
+        situacao = "Aprovado";
+    } else if (media >= 5) {
+        situacao = "Recuperação";
+    } else {
+        situacao = "Reprovado";
     }
+
+    // RETORNA o resultado (sem console, sem print)
+    return {
+        media: media,
+        situacao: situacao
+    };
+}
+
+console.log(avaliarAluno(5, 9, 7));

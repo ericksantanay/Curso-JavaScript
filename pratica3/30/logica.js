@@ -17,4 +17,4 @@ function avaliarAluno(n1, n2, n3) {
     };
 }
 
-console.log(avaliarAluno(5, 9, 7));
+console.log(avaliarAluno(10, 10, 10));

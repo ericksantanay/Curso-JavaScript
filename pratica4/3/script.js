@@ -14,5 +14,8 @@ function ClickMenu() {
 // Parte dos produtos
 // Função
 function cart() {
+    // Input Produto
+    let produto = document.getElementById('iproduto').value
+    let preco = document.getElementById('ipreco').value
     
 }

@@ -13,9 +13,15 @@ function ClickMenu() {
 
 // Parte dos produtos
 // Função
+
+// Array, aonde vou armazenar a lista!! 
+let caixa = []
+
 function cart() {
     // Input Produto
     let produto = document.getElementById('iproduto').value
     let preco = document.getElementById('ipreco').value
-    
+    let r = document.getElementById('res')
+
+
 }

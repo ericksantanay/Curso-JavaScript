@@ -4,10 +4,15 @@ let m = document.getElementById('hamburguer')
 function ClickMenu() {
     if (menu.style.display == 'block') {
         menu.style.display = 'none'
-        m.innerText = 'menu'
+        m.innerText = 'shopping_cart'
     }else {
         menu.style.display = 'block'
         m.innerText = 'close'
     }
 }
 
+// Parte dos produtos
+// Função
+function cart() {
+    
+}

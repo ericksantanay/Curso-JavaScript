@@ -11,6 +11,9 @@ function ClickMenu() {
     }
 }
 
+
+
+
 // Parte dos produtos
 
 // Saidas
@@ -23,8 +26,8 @@ let caixa = []
 // Função
 function cart() {
     // Input Produto
-    let produto = document.getElementById('iproduto').value
-    let preco = document.getElementById('ipreco').value
+    let Produto = document.getElementById('iproduto').value
+    let Preco = document.getElementById('ipreco').value
     soma = 0
 
     // Parte da verificação!
@@ -37,8 +40,8 @@ function cart() {
 
     // Parte do objeto, que vai ser armanezado no Array
     let pacote = {
-        produto: produto,
-        preco: preco
+        produto: Produto,
+        preco: Preco
     }
 
     // Parte do push, para por o objeto no array
@@ -55,10 +58,7 @@ function cart() {
         `
         soma += item.preco  
     });
-    t.innerHTML += (`<p id='total'>Total: R$:${soma}</p>`)
-
-
-
+    t.innerHTML = (`<p id='total'>Total: R$:${soma}</p>`)
 
     document.getElementById('iproduto').value = ''
     document.getElementById('ipreco').value = ''

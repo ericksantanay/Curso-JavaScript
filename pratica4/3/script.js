@@ -12,28 +12,25 @@ function ClickMenu() {
 }
 
 // Parte dos produtos
-// Função
-
-// Array, aonde vou armazenar a lista!! 
-let caixa = []
 
 // Saidas
 let r = document.getElementById('res')
 let t = document.getElementById('total')
 
+// Array, aonde vou armazenar a lista!! 
+let caixa = []
 
+// Função
 function cart() {
     // Input Produto
     let produto = document.getElementById('iproduto').value
     let preco = document.getElementById('ipreco').value
-    
+    soma = 0
 
     // Parte da verificação!
     if (produto === '' || preco === '') {
         alert('Preencha os campos.')
     }
-
-    soma = 0
 
     // Parte para não repetir os produtos e o preço
     r.innerHTML = ''
@@ -58,7 +55,7 @@ function cart() {
         `
         soma += item.preco  
     });
-    t.innerHTML += `<p id='total'>Total: R$:${soma}</p>`
+    t.innerHTML += (`<p id='total'>Total: R$:${soma}</p>`)
 
 
 

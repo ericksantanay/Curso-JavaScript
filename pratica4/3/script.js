@@ -27,11 +27,11 @@ let caixa = []
 function cart() {
     // Input Produto
     let Produto = document.getElementById('iproduto').value
-    let Preco = document.getElementById('ipreco').value
+    let Preco = Number(document.getElementById('ipreco').value)
     soma = 0
 
     // Parte da verificação!
-    if (Produto === '' || Preco === '') {
+    if (Produto === '') {
         alert('Preencha os campos.')
     }
 

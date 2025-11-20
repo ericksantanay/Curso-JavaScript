@@ -28,6 +28,8 @@ function cart() {
         alert('Preencha os campos.')
     }
 
+    soma = 0
+
     // Parte para não repetir os produtos e o preço
     r.innerHTML = ''
 
@@ -41,8 +43,16 @@ function cart() {
     caixa.push(pacote)
 
     // Parte do forEach, que vai proucurar os produtos e o preço pelo indice
-    caixa.forEach(element => {
-        
+    caixa.forEach(item => {
+        r.innerHTML += 
+        `
+        <article>
+            <p>Produto: ${item.produto}</p>
+            <p>Preço:   ${item.preco.toFixed(2)}</p>
+            <p id=''>Total:  ''</p>
+        </article>
+        `
+        soma += item.preco
     });
 
 }

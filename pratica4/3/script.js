@@ -23,6 +23,11 @@ function cart() {
     let preco = document.getElementById('ipreco').value
     let r = document.getElementById('res')
 
-    
+    // Parte da verificação!
+    if (produto === '' || preco === '') {
+        alert('Preencha os campos.')
+    }
+
+    // Parte para não repetir os produtos e o preço
 
 }

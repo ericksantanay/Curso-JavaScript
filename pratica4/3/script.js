@@ -17,11 +17,16 @@ function ClickMenu() {
 // Array, aonde vou armazenar a lista!! 
 let caixa = []
 
+// Saidas
+let r = document.getElementById('res')
+let t = document.getElementById('total')
+
+
 function cart() {
     // Input Produto
     let produto = document.getElementById('iproduto').value
     let preco = document.getElementById('ipreco').value
-    let r = document.getElementById('res')
+    
 
     // Parte da verificação!
     if (produto === '' || preco === '') {
@@ -49,10 +54,16 @@ function cart() {
         <article>
             <p>Produto: ${item.produto}</p>
             <p>Preço:   ${item.preco.toFixed(2)}</p>
-            <p id=''>Total:  ''</p>
         </article>
         `
+        t.innerHTML += `<p id="total">Total: ${soma}</p>`
         soma += item.preco
     });
+
+
+
+
+    document.getElementById('iproduto').value = ''
+    document.getElementById('ipreco').value = ''
 
 }

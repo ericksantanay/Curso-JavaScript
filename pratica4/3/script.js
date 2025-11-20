@@ -29,5 +29,20 @@ function cart() {
     }
 
     // Parte para não repetir os produtos e o preço
+    r.innerHTML = ''
+
+    // Parte do objeto, que vai ser armanezado no Array
+    let pacote = {
+        produto: produto,
+        preco: preco
+    }
+
+    // Parte do push, para por o objeto no array
+    caixa.push(pacote)
+
+    // Parte do forEach, que vai proucurar os produtos e o preço pelo indice
+    caixa.forEach(element => {
+        
+    });
 
 }

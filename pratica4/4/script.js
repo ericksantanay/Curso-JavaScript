@@ -8,11 +8,11 @@ setInterval(function(){
     let dia = new Date()
     // hora
     let hora = String(dia.getHours()).padStart(2, '0')
-    h.innerHTML = `${hora}:`
+    h.innerHTML = `${hora}`
 
     // Minutos
     let minutos = String(dia.getMinutes()).padStart(2, '0')
-    m.innerHTML = `${minutos}:`
+    m.innerHTML = `${minutos}`
 
     // Segundos
     let segundos = String(dia.getSeconds()).padStart(2, '0')

@@ -53,12 +53,12 @@ function cart() {
         `
         <article>
             <p>Produto: ${item.produto}</p>
-            <p>Preço: R$${item.preco.toFixed(2)}</p>
+            <p>Preço: R$:${item.preco}</p>
         </article>
         `
         soma += item.preco  
     });
-    t.innerHTML += `<p>Total: R$${soma}</p>`
+    t.innerHTML += `<p id='total'>Total: R$:${soma}</p>`
 
 
 

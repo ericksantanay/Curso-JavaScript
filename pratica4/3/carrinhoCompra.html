@@ -11,6 +11,7 @@
         body {
             display: flex;
             margin-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
 
@@ -22,6 +23,13 @@
 
         #menu {
             display: none;
+            background-color: rgb(196, 196, 196);
+            padding: 10px;
+            height: 100%;
+        }
+
+        article {
+            margin: 30px;
         }
 
         .produtos {
@@ -34,13 +42,7 @@
     <span id="hamburguer" class="material-symbols-outlined" onclick="ClickMenu()">shopping_cart</span>
 
     <div id="menu">
-        <div id="res">
-           <article>
-                <p>Produto: ''</p>
-                <p>Preço:   ''</p>
-                <p id="total">Total:  ''</p>
-           </article>
-            
+        <div id="res"> 
         </div>
     </div>
 

@@ -7,14 +7,14 @@ let s = document.getElementById('segundos')
 setInterval(function(){
     let dia = new Date()
     // hora
-    let hora = dia.getHours()
+    let hora = String(dia.getHours()).padStart(2, '0')
     h.innerHTML = `${hora}:`
 
     // Minutos
-    let minutos = dia.getMinutes()
+    let minutos = String(dia.getMinutes()).padStart(2, '0')
     m.innerHTML = `${minutos}:`
 
     // Segundos
-    let segundos = dia.getSeconds()
-    s.innerText = (segundos)+2
+    let segundos = String(dia.getSeconds()).padStart(2, '0')
+    s.innerText = (segundos)
 }, 1000)

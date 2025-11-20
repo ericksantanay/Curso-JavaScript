@@ -23,5 +23,6 @@ function cart() {
     let preco = document.getElementById('ipreco').value
     let r = document.getElementById('res')
 
+    
 
 }

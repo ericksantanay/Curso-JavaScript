@@ -56,10 +56,10 @@ function cart() {
             <p>Preço: R$:${item.preco}</p>
         </article>
         `
-        soma = item.preco  
+        soma += item.preco  
     });
 
-    t.innerHTML += `<p id='total'>Total: R$:${soma}</p>`
+    t.innerHTML = `<p>Total: R$:${soma}</p>`
     
     document.getElementById('iproduto').value = ''
     document.getElementById('ipreco').value = ''

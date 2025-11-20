@@ -31,8 +31,9 @@ function cart() {
     soma = 0
 
     // Parte da verificação!
-    if (Produto === '') {
+    if (Produto === '' || Preco === '') {
         alert('Preencha os campos.')
+        return
     }
 
     // Parte para não repetir os produtos e o preço

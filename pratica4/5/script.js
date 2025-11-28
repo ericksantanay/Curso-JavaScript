@@ -13,7 +13,7 @@ function norepet() {
 
     // ForEach
     armazemNomes.forEach((item, indice) => {
-        r.innerHTML += `<p>Nome: ${item.nome} 
+        r.innerHTML += `<p style="width: max-content; border: 1px solid black; padding: 10px;">Nome: ${item.nome} 
         <span id="del" class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
         </p>`
     });

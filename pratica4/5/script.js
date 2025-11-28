@@ -5,6 +5,7 @@ let r = document.getElementById('res')
 let armazemNomes = []
 
 // Função
-function Buscar() {
-    
+function Adicionar() {
+    let input = document.getElementById('pesquisa').value
+
 }

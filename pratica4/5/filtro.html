@@ -12,20 +12,38 @@
             height: 100vh;
             display: flex;
             justify-content: center;
-            background-color: aliceblue;
+            background-color: rgb(227, 227, 227);
         }
 
         div {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: white;
             height: max-content;
+            border-radius: 10px;
+            margin-top: 40px;
         }
 
         input {
             padding: 10px;
             border-radius: 5px;
             border: 1px solid black;
+        }
+
+        .btn {
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(43, 190, 239);
+            transition: .3s;
+            border-radius: 4px;
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+        .btn:hover {
+            background-color: rgb(10, 91, 118);
         }
 
         p {
@@ -47,11 +65,9 @@
     <div>
         <h1>Filtrar nomes que começam com uma letra</h1>
         <input type="text"  id="pesquisa">
-        <input type="button" value="Adicionar" onclick="Adicionar()">
-        <input type="button" value="Buscar" onclick="Buscar()">
-        <p id="res">
-            Nome: Erick <span id="del" class="material-symbols-outlined">delete</span>
-        </p>
+        <input class="btn" type="button" value="Adicionar" onclick="Adicionar()">
+        <input class="btn" type="button" value="Buscar" onclick="Buscar()">
+        <p id="res"></p>
     </div>
 
 

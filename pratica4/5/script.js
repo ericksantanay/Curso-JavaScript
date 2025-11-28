@@ -14,7 +14,7 @@ function norepet() {
     // ForEach
     armazemNomes.forEach((item, indice) => {
         r.innerHTML += `<p>Nome: ${item.nome} 
-        <span class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
+        <span id="del" class="material-symbols-outlined" onclick="deletar(${indice})">delete</span>
         </p>`
     });
 }
@@ -45,6 +45,6 @@ function Adicionar() {
 function deletar(indice) {
 
     armazemNomes.splice(indice, 1)
-    
+
     norepet() 
 }

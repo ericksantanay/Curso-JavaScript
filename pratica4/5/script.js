@@ -48,3 +48,12 @@ function deletar(indice) {
 
     norepet() 
 }
+
+function Buscar(a,b) {
+
+    armazemNomes.sort()
+
+
+    norepet()
+    
+}

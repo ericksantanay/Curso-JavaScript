@@ -2,4 +2,9 @@
 let r = document.getElementById('res')
 
 // Array (Armazem)
-let armazemDasPalavras = []
+let armazemNomes = []
+
+// Função
+function Buscar() {
+    
+}

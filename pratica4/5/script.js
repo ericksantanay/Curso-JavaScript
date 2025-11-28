@@ -49,11 +49,27 @@ function deletar(indice) {
     norepet() 
 }
 
-function Buscar(a,b) {
+function Buscar() {
+    let letra = document.getElementById('pesquisa').value.toLowerCase()
 
-    armazemNomes.sort()
+    if (letra === '') {
+        alert('Digite uma letra para buscar')
+        return
+    }
 
+    // Filtra os nomes que começam com a letra digitada
+    let filtrados = armazemNomes.filter(item =>
+        item.nome.toLowerCase().startsWith(letra)
+    )
 
-    norepet()
-    
+    // Exibir apenas os filtrados
+    r.innerHTML = ''
+
+    filtrados.forEach((item, indice) => {
+        r.innerHTML += `
+            <p style="width: max-content; border: 1px solid black; padding: 10px;">
+                Nome: ${item.nome}
+            </p>
+        `
+    })
 }

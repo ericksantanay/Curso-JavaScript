@@ -26,6 +26,7 @@ function Adicionar() {
 
     if (input === '') {
         alert('PREENCHA O CAMPO')
+        return
     }
 
     // Dados 
@@ -41,7 +42,7 @@ function Adicionar() {
     document.getElementById('pesquisa').value = ''
 }
 
-
+// Função de deletar
 function deletar(indice) {
 
     armazemNomes.splice(indice, 1)
@@ -49,6 +50,7 @@ function deletar(indice) {
     norepet() 
 }
 
+// Função de Buscar
 function Buscar() {
     let letra = document.getElementById('pesquisa').value.toLowerCase()
 

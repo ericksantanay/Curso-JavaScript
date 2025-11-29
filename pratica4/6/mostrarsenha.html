@@ -6,6 +6,11 @@
     <title>Mostrar senha </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_"/>
     <style>
+        body {
+            background-color: rgb(226, 226, 226);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         #div-mae {
             height: 100vh;
             display: flex;
@@ -16,15 +21,30 @@
         #container {
             display: flex;
             flex-direction: column;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        #cont-email,#cont-senha {
+            display: flex;
+            flex-direction: column;
         }
 
         input {
-           
+           width: 250px;
+           padding: 10px;
+           margin-bottom: 10px;
+           border-radius: 3px;
+           border: 1px solid black;
         }
 
         span {
-            
+            cursor: pointer;
+            margin-top: -37px;
+            margin-left: 280px;
         }
+
     </style>
 </head>
 <body>
@@ -32,7 +52,7 @@
         <form action="" method="get">
             <div id="container">
                 <div id="cont-email">
-                    <label for="email">E-mail</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email">
                 </div>
                 <!--SENHA-->

@@ -1,3 +1,5 @@
 
 // Saída
-let
+let r = document.getElementById('res')
+
+let 

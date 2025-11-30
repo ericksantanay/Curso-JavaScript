@@ -6,7 +6,10 @@ const armazem = ["<div>oi</div>", "<div>P</div>", "<div>JHHH</div>", "<div>DDDDD
 
 indice = 0 
 setInterval(function(){
-    indice++
+    
     r.innerHTML = (armazem[indice])
-
+    indice++
+    if (indice == armazem.length) {
+        indice = 0
+    }
 }, 1000)

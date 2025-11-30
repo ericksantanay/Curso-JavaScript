@@ -12,4 +12,3 @@ setInterval(function(){
         indice = 0 
     }
 }, 1000)
-

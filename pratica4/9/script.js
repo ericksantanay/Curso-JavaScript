@@ -6,7 +6,7 @@ let nomes = ["Erick", "Leandro", "Mateus", "Breno", "Bruno", "Bernardo", "Vinici
 indice = 0
 setInterval(function(){
 
-    r.innerText = (indice[nomes])
+    r.innerHTML = (indice[nomes])
     indice++
 
 }, 1000)

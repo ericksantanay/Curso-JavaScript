@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantas vezes a letra "a" aparece em uma frase</title>
+</head>
+<body>
+    
+    <input type="text" id="palavras" placeholder="Nome">
+    <button onclick="Mostrar()">Mostrar</button>
+    <p id="res"></p>
+
+
+    <script>
+        let r = document.getElementById('res')
+
+       
+
+        
+        function Mostrar() {
+            let palavras = document.getElementById('palavras').value
+    
+
+        let contador = 0;
+
+        for (let i = 0; i < palavras.length; i++) {
+        if (palavras[i] === "a") {
+        contador++;
+        }
+        }
+
+        r.innerText = ('A letra "a" aparece ' + contador + " vezes.");
+
+
+
+        }
+    </script>
+</body>
+</html>

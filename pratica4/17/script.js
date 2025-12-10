@@ -4,16 +4,16 @@ let s = document.getElementById('segundos')
 let mi = document.getElementById('milessegundo')
 
 
-let hor = 0
-let min = 0 
-let seg = 0
-let mil = 0
+let hor = 0     // Indices (Pense assim)
+let min = 0     // Indices (Pense assim)
+let seg = 0     // Indices (Pense assim)
+let mil = 0     // Indices (Pense assim)
 
 let tempo;
 
 function iniciar() {
 
-    if (tempo) return; // Para o cronometro nao repetir
+    if (tempo) return; // Evita rodar 2 cronômetros ao mesmo tempo
 
 
     tempo = setInterval(function(){

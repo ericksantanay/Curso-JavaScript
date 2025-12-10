@@ -17,13 +17,14 @@ function iniciar() {
 
 
     tempo = setInterval(function(){
-    // Milessegundo
+
+        // Milessegundo
         mil++    
         mi.innerText = String(mil).padStart(2, '0')
 
 
-        // Der 10 mile vai dar 1 segundo
-        if (mil == 10) {
+            // Quando Der 10 mile vai dar 1 segundo
+            if (mil == 10) {
             mil = 0
             seg++
             s.innerText = String(seg).padStart(2, '0')
@@ -50,7 +51,7 @@ function iniciar() {
 
 function pausar() {
     clearInterval(tempo)
-    tempo = null
+    tempo = null  // libera pra iniciar de novo
 }
 
 function resetar() {
@@ -64,7 +65,6 @@ function resetar() {
     m.innerText = "00";
     s.innerText = "00";
     mi.innerText = "00";
-
     pausar()
 }
  

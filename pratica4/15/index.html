@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Impar</title>
+</head>
+<body>
+    
+        <h1>Digite um Número</h1>
+        <p>Impar ou Par</p>
+        <input type="text"  id="num">
+        <button onclick="Mostrar()">Verificar</button>
+
+        <p id="r"></p>
+
+
+
+        <script>
+            let r = document.getElementById('r')
+
+            function Mostrar() {
+                let num = Number(document.getElementById('num').value)
+                let conta = num % 2 ? "Impar" : "Par";
+                r.innerText = (conta)
+
+
+
+            }
+
+
+        </script>
+
+</body>
+</html>

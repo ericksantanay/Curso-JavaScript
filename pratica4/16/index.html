@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovado ou Não</title>
+</head>
+<body>
+    
+    <input type="number" id="nota">
+    <button onclick="Verificar()">Verificar</button>
+    <p id="r"></p>
+
+
+    <script>
+    function Verificar() {
+       let r = document.getElementById('r')
+
+       let nota = document.getElementById('nota').value
+
+       if (nota >= 7) {
+        r.innerText = ('Aprovado')
+        return
+       }else if (nota >= 5 && nota < 7) {
+        r.innerText = ('Recuperação')
+       } else {
+        r.innerText = ('Reprovado')
+       }
+
+
+    }
+
+    </script>
+
+</body>
+</html>

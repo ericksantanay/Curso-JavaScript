@@ -1,5 +1,4 @@
 //Criar função que retorna o maior de dois números
-
 function Maior(num1,num2) {
     num1 = 5 
     num2 = 6

@@ -1,6 +1,5 @@
 let nota = 4
 
-
 if (nota < 5) {
     console.log('Ruim')
 }else if (nota >= 5 && nota <= 6 ) {

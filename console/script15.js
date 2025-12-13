@@ -7,4 +7,3 @@ if (num % 2 === 0) {
     console.log('Impar')
 }
 
-script15.js

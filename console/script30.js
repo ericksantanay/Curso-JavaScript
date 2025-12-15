@@ -1,7 +1,6 @@
 /*Loja
 Dados: estoque, reservado
 Defina o status do produto.
-
 */
 
 let estoque = 21

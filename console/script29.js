@@ -8,7 +8,7 @@ let senha = 'Errado'
 
 if (usuario === 'Ativo' && senha === 'Correta') {
     console.log('Acesso Permitido')
-}else if (usuario === 'Inativo' && senha === 'Errado'){
+}else if (usuario === 'Inativo'){
     console.log('Acesso Bloqueado ')
 }else {
     console.log('Acesso Negado')

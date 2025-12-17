@@ -9,7 +9,3 @@ let nuns = [34, 55, 2, 13, 567]
 for(n of nuns) {
     console.log(n)
 }
-
-
-
-

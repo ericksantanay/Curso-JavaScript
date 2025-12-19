@@ -10,4 +10,6 @@ let indice = 0
 
 for(n of num) {
     
+
 }
+

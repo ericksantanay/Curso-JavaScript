@@ -19,16 +19,37 @@
 
         div button {
             margin: 10px;
+            cursor: pointer;
+            border-radius: 2px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: blanchedalmond;
         }
     </style>
 </head>
 <body>
     
     <div>
-        <button>+</button>
+        <button onclick="aumentar()">+</button>
         <p id="res">0</p>
-        <button>-</button>
+        <button onclick="diminuir()">-</button>
     </div>
 
+
+    <script>
+        let r = document.getElementById('res')
+        let contador = 0 
+
+        function aumentar() {
+            contador++
+            r.innerText = contador
+        }
+
+        function diminuir() {
+            contador--
+            r.innerText = contador
+        }
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f4f7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
+#container {
+  background: #fff;
+  width: 95%;
+  max-width: 900px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Título */
+#container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#text-button {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+}
+
+#text-button > input {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 4px;
+    border: 1px solid black;
+
+}
+
+/* Botão adicionar */
+#btnAdicionar {
+  margin: 0 0 20px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #1abc9c;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnAdicionar:hover {
+  background: #16a085;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background: #f0f2f5;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  font-weight: 600;
+  color: #333;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Prioridades */
+.alta {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.media {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.baixa {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+/* Status */
+.pendente {
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.andamento {
+  color: #2980b9;
+  font-weight: 500;
+}
+
+.concluida {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+/* Botões de ação */
+td button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.editar {
+  background: #3498db;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.excluir {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.editar:hover {
+  background: #2980b9;
+}
+
+.excluir:hover {
+  background: #c0392b;
+}
+
+/* Estatísticas */
+#estatisticas {
+  background: #f7f9fc;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+
+  th, td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  td button {
+    margin-top: 5px;
+    width: 100%;
+  }
+}

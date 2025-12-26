@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controlador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="container">
+
+    <!-- Título -->
+    <h1>🔍 Controlador de Tarefas</h1>
+
+    <div id="text-button">
+        <!-- Botão adicionar -->
+     <input type="text">
+    <button id="btnAdicionar" onclick="Adicionar()">+ Adicionar Tarefa</button>
+    </div>
+
+    <!-- Tabela -->
+    <table>
+      <thead>
+        <tr>
+          <th>Tarefa</th>
+          <th>Prioridade</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody id="listaTarefas">
+        <!-- Exemplo de tarefa -->
+        <tr>
+          <td>Estudar JavaScript</td>
+          <td class="alta">Alta</td>
+          <td class="pendente">Pendente</td>
+          <td>
+            <button class="editar" onclick="editar()">Editar</button>
+            <button class="excluir" onclick="excluir()">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Estatísticas -->
+    <section id="estatisticas">
+      <p>
+        Total de Tarefas: <span id="total">0</span> |
+        Pendentes: <span id="pendentes">0</span> |
+        Em Andamento: <span id="andamento">0</span> |
+        Concluídas: <span id="concluidas">0</span> |
+        Alta Prioridade: <span id="altaPrioridade">0</span>
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>

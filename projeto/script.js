@@ -4,5 +4,5 @@ let armazenarDados = []
 
 //######### FUNÇÃO DE ADICIONAR #########
 function Adicionar() {
-    
+    let tarefas = document.getElementById('tarefa')
 }

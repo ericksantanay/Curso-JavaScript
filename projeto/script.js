@@ -7,6 +7,19 @@ let resultado4 = document.getElementById('resultado4')
 //####### RESULTADO DAS TAREFAS#########
 let resultTarefas = document.querySelector('.resultadoListaTarefas')
 
+//####### ARRAY PARA ARMAZENAR OS ITENS #########
+let guardarDados = []
+
+
+//####### INDICE PARA PERCORRER #########
+indice = 0 
+
+//####### ESTADO INICIAL DAS TAREFAS #########
+let totalTarefas = 0
+let tarefasPendentes = 0
+let EmAndamento = 0
+let concluido = 0
+
 
 
 //####### FUNÇÃO DE ADICIONAR #########
@@ -17,6 +30,51 @@ function AdicionarTarefa() {
     // PEGANDO O VALUE DO SELECT
     let opcoes = document.querySelector('.opcoesPrioridade').value 
 
-    
+
+    // OBJETO
+    let dados = {
+        tarefa: tarefa,
+        opcoes: opcoes
+    }
+
+    // COLOCANDO OS DADOS NO ARRAY
+    guardarDados.push(dados)
+
+    // COONDIÇÃO DA COR DA PRIORIDADE
+
+
+
+    //ZERAR O INPUT DEPOIS DE DIGITADO
+    document.getElementById('itarefa').value = ''
+
+
+    complementos()
 }
 
+
+// FUNÇÃO PARA NÃO REPETIR CODIGOS
+function complementos() {
+    //NÃO REPETIR OS DADOS
+    resultTarefas.innerHTML = ''
+
+    guardarDados.forEach((item, indice) => {
+        resultTarefas.innerHTML += `
+            <div class="left">
+                            <div class="textNameEPrioridade">
+                                <p class="nomeTarefa">${item.tarefa}</p>
+                                <p class="resultadoPrioridade">${item.opcoes} prioridade</p>
+                            </div>
+                            <p class="status">Status:Pendente</p>
+                        </div>
+
+                        <div class="right">
+                            <div class="btns">
+                                <button class="editar" onclick="Editar()">Editar</button>
+                                <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
+                            </div>
+                        </div>
+        `
+    });
+}
+
+// EU PRECISO PEGAR O .resultadoPrioridade PARA FAZER A CONDIÇÃO E MUDAR A COR A CADA CONDIÇÃO SENDO VERMELHO, AMARELO E VERDE

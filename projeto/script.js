@@ -15,6 +15,8 @@ function AdicionarTarefa() {
     let tarefa = document.getElementById('itarefa').value
 
     // PEGANDO O VALUE DO SELECT
-    let opcoes = document.querySelector('.opcoesPrioridade')
+    let opcoes = document.querySelector('.opcoesPrioridade').value 
+
+    
 }
 

@@ -82,6 +82,7 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 #background > h2 {
@@ -143,4 +144,41 @@ body {
 
 .inputsTxt > button:hover {
   background-color: #598a58;
+}
+
+#ListaDeTarefas > h2 {
+    font-family: var(--poppins);
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.resultadoListaTarefas {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 25%;
+  margin-top: 12px;
+}
+
+.textNameEPrioridade {
+  display: flex;
+  gap: 90px;
+}
+
+.textNameEPrioridade {
+  font-family: var(--font);
+}
+
+.textNameEPrioridade > .nomeTarefa {
+  color: #D93240;
+  font-weight: 700;
+}
+
+.textNameEPrioridade > .resultadoPrioridade {
+  background-color: #D93240;
+  color: white;
+  padding: 3px;
+  border-radius: 4px;
 }

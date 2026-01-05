@@ -37,21 +37,25 @@
         </div> <!--DIV RESULTADO TAREFAS-->
 
         <div class="adicionareTarefas"> <!--ADICIONAR TAREFAS-->
-            <h2>Adicionar Tarefas</h2>
+            <div id="background">
+                <h2>Adicionar Tarefas</h2>
 
-            <div class="inputsTxt"> <!--DIV DOS INPUTS-->
-                <input type="text" id="itarefa" placeholder="Nova Tarefa">
+              <div class="inputsTxt"> <!--DIV DOS INPUTS-->
+                  <input type="text" id="itarefa" placeholder="Nova Tarefa">
                 
-                <div class="prioridadeDaTarefa">
-                    <p>Prioridade:</p>
-                    <select>
-                        <option class="prioridade" value="Alta">Alta Prioridade</option>
-                        <option class="prioridade" value="Media">Media Prioridade</option>
-                        <option class="prioridade" value="Baixa">Baixa Prioridade</option>
-                    </select>
+                  <div class="prioridadeDaTarefa">
+                      <p>Prioridade:</p>
+                        <select>
+                          <option class="prioridade" value="Alta">Alta </option>
+                          <option class="prioridade" value="Media">Media </option>
+                          <option class="prioridade" value="Baixa">Baixa </option>
+                        </select>
 
-                    <button class="btnAdicionar" onclick="AdicionarTarefa()">Adicionar Tarefa</button>
-                </div>
+                        
+                  </div>
+                  <button class="btnAdicionar" onclick="AdicionarTarefa()">Adicionar Tarefa</button>
+              </div>
+            </div> 
 
                 <div id="ListaDeTarefas">
                     <div class="resultadoListaTarefas">

@@ -73,3 +73,74 @@ body {
   font-size: 23px;
   font-weight: 400;
 }
+
+.adicionareTarefas {
+  margin-top: 10px;
+}
+
+#background {
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#background > h2 {
+  padding-bottom: 6px;
+  font-family: var(--font);
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+
+.inputsTxt {
+  display: flex;
+  gap: 10px;
+}  
+
+.inputsTxt > input {
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid #dcdcdc;
+}
+
+.inputsTxt > input::placeholder {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.prioridadeDaTarefa {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+
+.prioridadeDaTarefa > p {
+  padding: 5px;
+  font-family: var(--font);
+}
+
+.prioridadeDaTarefa > select {
+  font-family: var(--font);
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding: 6px;
+  outline: none;
+}
+
+.inputsTxt > button {
+  background-color: #6AA668;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.inputsTxt > button:hover {
+  background-color: #598a58;
+}

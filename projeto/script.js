@@ -4,8 +4,12 @@ let resultado2 = document.getElementById('resultado2')
 let resultado3 = document.getElementById('resultado3')
 let resultado4 = document.getElementById('resultado4')
 
-//####### RESULTADO DAS TAREFAS#########
-let resultTarefas = document.querySelectorAll('.resultadoListaTarefas')
+//####### RESULTADO DAS TAREFAS #########
+let resultTarefas = document.querySelector('.resultadoListaTarefas')
+
+
+//###### BACKGROUND DO PARAGRAFO ########
+let resultadoPrioridadeBackground = document.querySelector('.resultadoPrioridade')
 
 //####### ARRAY PARA ARMAZENAR OS ITENS #########
 let guardarDados = []
@@ -30,8 +34,7 @@ function AdicionarTarefa() {
     // PEGANDO O VALUE DO SELECT
     let prioridade = document.querySelector('.opcoesPrioridade').value 
 
-    //###### RESULTADO PRIORIDADE##########
-    let prioridadeBackground = document.querySelector('.resultadoPrioridade')
+    
 
     // VERIFICAR SE O INPUT TA VAZIO
     if (tarefa === '') {
@@ -47,9 +50,10 @@ function AdicionarTarefa() {
     // COLOCANDO OS DADOS NO ARRAY
     guardarDados.push(dados)
 
+
     // CONDIÇÃO DA COR DA PRIORIDADE
-    if(prioridade === 'Alta' ) {
-        prioridadeBackground.style.backgroundColor = 'blue'
+    if (prioridade === 'Alta') {
+        resultadoPrioridadeBackground.style.backgroundColor = 'green'
     }
 
 
@@ -61,19 +65,21 @@ function AdicionarTarefa() {
 }
 
 
+
 // FUNÇÃO PARA NÃO REPETIR CODIGOS
 function complementos() {
     //NÃO REPETIR OS DADOS
     resultTarefas.innerHTML = ''
 
     guardarDados.forEach((item, indice) => {
+
         resultTarefas.innerHTML += `
 
             <div class="cards">
                 <div class="left">
                             <div class="textNameEPrioridade">
                                 <p class="nomeTarefa">${item.tarefa}</p>
-                                <p class="resultadoPrioridade">${item.opcoes} prioridade</p>
+                                <p class="resultadoPrioridade">${item.prioridade} prioridade</p>
                             </div>
                             <p class="status">Status:Pendente</p>
                         </div>

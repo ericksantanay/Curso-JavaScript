@@ -53,7 +53,9 @@ function AdicionarTarefa() {
 
     // CONDIÇÃO DA COR DA PRIORIDADE
     if (prioridade === 'Alta') {
-        resultadoPrioridadeBackground.style.backgroundColor = 'green'
+        resultadoPrioridadeBackground = '#prioridade-alta'
+    }else if (){
+
     }
 
 

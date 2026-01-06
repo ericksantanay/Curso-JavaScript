@@ -118,6 +118,18 @@ body {
   border-radius: 3px;
 }
 
+#prioridade-alta {
+  background-color: #D93240;
+}
+
+#prioridade-media {
+  background-color: yellow;
+}
+
+#prioridade-baixa {
+  background-color: #6AA668;
+}
+
 .prioridadeDaTarefa > p {
   padding: 5px;
   font-family: var(--font);

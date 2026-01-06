@@ -7,10 +7,6 @@ let resultado4 = document.getElementById('resultado4')
 //####### RESULTADO DAS TAREFAS#########
 let resultTarefas = document.querySelectorAll('.resultadoListaTarefas')
 
-//###### RESULTADO PRIORIDADE##########
-let prioridadeBackground = document.querySelectorAll('.resultadoPrioridade')
-
-
 //####### ARRAY PARA ARMAZENAR OS ITENS #########
 let guardarDados = []
 
@@ -32,8 +28,10 @@ function AdicionarTarefa() {
     let tarefa = document.getElementById('itarefa').value
 
     // PEGANDO O VALUE DO SELECT
-    let opcoes = document.querySelectorAll('.opcoesPrioridade').value 
+    let prioridade = document.querySelector('.opcoesPrioridade').value 
 
+    //###### RESULTADO PRIORIDADE##########
+    let prioridadeBackground = document.querySelector('.resultadoPrioridade')
 
     // VERIFICAR SE O INPUT TA VAZIO
     if (tarefa === '') {
@@ -43,15 +41,15 @@ function AdicionarTarefa() {
     // OBJETO
     let dados = {
         tarefa: tarefa,
-        opcoes: opcoes
+        prioridade: prioridade 
     }
 
     // COLOCANDO OS DADOS NO ARRAY
     guardarDados.push(dados)
 
-    // COONDIÇÃO DA COR DA PRIORIDADE
-    if(opcoes == ) {
-        prioridadeBackground.style.backgroundcolor = 'blue'
+    // CONDIÇÃO DA COR DA PRIORIDADE
+    if(prioridade === 'Alta' ) {
+        prioridadeBackground.style.backgroundColor = 'blue'
     }
 
 

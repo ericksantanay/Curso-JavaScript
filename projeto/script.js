@@ -59,10 +59,12 @@ function complementos() {
 
     guardarDados.forEach((item, indice) => {
         resultTarefas.innerHTML += `
-            <div class="left">
+
+            <div class="cards">
+                <div class="left">
                             <div class="textNameEPrioridade">
-                                <p class="nomeTarefa">${item.tarefa}</p>
-                                <p class="resultadoPrioridade">${item.opcoes} prioridade</p>
+                                <p class="nomeTarefa">AAA</p>
+                                <p class="resultadoPrioridade">Alta prioridade</p>
                             </div>
                             <p class="status">Status:Pendente</p>
                         </div>
@@ -70,9 +72,16 @@ function complementos() {
                         <div class="right">
                             <div class="btns">
                                 <button class="editar" onclick="Editar()">Editar</button>
-                                <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
+                                <button class="excluir" onclick="Excluir()">Excluir</button>
                             </div>
                         </div>
+
+            </div>
+
+            
+
+
+                        
         `
     });
 }

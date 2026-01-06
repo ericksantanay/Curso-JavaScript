@@ -153,14 +153,20 @@ body {
 }
 
 .resultadoListaTarefas {
+  
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 12px;
+}
+
+.cards {
   border-radius: 4px;
   padding: 10px;
   background-color: white;
-  display: flex;
-  align-items: center;
-  gap: 15%;
-  margin-top: 12px;
+  margin-bottom: 20px;
 }
+
 
 .textNameEPrioridade {
   display: flex;

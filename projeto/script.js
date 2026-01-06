@@ -5,7 +5,11 @@ let resultado3 = document.getElementById('resultado3')
 let resultado4 = document.getElementById('resultado4')
 
 //####### RESULTADO DAS TAREFAS#########
-let resultTarefas = document.querySelector('.resultadoListaTarefas')
+let resultTarefas = document.querySelectorAll('.resultadoListaTarefas')
+
+//###### RESULTADO PRIORIDADE##########
+let prioridadeBackground = document.querySelectorAll('.resultadoPrioridade')
+
 
 //####### ARRAY PARA ARMAZENAR OS ITENS #########
 let guardarDados = []
@@ -28,8 +32,13 @@ function AdicionarTarefa() {
     let tarefa = document.getElementById('itarefa').value
 
     // PEGANDO O VALUE DO SELECT
-    let opcoes = document.querySelector('.opcoesPrioridade').value 
+    let opcoes = document.querySelectorAll('.opcoesPrioridade').value 
 
+
+    // VERIFICAR SE O INPUT TA VAZIO
+    if (tarefa === '') {
+        alert('Preencha o Campo')
+    }
 
     // OBJETO
     let dados = {
@@ -41,7 +50,9 @@ function AdicionarTarefa() {
     guardarDados.push(dados)
 
     // COONDIÇÃO DA COR DA PRIORIDADE
-
+    if(opcoes == ) {
+        prioridadeBackground.style.backgroundcolor = 'blue'
+    }
 
 
     //ZERAR O INPUT DEPOIS DE DIGITADO
@@ -63,8 +74,8 @@ function complementos() {
             <div class="cards">
                 <div class="left">
                             <div class="textNameEPrioridade">
-                                <p class="nomeTarefa">AAA</p>
-                                <p class="resultadoPrioridade">Alta prioridade</p>
+                                <p class="nomeTarefa">${item.tarefa}</p>
+                                <p class="resultadoPrioridade">${item.opcoes} prioridade</p>
                             </div>
                             <p class="status">Status:Pendente</p>
                         </div>

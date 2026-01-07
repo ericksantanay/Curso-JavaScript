@@ -207,6 +207,10 @@ body {
   font-family: var(--font);
 }
 
+#estadoDoStatus {
+  display: none;
+}
+
 .editar {
   cursor: pointer;
   background-color: #3B74BF;

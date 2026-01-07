@@ -36,7 +36,7 @@ function AdicionarTarefa() {
     let prioridade = document.querySelector('.opcoesPrioridade').value 
 
     // PEGANDO O STATUS
-    let status = document.querySelector('.status')
+    let statusTarefa = document.getElementById('estadoDoStatus').valeu
 
     
     // Ajustar a parte de nao estar nada digitado no input 
@@ -50,7 +50,7 @@ function AdicionarTarefa() {
     let dados = {
         tarefa: tarefa,
         prioridade: prioridade,
-        status: status
+        statusTarefa: statusTarefa
     }
 
     // COLOCANDO OS DADOS NO ARRAY
@@ -97,12 +97,12 @@ function atulizadoALista() {
                                 <p class="nomeTarefa">${item.tarefa}</p>
                                 <p class="resultadoPrioridade">${item.prioridade} prioridade</p>
                             </div>
-                            <p class="status">Status: ${item.status}</p>
+                            <p class="status">Status: </p>
                         </div>
 
                         <div class="right">
                             <div class="btns">
-                                <button class="editar" onclick="Editar(${})">Editar</button> 
+                                <button class="editar" onclick="Editar(${indice})">Editar</button> 
                                 <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
                             </div>
                         </div>
@@ -121,9 +121,7 @@ function atulizadoALista() {
 
 
         // CONDIÇÃO DE TAREFAS PENDENTES
-        if() {
-
-        }
+        
 
 
 
@@ -137,6 +135,12 @@ function atulizadoALista() {
     //TOTAL DE TAREFAS
     resultado1.innerText = totalTarefas
     
+
+
+
+    if (statusTarefa) {
+        
+    }
 
 }
 
@@ -152,7 +156,14 @@ function Excluir(indice) {
 
 
 // FUNÇÃO EDITAR 
-function Editar() {
+function Editar(indice) {
+
+    //QUANDO O USUARIO CLICA EM EDITAR APARECE O SELECT PARA ELE ESCOLHER O STATUS
+    if (estadoDoStatus.style.display = 'none') {
+        estadoDoStatus.style.display = 'block'
+    }
+
+    
 
 
     atulizadoALista()

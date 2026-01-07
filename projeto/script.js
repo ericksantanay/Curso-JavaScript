@@ -120,13 +120,13 @@ function atulizadoALista() {
         }   
 
 
-        // CONDIÇÃO DE TAREFAS PENDENTES
-        if (item.statusTarefa) {
+        // CONDIÇÃO DE TAREFAS CONCLUIDO
+        if (item.statusTarefa == 'Concluido') {
         concluido++
         }
 
         // EM ANDAMENTO
-        if ()
+        
 
 
 
@@ -141,7 +141,7 @@ function atulizadoALista() {
     resultado1.innerText = totalTarefas
     
     // TOTAL DE TAREFAS CONCLUIDAS
-    resultado2.innerText = concluido
+    resultado4.innerText = concluido
 
 
     

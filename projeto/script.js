@@ -121,9 +121,12 @@ function atulizadoALista() {
 
 
         // CONDIÇÃO DE TAREFAS PENDENTES
-        if (statusTarefa) {
+        if (item.statusTarefa) {
         concluido++
         }
+
+        // EM ANDAMENTO
+        if ()
 
 
 
@@ -164,9 +167,7 @@ function Editar(indice) {
         estadoDoStatus.style.display = 'block'
     }
 
-    if(statusTarefa == 'Concluido') {
-
-    }
+    
 
 
     atulizadoALista()

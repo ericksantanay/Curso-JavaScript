@@ -36,7 +36,7 @@ function AdicionarTarefa() {
     let prioridade = document.querySelector('.opcoesPrioridade').value 
 
     // PEGANDO O STATUS
-    let statusTarefa = document.getElementById('estadoDoStatus').valeu
+    let statusTarefa = document.getElementById('estadoDoStatus').value
 
     
     // Ajustar a parte de nao estar nada digitado no input 
@@ -97,7 +97,7 @@ function atulizadoALista() {
                                 <p class="nomeTarefa">${item.tarefa}</p>
                                 <p class="resultadoPrioridade">${item.prioridade} prioridade</p>
                             </div>
-                            <p class="status">Status: </p>
+                            <p class="status">Status: ${item.statusTarefa}</p>
                         </div>
 
                         <div class="right">
@@ -121,7 +121,9 @@ function atulizadoALista() {
 
 
         // CONDIÇÃO DE TAREFAS PENDENTES
-        
+        if (statusTarefa) {
+        concluido++
+        }
 
 
 
@@ -135,12 +137,11 @@ function atulizadoALista() {
     //TOTAL DE TAREFAS
     resultado1.innerText = totalTarefas
     
+    // TOTAL DE TAREFAS CONCLUIDAS
+    resultado2.innerText = concluido
 
 
-
-    if (statusTarefa) {
-        
-    }
+    
 
 }
 
@@ -163,7 +164,9 @@ function Editar(indice) {
         estadoDoStatus.style.display = 'block'
     }
 
-    
+    if(statusTarefa == 'Concluido') {
+
+    }
 
 
     atulizadoALista()

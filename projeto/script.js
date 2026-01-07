@@ -26,6 +26,7 @@ let concluido = 0
 
 
 
+
 //####### FUNÇÃO DE ADICIONAR #########
 function AdicionarTarefa() {
     // INPUT DA TAREFA
@@ -35,6 +36,7 @@ function AdicionarTarefa() {
     let prioridade = document.querySelector('.opcoesPrioridade').value 
 
     
+    // Ajustar a parte de nao estar nada digitado no input 
 
     // VERIFICAR SE O INPUT TA VAZIO
     if (tarefa === '') {
@@ -59,6 +61,8 @@ function AdicionarTarefa() {
     //}
 
 
+
+
     //ZERAR O INPUT DEPOIS DE DIGITADO
     document.getElementById('itarefa').value = ''
 
@@ -72,6 +76,7 @@ function AdicionarTarefa() {
 function complementos() {
     //NÃO REPETIR OS DADOS
     resultTarefas.innerHTML = ''
+    totalTarefas = 0
 
     guardarDados.forEach((item, indice) => {
 
@@ -88,19 +93,19 @@ function complementos() {
 
                         <div class="right">
                             <div class="btns">
-                                <button class="editar" onclick="Editar()">Editar</button>
+                                <button class="editar" onclick="Editar()">Editar</button> 
                                 <button class="excluir" onclick="Excluir()">Excluir</button>
                             </div>
                         </div>
 
             </div>
-
-            
-
-
                         
         `
+        totalTarefas += (item.tarefa) // Acumular os valores
+        // Depois arrumar a parte de editar
     });
+
+    resultado1.innerText = totalTarefas
 }
 
 // EU PRECISO PEGAR O .resultadoPrioridade PARA FAZER A CONDIÇÃO E MUDAR A COR A CADA CONDIÇÃO SENDO VERMELHO, AMARELO E VERDE

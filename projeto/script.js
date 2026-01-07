@@ -52,11 +52,11 @@ function AdicionarTarefa() {
 
 
     // CONDIÇÃO DA COR DA PRIORIDADE
-    if (prioridade === 'Alta') {
-        resultadoPrioridadeBackground = '#prioridade-alta'
-    }else if (){
+    //if (prioridade === 'Alta') {
+    //    resultadoPrioridadeBackground = '#prioridade-alta'
+   // }else if (){
 
-    }
+    //}
 
 
     //ZERAR O INPUT DEPOIS DE DIGITADO

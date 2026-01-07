@@ -35,6 +35,9 @@ function AdicionarTarefa() {
     // PEGANDO O VALUE DO SELECT
     let prioridade = document.querySelector('.opcoesPrioridade').value 
 
+    // PEGANDO O STATUS
+    let status = document.querySelector('.status')
+
     
     // Ajustar a parte de nao estar nada digitado no input 
 
@@ -46,7 +49,8 @@ function AdicionarTarefa() {
     // OBJETO
     let dados = {
         tarefa: tarefa,
-        prioridade: prioridade 
+        prioridade: prioridade,
+        status: status
     }
 
     // COLOCANDO OS DADOS NO ARRAY
@@ -66,17 +70,22 @@ function AdicionarTarefa() {
     //ZERAR O INPUT DEPOIS DE DIGITADO
     document.getElementById('itarefa').value = ''
 
-
-    complementos()
+    atulizadoALista()
 }
 
 
 
 // FUNÇÃO PARA NÃO REPETIR CODIGOS
-function complementos() {
+function atulizadoALista() {
     //NÃO REPETIR OS DADOS
     resultTarefas.innerHTML = ''
+
+    // ZERANDO OS VALORES ANTES DE ENTRAR 
     totalTarefas = 0
+    tarefasPendentes = 0
+    EmAndamento = 0
+    concluido = 0
+
 
     guardarDados.forEach((item, indice) => {
 
@@ -88,24 +97,63 @@ function complementos() {
                                 <p class="nomeTarefa">${item.tarefa}</p>
                                 <p class="resultadoPrioridade">${item.prioridade} prioridade</p>
                             </div>
-                            <p class="status">Status:Pendente</p>
+                            <p class="status">Status: ${item.status}</p>
                         </div>
 
                         <div class="right">
                             <div class="btns">
-                                <button class="editar" onclick="Editar()">Editar</button> 
-                                <button class="excluir" onclick="Excluir()">Excluir</button>
+                                <button class="editar" onclick="Editar(${})">Editar</button> 
+                                <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
                             </div>
                         </div>
 
             </div>
                         
         `
-        totalTarefas += (item.tarefa) // Acumular os valores
-        // Depois arrumar a parte de editar
+
+
+
+
+        //CONDIÇÃO DE DO TOTAL DE TAREFAS 
+        if(item.tarefa) {
+        totalTarefas++
+        }   
+
+
+        // CONDIÇÃO DE TAREFAS PENDENTES
+        if() {
+
+        }
+
+
+
+        // CONDIÇÃO DE TAREFAS PENDENTES
+        
+
+
+
     });
 
+    //TOTAL DE TAREFAS
     resultado1.innerText = totalTarefas
+    
+
 }
 
+
+
 // EU PRECISO PEGAR O .resultadoPrioridade PARA FAZER A CONDIÇÃO E MUDAR A COR A CADA CONDIÇÃO SENDO VERMELHO, AMARELO E VERDE
+
+// FUNÇÃO EXCLUIR OS CARDS 
+function Excluir(indice) {
+    guardarDados.splice(indice, 1)
+    atulizadoALista()
+}
+
+
+// FUNÇÃO EDITAR 
+function Editar() {
+
+
+    atulizadoALista()
+}

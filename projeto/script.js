@@ -113,9 +113,6 @@ function atulizadoALista() {
                         
         `
 
-
-
-
         //CONDIÇÃO DE DO TOTAL DE TAREFAS 
         if(item.tarefa) {
         totalTarefas++

@@ -24,6 +24,7 @@ let tarefasPendentes = 0
 let EmAndamento = 0
 let concluido = 0
 
+let indiceEmEdicao = null
 
 
 
@@ -127,12 +128,14 @@ function atulizadoALista() {
         }
 
         // EM ANDAMENTO
-        
-
-
+        if(item.statusTarefa == 'Andamento') {
+            EmAndamento++
+        }
 
         // CONDIÇÃO DE TAREFAS PENDENTES
-        
+        if(item.statusTarefa == 'Pendente') {
+            tarefasPendentes++
+        }        
 
 
 
@@ -140,12 +143,15 @@ function atulizadoALista() {
 
     //TOTAL DE TAREFAS
     resultado1.innerText = totalTarefas
+
+    // TAREFAS PENDENTES 
+    resultado2.innerText = tarefasPendentes
+
+    // Resultado EM ANDAMENRTO
+    resultado3.innerText = EmAndamento
     
     // TOTAL DE TAREFAS CONCLUIDAS
     resultado4.innerText = concluido
-
-
-    
 
 }
 
@@ -164,16 +170,23 @@ function Excluir(indice) {
 function Editar(indice) {
 
     //QUANDO O USUARIO CLICA EM EDITAR APARECE O SELECT PARA ELE ESCOLHER O STATUS
-    if (estadoDoStatus.style.display == 'block') {
-        estadoDoStatus.style.display = 'none'
-        paragrafoStatus.innerText = (statusTarefa)
-    }else {
-         estadoDoStatus.style.display = 'block'
-         paragrafoStatus.innerText = (statusTarefa)
-    }
 
-     
+    estadoDoStatus.style.display = 'block'
 
+     indiceEmEdicao = indice
+}
+
+
+// Mudando o status
+function mudarStatus() {
+    let novoStatus = estadoDoStatus.value
+
+    if (indiceEmEdicao === null) return
+
+    guardarDados[indiceEmEdicao].statusTarefa = novoStatus
+
+    estadoDoStatus.style.display = 'none'
+    indiceEmEdicao = null
 
     atulizadoALista()
 }

@@ -118,15 +118,15 @@ body {
   border-radius: 3px;
 }
 
-#prioridade-alta {
+.prioridade-alta {
   background-color: #D93240;
 }
 
-#prioridade-media {
-  background-color: yellow;
+.prioridade-media {
+  background-color: rgba(222, 222, 35, 0.772);
 }
 
-#prioridade-baixa {
+.prioridade-baixa {
   background-color: #6AA668;
 }
 
@@ -171,6 +171,7 @@ body {
 }
 
 .cards {
+  width: 100%;
   border-radius: 4px;
   padding: 10px;
   background-color: white;
@@ -196,7 +197,6 @@ body {
 }
 
 .resultadoPrioridade {
-  background-color: #D93240;
   color: white;
   padding: 3px;
   border-radius: 4px;
@@ -221,6 +221,7 @@ body {
   color: white;
   border:none;
   transition: .3s;
+  margin-bottom: 5px;
 }
 
 .editar:hover {

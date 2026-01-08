@@ -8,9 +8,6 @@ let paragrafoStatus = document.querySelector('.status')
 let resultTarefas = document.querySelector('.resultadoListaTarefas')
 
 
-//###### BACKGROUND DO PARAGRAFO ########
-let resultadoPrioridadeBackground = document.querySelector('.resultadoPrioridade')
-
 //####### ARRAY PARA ARMAZENAR OS ITENS #########
 let guardarDados = []
 
@@ -59,14 +56,7 @@ function AdicionarTarefa() {
     guardarDados.push(dados)
 
 
-    // CONDIÇÃO DA COR DA PRIORIDADE
-    //if (prioridade === 'Alta') {
-    //    resultadoPrioridadeBackground = '#prioridade-alta'
-   // }else if (){
-
-    //}
-
-
+   
 
 
     //ZERAR O INPUT DEPOIS DE DIGITADO
@@ -88,29 +78,44 @@ function atulizadoALista() {
     EmAndamento = 0
     concluido = 0
 
+    //###### BACKGROUND DO PARAGRAFO ########
+    
+
 
     guardarDados.forEach((item, indice) => {
 
+        // CONDIÇÃO DA COR DA PRIORIDADE
+        let classePrioridade = ''
+
+        if (item.prioridade === 'Alta') {
+        classePrioridade = 'prioridade-alta'
+        } else if (item.prioridade === 'Media') {
+        classePrioridade = 'prioridade-media'
+        } else {
+        classePrioridade = 'prioridade-baixa'
+        }
+
+
+
         resultTarefas.innerHTML += `
-
-            <div class="cards">
-                <div class="left">
-                            <div class="textNameEPrioridade">
-                                <p class="nomeTarefa">${item.tarefa}</p>
-                                <p class="resultadoPrioridade">${item.prioridade} prioridade</p>
-                            </div>
-                            <p class="status">Status: ${item.statusTarefa}</p>
-                        </div>
-
-                        <div class="right">
-                            <div class="btns">
-                                <button class="editar" onclick="Editar(${indice})">Editar</button> 
-                                <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
-                            </div>
-                        </div>
-
+    <div class="cards">
+        <div class="left">
+            <div class="textNameEPrioridade">
+                <p class="nomeTarefa">${item.tarefa}</p>
+                <p class="resultadoPrioridade ${classePrioridade}">
+                    ${item.prioridade} prioridade
+                </p>
             </div>
-                        
+            <p class="status">Status: ${item.statusTarefa}</p>
+        </div>
+
+            <div class="right">
+                <div class="btns">
+                    <button class="editar" onclick="Editar(${indice})">Editar</button> 
+                    <button class="excluir" onclick="Excluir(${indice})">Excluir</button>
+                </div>
+            </div>
+        </div>
         `
 
         //CONDIÇÃO DE DO TOTAL DE TAREFAS 
@@ -135,6 +140,8 @@ function atulizadoALista() {
         }        
 
 
+
+         
 
     });
 

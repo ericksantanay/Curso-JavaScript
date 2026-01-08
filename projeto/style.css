@@ -143,6 +143,11 @@ body {
   outline: none;
 }
 
+#estadoDoStatus {
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+
 .inputsTxt > button {
   background-color: #6AA668;
   border: none;

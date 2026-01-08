@@ -44,6 +44,7 @@ function AdicionarTarefa() {
     // VERIFICAR SE O INPUT TA VAZIO
     if (tarefa === '') {
         alert('Preencha o Campo')
+        return
     }
 
     // OBJETO
@@ -163,11 +164,15 @@ function Excluir(indice) {
 function Editar(indice) {
 
     //QUANDO O USUARIO CLICA EM EDITAR APARECE O SELECT PARA ELE ESCOLHER O STATUS
-    if (estadoDoStatus.style.display = 'none') {
-        estadoDoStatus.style.display = 'block'
+    if (estadoDoStatus.style.display == 'block') {
+        estadoDoStatus.style.display = 'none'
+    }else {
+         estadoDoStatus.style.display = 'block'
     }
 
-    
+    if (estadoDoStatus) {
+        estadoDoStatus = item.statusTarefa
+    } 
 
 
     atulizadoALista()

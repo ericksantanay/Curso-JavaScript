@@ -3,7 +3,7 @@ let resultado1 = document.getElementById('resultado1')
 let resultado2 = document.getElementById('resultado2')
 let resultado3 = document.getElementById('resultado3')
 let resultado4 = document.getElementById('resultado4')
-
+let paragrafoStatus = document.querySelector('.status')
 //####### RESULTADO DAS TAREFAS #########
 let resultTarefas = document.querySelector('.resultadoListaTarefas')
 
@@ -166,13 +166,13 @@ function Editar(indice) {
     //QUANDO O USUARIO CLICA EM EDITAR APARECE O SELECT PARA ELE ESCOLHER O STATUS
     if (estadoDoStatus.style.display == 'block') {
         estadoDoStatus.style.display = 'none'
+        paragrafoStatus.innerText = (statusTarefa)
     }else {
          estadoDoStatus.style.display = 'block'
+         paragrafoStatus.innerText = (statusTarefa)
     }
 
-    if (estadoDoStatus) {
-        estadoDoStatus = item.statusTarefa
-    } 
+     
 
 
     atulizadoALista()

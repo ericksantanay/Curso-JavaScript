@@ -23,8 +23,6 @@ let concluido = 0
 
 let indiceEmEdicao = null
 
-
-
 //####### FUNÇÃO DE ADICIONAR #########
 function AdicionarTarefa() {
     // INPUT DA TAREFA
@@ -35,9 +33,6 @@ function AdicionarTarefa() {
 
     // PEGANDO O STATUS
     let statusTarefa = document.getElementById('estadoDoStatus').value
-
-    
-    // Ajustar a parte de nao estar nada digitado no input 
 
     // VERIFICAR SE O INPUT TA VAZIO
     if (tarefa === '') {
@@ -54,10 +49,6 @@ function AdicionarTarefa() {
 
     // COLOCANDO OS DADOS NO ARRAY
     guardarDados.push(dados)
-
-
-   
-
 
     //ZERAR O INPUT DEPOIS DE DIGITADO
     document.getElementById('itarefa').value = ''
@@ -81,7 +72,6 @@ function atulizadoALista() {
     //###### BACKGROUND DO PARAGRAFO ########
     
 
-
     guardarDados.forEach((item, indice) => {
 
         // CONDIÇÃO DA COR DA PRIORIDADE
@@ -94,7 +84,6 @@ function atulizadoALista() {
         } else {
         classePrioridade = 'prioridade-baixa'
         }
-
 
 
         resultTarefas.innerHTML += `
@@ -139,10 +128,6 @@ function atulizadoALista() {
             tarefasPendentes++
         }        
 
-
-
-         
-
     });
 
     //TOTAL DE TAREFAS
@@ -170,13 +155,12 @@ function Excluir(indice) {
 }
 
 
+
+
 // FUNÇÃO EDITAR 
 function Editar(indice) {
-
     //QUANDO O USUARIO CLICA EM EDITAR APARECE O SELECT PARA ELE ESCOLHER O STATUS
-
     estadoDoStatus.style.display = 'block'
-
      indiceEmEdicao = indice
 }
 

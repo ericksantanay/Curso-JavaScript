@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 1</title>
+
+    
+</head>
+<body>
+
+    <img  id="foto" src="" alt="">
+
+    <input onclick="escolherFoto()"  type="file"  id="escolherFoto" >
+
+
+
+
+    <script>
+
+        const fotoAparecer = document.getElementById('foto')
+        const inputFoto = document.getElementById('escolherFoto')
+
+        inputFoto.addEventListener('change', function (){
+            const arquivo = this.files[0]
+
+            if (arquivo) {
+                const leitor = new FileReader()
+
+                leitor.onload = function (e) {
+                    const imagemTexto = e.target.result
+
+                    //Mostra a imagem na tela
+                    fotoAparecer.src = imagemTexto
+                   
+                }
+
+                leitor.readAsDataURL(arquivo)
+            }
+
+
+
+        }) 
+
+      
+
+
+
+
+    </script>
+</body>
+</html>
